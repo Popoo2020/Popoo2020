@@ -5,7 +5,7 @@
 Welcome to my GitHub – I’m Eric Ariel Rimón, a Chief‑level architect who bridges deep technical mastery with entrepreneurial acumen. Over the past decade I’ve led both startups and enterprise security programmes, weaving cloud security, offensive AI and DevSecOps into scalable, secure‑by‑design systems that impress CISOs, CTOs and investors alike.  
 
 ### 🎯 **Executive Summary**
-With 10 years in cyber‑security and artificial intelligence I’ve architected cutting‑edge products and mentored high‑performing teams. My experiences include: 
+With several years in cyber‑security and artificial intelligence I’ve architected cutting‑edge products and mentored high‑performing teams. My experiences include: 
 
 * **Cloud & SOC Automation:** Designing zero‑trust architectures, deploying Microsoft Sentinel, Azure and AWS stacks, and building intelligent playbooks that automatically triage and close incidents using LLMs. Automation rules in Microsoft Sentinel can triage new incidents, change their status, assign an owner, tag and even close resolved incidents【935991109219243†L219-L241】.
 * **Offensive Security & AI:** Developing autonomous red‑team agents that perform reconnaissance, map CVEs and generate payloads. Proactive threat hunting reduces risk and aligns with security best practices.
