@@ -7,7 +7,7 @@ Welcome to my GitHub – I’m Eric Ariel Rimón, a Chief‑level architect who
 ### 🎯 **Executive Summary**
 With several years in cyber‑security and artificial intelligence I’ve architected cutting‑edge products and mentored high‑performing teams. My experiences include: 
 
-* **Cloud & SOC Automation:** Designing zero‑trust architectures, deploying Microsoft Sentinel, Azure and AWS stacks, and building intelligent playbooks that automatically triage and close incidents using LLMs. Automation rules in Microsoft Sentinel can triage new incidents, change their status, assign an owner, tag and even close resolved incidents【935991109219243†L219-L241】.
+* **Cloud & SOC Automation:** Designing zero‑trust architectures, deploying Microsoft Sentinel, Azure and AWS stacks, and building intelligent playbooks that automatically triage and close incidents using LLMs. Automation rules in Microsoft Sentinel can triage new incidents, change their status, assign an owner, tag and even close resolved incidents.
 * **Offensive Security & AI:** Developing autonomous red‑team agents that perform reconnaissance, map CVEs and generate payloads. Proactive threat hunting reduces risk and aligns with security best practices.
 * **GRC & Compliance:** Delivering cloud‑native compliance engines that continuously audit Azure and AWS environments against ISO 27001, generating evidence‑ready matrices.
 * **AI Platform Engineering:** Building secure GenAI/LLM platforms that leverage Retrieval‑Augmented Generation (RAG) and adhere to privacy and data‑sovereignty requirements.
