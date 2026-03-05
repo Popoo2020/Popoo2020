@@ -1,6 +1,6 @@
 # 👋 Eric Ariel Rimón
 
-## **Lead Cybersecurity & AI Architect&nbsp;|&nbsp;CEH AI&nbsp;|&nbsp;Tech Entrepreneur**
+## **Cybersecurity & AI Architect&nbsp;|&nbsp;CEH AI&nbsp;|&nbsp;Tech Entrepreneur**
 
 Welcome to my GitHub – I’m Eric Ariel Rimón, a Chief‑level architect who bridges deep technical mastery with entrepreneurial acumen. Over the past decade I’ve led both startups and enterprise security programmes, weaving cloud security, offensive AI and DevSecOps into scalable, secure‑by‑design systems that impress CISOs, CTOs and investors alike.  
 
