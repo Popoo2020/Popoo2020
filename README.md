@@ -1,38 +1,39 @@
-# 👋 Eric Ariel Rimón
+# Hi, I'm Ariel (Popoo2020) 👋
 
-## **Cybersecurity & AI Architect&nbsp;|&nbsp;CEH AI&nbsp;|&nbsp;Tech Entrepreneur**
+Welcome to my GitHub profile! I'm a seasoned cybersecurity and AI architect with a passion for building secure, scalable systems that bridge the gap between cutting‑edge research and real‑world enterprise needs. My background spans security engineering, AI/ML, compliance, cloud architecture and DevOps. I'm driven by the belief that security and innovation can (and must) coexist in modern technology stacks.
 
-Welcome to my GitHub – I’m Eric Ariel Rimón, a Chief‑level architect who bridges deep technical mastery with entrepreneurial acumen. Over the past decade I’ve led both startups and enterprise security programmes, weaving cloud security, offensive AI and DevSecOps into scalable, secure‑by‑design systems that impress CISOs, CTOs and investors alike.  
+## Featured Projects
 
-### 🎯 **Executive Summary**
-With several years in cyber‑security and artificial intelligence I’ve architected cutting‑edge products and mentored high‑performing teams. My experiences include: 
+Here are some of the repositories I'm actively curating and developing:
 
-* **Cloud & SOC Automation:** Designing zero‑trust architectures, deploying Microsoft Sentinel, Azure and AWS stacks, and building intelligent playbooks that automatically triage and close incidents using LLMs. Automation rules in Microsoft Sentinel can triage new incidents, change their status, assign an owner, tag and even close resolved incidents.
-* **Offensive Security & AI:** Developing autonomous red‑team agents that perform reconnaissance, map CVEs and generate payloads. Proactive threat hunting reduces risk and aligns with security best practices.
-* **GRC & Compliance:** Delivering cloud‑native compliance engines that continuously audit Azure and AWS environments against ISO 27001, generating evidence‑ready matrices.
-* **AI Platform Engineering:** Building secure GenAI/LLM platforms that leverage Retrieval‑Augmented Generation (RAG) and adhere to privacy and data‑sovereignty requirements.
+- **Sentinel‑AI‑AutoTriage** – A proof‑of‑concept pipeline for automating Microsoft Sentinel incident triage using large language models. It aims to parse alerts, assign severity/confidence scores and recommend next actions.
+- **Autonomous‑RedAgent** – An extensible framework for authorised red‑team reconnaissance with safe‑mode enforcement, plugin architecture and future support for structured reporting.
+- **Cloud‑Compliance‑Engine‑ISO27001** – Templates and documentation for collecting evidence across Azure and AWS and mapping it to ISO/IEC 27001 controls to simplify audits.
+- **Detection‑Engineering‑Playbook** – A curated library of detection rules (KQL, SPL, Sigma) mapped to MITRE ATT&CK along with validation guides and tuning strategies.
+- **DevSecOps‑Reference‑Pipeline** – A GitHub Actions pipeline template demonstrating how to embed linting, testing, secret scanning and dependency analysis into your CI process.
+- **Enterprise‑Sundai‑Bot** – A blueprint for a retrieval‑augmented chatbot focusing on secure architecture, ingestion pipelines and enterprise controls.
+- **Secure‑Cloud‑Landing‑Zones** – High‑level guidance for designing secure landing zones in Azure and AWS, including identity baselines and control objectives.
+- **LLM‑Security‑Guardrails‑Lab** – An experimental lab exploring guardrails for large language model integrations with threat modelling and prompt injection test harnesses.
+- **SPARTA‑IL** – A conversational agent to help track daily calories, nutrition and fitness goals (currently being prepared for public release).
 
-I translate these technical achievements into business growth by aligning cyber strategy with corporate objectives and investor relations. Executive communication, fundraising and strategic partnerships are part of my daily vocabulary.
+## Languages & Tools
 
-### ⚙️ **Tech Stack & Arsenal**
+I work primarily with **Python**, **YAML**, **Markdown** and the **GitHub Actions** ecosystem. Many of my projects leverage containerisation (Docker), cloud services (Azure, AWS), infrastructure‑as‑code, and a variety of security tools including `gitleaks`, `pip‑audit`, `pytest`, `semgrep` and `ruff`. I'm a strong advocate for DevSecOps practices, threat modelling and continuous learning.
 
-| Category | Stack & Tools |
-|---|---|
-| **Programming** | ![Python](https://img.shields.io/badge/Python-blue.svg)  ![Bash](https://img.shields.io/badge/Bash-black.svg) |
-| **Cloud & SIEM** | ![Azure](https://img.shields.io/badge/Azure-blue.svg) ![AWS](https://img.shields.io/badge/AWS-orange.svg) ![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-purple.svg) |
-| **AI & LLM** | ![OpenAI](https://img.shields.io/badge/OpenAI-ChatGPT-ff69b4.svg) ![LangChain](https://img.shields.io/badge/LangChain-red.svg)  RAG architectures |
-| **Security** | CEH AI Certified Ethical Hacker, Metasploit, Nmap wrappers, custom offensive tooling |
-| **DevSecOps & GRC** | IaC (Terraform/ARM), ISO 27001, SOC 2, automated compliance reporting |
+## What I'm Working On
 
-### 🚀 **Featured Flagship Projects**
-Below are four enterprise‑grade repositories that exemplify my expertise. Each repository has its own professional documentation and demonstrates secure coding practices, automation and scalability.  
+I'm currently focused on:
 
-| Project | Description |
-|---|---|
-| **[Sentinel‑AI‑AutoTriage](../Sentinel-AI-AutoTriage)** | Cloud‑native SOC automation framework. Connects to Microsoft Sentinel, ingests Tier‑1 incidents and uses an LLM API to analyse, enrich and auto‑close incidents. Uses Python, `azure‑identity` and `azure‑mgmt‑securityinsight`. |
-| **[Autonomous‑RedAgent](../Autonomous-RedAgent)** | AI‑driven red‑team agent that automates reconnaissance, parses CVEs, maps attack vectors and generates payloads. Integrates Nmap, CVE feeds and LLM summarisation. |
-| **[Cloud‑Compliance‑Engine‑ISO27001](../Cloud-Compliance-Engine-ISO27001)** | Infrastructure‑as‑Code and Python scripts that audit Azure/AWS environments and map controls directly to ISO/IEC 27001. Generates CSV and JSON compliance matrices. |
-| **[Enterprise‑Sundai‑Bot](../Enterprise-Sundai-Bot)** | Sanitised showcase of a production‑grade AI bot that automates business operations, shift planning and ROI measurement. Built with FastAPI, vector stores and secure API deployment. |
+* Developing automated triage and scoring logic for security incidents using LLMs
+* Expanding detection engineering coverage across multiple security platforms
+* Enhancing DevSecOps pipelines with additional static analysis, SBOM and signed release features
+* Formalising documentation and control mappings for cloud compliance
+* Experimenting with defensive techniques against prompt injection and retrieval poisoning
 
-### 🤝 **Connect & Collaborate**
-I’m always interested in pioneering projects, advisory roles and speaking engagements. Feel free to reach out via LinkedIn or email to discuss how we can secure the future together.
+If any of these areas resonate with you, feel free to explore the repositories, open issues or collaborate via pull requests.
+
+## Get in Touch
+
+You can find me on GitHub as **@Popoo2020**. I'm always open to feedback, collaborations and discussions about cybersecurity, AI and cloud engineering. Feel free to fork my repositories, create issues or reach out via GitHub discussions.
+
+Thanks for visiting!
