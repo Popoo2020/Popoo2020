@@ -1,6 +1,6 @@
 # Hi, I'm Eric Ariel R. (Popoo2020) 👋
 
-Welcome to my GitHub profile! I'm a seasoned cybersecurity and AI architect with a passion for building secure, scalable systems that bridge the gap between cutting‑edge research and real‑world enterprise needs. My background spans security engineering, AI/ML, compliance, cloud architecture and DevOps. I'm driven by the belief that security and innovation can (and must) coexist in modern technology stacks.
+Welcome to my GitHub profile! I'm a seasoned cybersecurity and AI security engineer / junior architect with a passion for building secure, scalable systems that bridge the gap between cutting‑edge research and real‑world enterprise needs. My background spans security engineering, AI/ML, compliance, cloud architecture and DevOps. I'm driven by the belief that security and innovation can (and must) coexist in modern technology stacks.
 
 ## Featured Projects
 
