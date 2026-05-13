@@ -1,39 +1,63 @@
-# Hi, I'm Eric Ariel R. (Popoo2020) 👋
+# Hi, I'm Eric Ariel Rimón 👋
 
-Welcome to my GitHub profile! I'm a seasoned cybersecurity and AI security engineer / junior architect with a passion for building secure, scalable systems that bridge the gap between cutting‑edge research and real‑world enterprise needs. My background spans security engineering, AI/ML, compliance, cloud architecture and DevOps. I'm driven by the belief that security and innovation can (and must) coexist in modern technology stacks.
+**AI Security | Cloud Security | DevSecOps | Security Automation**
 
-## Featured Projects
+I build secure-by-design systems at the intersection of **cybersecurity, cloud infrastructure, and applied AI** — with a focus on LLM security, SOC automation, compliance engineering, and practical DevSecOps.
 
-Here are some of the repositories I'm actively curating and developing:
+My background combines hands-on technical development with entrepreneurship, cross-border innovation work, and security architecture thinking. I am especially interested in how organisations can deploy AI-enabled systems that are useful, governed, and resilient against misuse.
 
-- **Sentinel‑AI‑AutoTriage** – A proof‑of‑concept pipeline for automating Microsoft Sentinel incident triage using large language models. It aims to parse alerts, assign severity/confidence scores and recommend next actions.
-- **Autonomous‑RedAgent** – An extensible framework for authorised red‑team reconnaissance with safe‑mode enforcement, plugin architecture and future support for structured reporting.
-- **Cloud‑Compliance‑Engine‑ISO27001** – Templates and documentation for collecting evidence across Azure and AWS and mapping it to ISO/IEC 27001 controls to simplify audits.
-- **Detection‑Engineering‑Playbook** – A curated library of detection rules (KQL, SPL, Sigma) mapped to MITRE ATT&CK along with validation guides and tuning strategies.
-- **DevSecOps‑Reference‑Pipeline** – A GitHub Actions pipeline template demonstrating how to embed linting, testing, secret scanning and dependency analysis into your CI process.
-- **Enterprise‑Sundai‑Bot** – A blueprint for a retrieval‑augmented chatbot focusing on secure architecture, ingestion pipelines and enterprise controls.
-- **Secure‑Cloud‑Landing‑Zones** – High‑level guidance for designing secure landing zones in Azure and AWS, including identity baselines and control objectives.
-- **LLM‑Security‑Guardrails‑Lab** – An experimental lab exploring guardrails for large language model integrations with threat modelling and prompt injection test harnesses.
-- **SPARTA‑IL** – A conversational agent to help track daily calories, nutrition and fitness goals (currently being prepared for public release).
+## Featured Work
 
-## Languages & Tools
+### 1. [Sentinel-AI-AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)
+LLM-assisted Microsoft Sentinel triage framework that fetches active incidents, prepares structured incident context, invokes an LLM analysis layer, and supports controlled response workflow development.
 
-I work primarily with **Python**, **YAML**, **Markdown** and the **GitHub Actions** ecosystem. Many of my projects leverage containerisation (Docker), cloud services (Azure, AWS), infrastructure‑as‑code, and a variety of security tools including `gitleaks`, `pip‑audit`, `pytest`, `semgrep` and `ruff`. I'm a strong advocate for DevSecOps practices, threat modelling and continuous learning.
+**Focus:** SOC automation, Azure Sentinel, LLM-assisted decision support, response safety controls.
 
-## What I'm Working On
+### 2. [LLM-Security-Guardrails-Lab](https://github.com/Popoo2020/LLM-Security-Guardrails-Lab)
+Experimental lab for testing prompt-injection handling, defensive prompt sanitisation, and repeatable guardrail validation patterns for LLM-enabled applications.
 
-I'm currently focused on:
+**Focus:** AI Security, prompt injection, test harnesses, defensive design.
 
-* Developing automated triage and scoring logic for security incidents using LLMs
-* Expanding detection engineering coverage across multiple security platforms
-* Enhancing DevSecOps pipelines with additional static analysis, SBOM and signed release features
-* Formalising documentation and control mappings for cloud compliance
-* Experimenting with defensive techniques against prompt injection and retrieval poisoning
+### 3. [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)
+Security-focused CI/CD reference pipeline that demonstrates how to combine testing, linting, secret scanning, dependency review, SAST-oriented checks, and supply-chain hygiene in GitHub Actions.
 
-If any of these areas resonate with you, feel free to explore the repositories, open issues or collaborate via pull requests.
+**Focus:** CI/CD security, pipeline hardening, repeatable quality gates.
 
-## Get in Touch
+### 4. [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)
+Multi-cloud ISO 27001 compliance automation project with control-mapping logic, structured evidence handling, and report-generation patterns for Azure/AWS security governance.
 
-You can find me on GitHub as **@Popoo2020**. I'm always open to feedback, collaborations and discussions about cybersecurity, AI and cloud engineering. Feel free to fork my repositories, create issues or reach out via GitHub discussions.
+**Focus:** Cloud compliance, ISO 27001, evidence mapping, audit-ready security automation.
 
-Thanks for visiting!
+### 5. [Detection-Engineering-Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)
+Detection engineering workspace for documenting high-signal rules, validation methodology, MITRE ATT&CK alignment, and practical false-positive tuning.
+
+**Focus:** SIEM content, detection logic, ATT&CK mapping, rule validation.
+
+## Current Focus
+
+- Building trustworthy **LLM-enabled security workflows**
+- Strengthening **SOC automation** and Microsoft Sentinel-oriented triage concepts
+- Developing practical **AI Security guardrails** and testable control patterns
+- Automating **cloud compliance** and security evidence collection
+- Improving **DevSecOps pipelines** with traceable, security-first controls
+
+## Technical Areas
+
+- **AI Security:** prompt injection, guardrails, secure RAG patterns, LLM workflow risks
+- **Cloud Security:** Azure, Entra ID, Microsoft Sentinel, AWS security controls
+- **DevSecOps:** GitHub Actions, secret scanning, dependency risk, CI/CD governance
+- **Detection Engineering:** KQL, Sigma concepts, MITRE ATT&CK alignment, validation guidance
+- **Security Architecture:** least privilege, safe automation, auditability, human-in-the-loop controls
+
+## Collaboration
+
+I am open to conversations, technical collaboration, and opportunities related to:
+
+- AI Security
+- Cloud Security
+- Security Architecture
+- DevSecOps
+- SOC Automation
+- Compliance Engineering
+
+Thanks for visiting my profile.
