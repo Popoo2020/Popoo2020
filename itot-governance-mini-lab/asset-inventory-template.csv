@@ -1,0 +1,4 @@
+asset_id,asset_name,environment,asset_type,owner,business_function,criticality,network_zone,authentication_method,logging_available,backup_required,notes
+OT-001,Example PLC,OT,Controller,Operations,Production line control,High,Production zone,Local account,Partial,Yes,Example placeholder
+OT-002,Example HMI,OT,Workstation,Operations,Operator interface,High,Operations zone,Directory account,Yes,Yes,Example placeholder
+IT-001,Example engineering workstation,IT,Workstation,Engineering,Configuration and maintenance,Medium,Engineering zone,Directory account,Yes,Yes,Example placeholder
