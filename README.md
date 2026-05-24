@@ -38,8 +38,10 @@ Detection engineering workspace with KQL examples, Sigma content, ATT&CK alignme
 
 **Focus:** SIEM content, detection logic, MITRE ATT&CK, analyst tuning and validation.
 
-## Targeted Portfolio Notes
+## Targeted Mini Labs
 
+- [IT/OT Governance Mini Lab](./itot-governance-mini-lab/README.md) — asset inventory, risk register, zones/conduits model and control mapping examples for IT/OT governance and compliance roles.
+- [Entra ID / IAM Governance Mini Lab](./entra-iam-governance-mini-lab/README.md) — identity lifecycle model, RBAC matrix, conditional access baseline, access review checklist and audit logging requirements.
 - [Career portfolio index](./career-portfolio/README.md) — short role-oriented mapping for recruiters and hiring teams.
 
 ## Additional Engineering Work
