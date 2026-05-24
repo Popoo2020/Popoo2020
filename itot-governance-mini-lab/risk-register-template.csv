@@ -1,0 +1,4 @@
+risk_id,asset_or_process,risk_statement,likelihood,impact,current_controls,planned_improvement,owner,status
+R-001,Remote maintenance access,Remote access may be granted without sufficient approval or logging,Medium,High,VPN and manual approval,Add periodic access review and central logging,Security,Open
+R-002,Shared local accounts,Shared accounts may reduce accountability,Medium,Medium,Local procedures,Move toward named accounts where technically possible,Operations,Open
+R-003,Incomplete asset visibility,Unknown assets may be excluded from governance processes,Medium,High,Spreadsheet inventory,Introduce periodic inventory validation,IT/OT,Open
