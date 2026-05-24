@@ -1,0 +1,6 @@
+role,business_function,standard_access,privileged_access_required,approval_owner,review_frequency,notes
+Employee,Basic business user,Email; collaboration tools; intranet,No,Line manager,Quarterly,Default role with minimal baseline access
+Support analyst,User support,Ticketing system; user lookup; documentation,Limited,Support manager,Monthly,No direct privileged changes without approval
+Application owner,System ownership,Application admin portal; reporting,Yes,System owner,Monthly,Access must be traceable and reviewed
+Security analyst,Security monitoring,SIEM; logs; alert dashboard,Limited,Security lead,Monthly,Read-focused access by default
+External consultant,Time-limited project access,Project tools only,No,Project owner,End of assignment,Must have defined end date
