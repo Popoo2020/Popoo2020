@@ -1,6 +1,6 @@
 # Hi, I'm Eric Ariel Rimón 👋
 
-**AI Security | Cloud Compliance | DevSecOps | SOC Automation | IAM Security**
+**AI Security · Cloud Compliance · DevSecOps · SOC Automation · IAM Security**
 
 I build secure-by-design systems at the intersection of **cybersecurity, cloud infrastructure, identity, compliance, and applied AI** — with a focus on practical security architecture, governed automation, audit-ready evidence, LLM guardrails, secure RAG evaluation, and Microsoft security workflows.
 
