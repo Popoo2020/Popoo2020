@@ -1,19 +1,31 @@
 # Targeted Cybersecurity Portfolio
 
-This folder provides short, recruiter-friendly project mappings for roles where my GitHub work supports a specific job profile.
+This folder provides a short, recruiter-friendly overview of how my GitHub work supports specific job profiles.
 
-## Role-oriented briefs
+## Role-oriented positioning
 
-- [IT/OT & IEC 62443 Compliance Brief](./itot-iec62443-compliance-brief.md) — maps my compliance, documentation, evidence automation and security-control work to IT/OT and GRC roles.
-- [Entra ID / IAM Governance Brief](./entra-iam-governance-brief.md) — maps my identity, access-control, lifecycle-process and automation background to IAM and Identity Provider roles.
+### IT/OT Compliance and GRC
 
-## Main proof-of-work repositories
+Relevant proof-of-work:
 
-- [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)
-- [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)
-- [Sentinel-AI-AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)
-- [Secure-Agent-Control-Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)
-- [Detection-Engineering-Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)
+- [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001) — control mapping, validation logic, evidence-style reporting and audit-ready documentation.
+- [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline) — repeatable security checks, secret scanning, dependency review and CI quality gates.
+- [Detection-Engineering-Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook) — structured security operations documentation and detection logic.
+
+### IAM, Entra ID and Identity Governance
+
+Relevant proof-of-work:
+
+- [Secure-Agent-Control-Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane) — role-aware access decisions, approval gates, least-privilege thinking and audit events.
+- [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001) — governance mindset, control mapping and documentation quality.
+- [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline) — secure delivery workflow and repeatable checks.
+
+### SOC Automation and Detection Engineering
+
+Relevant proof-of-work:
+
+- [Sentinel-AI-AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage) — Microsoft Sentinel-oriented triage automation with human approval gates and metadata-only audit trail.
+- [Detection-Engineering-Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook) — KQL/Sigma-style detection examples and tuning guidance.
 
 ## Positioning
 
