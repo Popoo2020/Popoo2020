@@ -10,12 +10,12 @@ The goal is not to claim deep industrial engineering experience. The goal is to 
 
 ## What this lab includes
 
-- Asset inventory template
-- Risk register template
-- Zones and conduits concept model
-- Control mapping example
-- Security policy outline
-- Evidence collection checklist
+- [Asset inventory template](./asset-inventory-template.csv)
+- [Risk register template](./risk-register-template.csv)
+- [Zones and conduits concept model](./zones-and-conduits-model.md)
+- [Control mapping example](./control-mapping-example.md)
+- [Security policy outline](./security-policy-outline.md)
+- [Evidence collection checklist](./evidence-collection-checklist.md)
 
 ## Relevant skills demonstrated
 
@@ -28,9 +28,9 @@ The goal is not to claim deep industrial engineering experience. The goal is to 
 
 ## Related portfolio projects
 
-- Cloud-Compliance-Engine-ISO27001
-- DevSecOps-Reference-Pipeline
-- Detection-Engineering-Playbook
+- [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)
+- [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)
+- [Detection-Engineering-Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)
 
 ## Role fit
 
