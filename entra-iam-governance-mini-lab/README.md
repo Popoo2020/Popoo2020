@@ -10,13 +10,13 @@ The goal is to show how identity governance can be documented and structured as 
 
 ## What this lab includes
 
-- Identity lifecycle model
-- RBAC role matrix example
-- Conditional access baseline
-- SSO and MFA concept notes
-- Access review checklist
-- Audit logging requirements
-- PowerShell-style pseudocode for access review reporting
+- [Identity lifecycle model](./identity-lifecycle-model.md)
+- [RBAC role matrix example](./rbac-role-matrix-example.csv)
+- [Conditional access baseline](./conditional-access-baseline.md)
+- [SSO and MFA concept notes](./sso-mfa-concept-notes.md)
+- [Access review checklist](./access-review-checklist.md)
+- [Audit logging requirements](./audit-logging-requirements.md)
+- [PowerShell-style pseudocode for access review reporting](./access-review-report-example.ps1)
 
 ## Relevant skills demonstrated
 
@@ -30,9 +30,9 @@ The goal is to show how identity governance can be documented and structured as 
 
 ## Related portfolio projects
 
-- Secure-Agent-Control-Plane
-- Cloud-Compliance-Engine-ISO27001
-- DevSecOps-Reference-Pipeline
+- [Secure-Agent-Control-Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)
+- [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)
+- [DevSecOps-Reference-Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)
 
 ## Role fit
 
