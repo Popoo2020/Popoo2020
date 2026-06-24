@@ -1,0 +1,34 @@
+name: AI Governance Toolkit
+
+on:
+  push:
+    branches: [ main, add-iso42001-ai-governance-toolkit ]
+  pull_request:
+    paths:
+      - 'ISO42001-AI-Governance-Evidence-Toolkit/**'
+      - '.github/workflows/ai-governance-toolkit.yml'
+
+jobs:
+  validate-toolkit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate readiness report
+        working-directory: ISO42001-AI-Governance-Evidence-Toolkit
+        run: |
+          python src/generate_readiness_report.py
+          test -f reports/generated_readiness_report.md
+
+      - name: Validate generated report content
+        working-directory: ISO42001-AI-Governance-Evidence-Toolkit
+        run: |
+          grep -q "AI Governance Readiness Report" reports/generated_readiness_report.md
+          grep -q "High-risk use cases" reports/generated_readiness_report.md
+          grep -q "Controls requiring follow-up" reports/generated_readiness_report.md
