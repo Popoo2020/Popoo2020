@@ -16,6 +16,11 @@ This project demonstrates how AI governance can be translated into practical art
 - an AI impact assessment example,
 - a lightweight AI policy draft,
 - an ISO/IEC 42001-oriented control/evidence mapping,
+- an AI supplier due-diligence checklist,
+- a human-oversight decision log,
+- an AI incident and complaint handling template,
+- an EU AI Act readiness classification note,
+- a client-facing consulting offer,
 - and a generated readiness report.
 
 It is designed to bridge **AI governance**, **cybersecurity GRC**, **ISO 27001 experience**, **ISO/IEC 42001 readiness**, **EU AI Act awareness**, and practical AI implementation work such as AI-assisted Shopify/e-commerce workflows.
@@ -24,19 +29,25 @@ It is designed to bridge **AI governance**, **cybersecurity GRC**, **ISO 27001 e
 
 ```text
 data/
-  ai_use_case_register.csv       # Example AI systems and organisational ownership
-  ai_risk_register.csv           # Example AI risks, controls and residual risk
-  control_mapping.csv            # Governance controls, owners and evidence references
+  ai_use_case_register.csv          # Example AI systems and organisational ownership
+  ai_risk_register.csv              # Example AI risks, controls and residual risk
+  control_mapping.csv               # Governance controls, owners and evidence references
+  human_oversight_decision_log.csv  # Example human-review and escalation log
 
 docs/
-  ai_policy_draft.md             # Lightweight internal AI-use policy draft
-  ai_impact_assessment_example.md # Example impact assessment for an SME AI workflow
+  ai_policy_draft.md                     # Lightweight internal AI-use policy draft
+  ai_impact_assessment_example.md        # Example impact assessment for an SME AI workflow
+  ai_supplier_due_diligence_checklist.md # Supplier/tool review checklist
+  eu_ai_act_risk_classification_note.md  # Readiness note for risk-based triage
+  ai_incident_response_template.md       # AI incident and complaint handling template
 
 src/
-  generate_readiness_report.py   # Generates a Markdown readiness summary from CSV inputs
+  generate_readiness_report.py      # Generates a Markdown readiness summary from CSV inputs
 
 reports/
-  sample_readiness_report.md     # Example generated-style report
+  sample_readiness_report.md        # Example generated-style report
+
+consulting_offer_ai_governance_readiness.md # Client-facing service outline
 ```
 
 ## Implemented artefacts
@@ -48,11 +59,15 @@ reports/
 | AI impact assessment example | ✅ Implemented |
 | AI policy draft | ✅ Implemented |
 | ISO/IEC 42001-oriented control mapping | ✅ Implemented |
+| AI supplier due-diligence checklist | ✅ Implemented |
+| EU AI Act risk-classification readiness note | ✅ Implemented |
+| Human oversight decision log | ✅ Implemented |
+| AI incident and complaint handling template | ✅ Implemented |
+| Client-facing AI governance consulting offer | ✅ Implemented |
 | Readiness report generator | ✅ Implemented |
-| EU AI Act risk classification expansion | 🟡 Planned |
-| Supplier due-diligence checklist | 🟡 Planned |
-| Human oversight workflow examples | 🟡 Planned |
+| CI validation for report generation | ✅ Implemented |
 | Evidence pack export to PDF/HTML | 🟡 Planned |
+| TeenTech AI awareness-training variant | 🟡 Planned |
 
 ## Example use cases covered
 
@@ -60,17 +75,29 @@ The sample register includes realistic SME scenarios such as:
 
 - AI-assisted Shopify product descriptions and SEO content,
 - AI customer-support drafting,
-- HR screening support,
+- recruitment note assistance,
 - internal document summarisation,
-- security incident triage support.
+- security workflow summarisation.
 
 The point is not to ban AI. The point is to make AI adoption visible, owned, risk-assessed, reviewable and evidence-backed.
 
 ## Quickstart
 
+From the repository root:
+
 ```bash
+cd ISO42001-AI-Governance-Evidence-Toolkit
 python -m venv .venv
 source .venv/bin/activate
+python src/generate_readiness_report.py
+```
+
+Windows PowerShell activation example:
+
+```powershell
+cd ISO42001-AI-Governance-Evidence-Toolkit
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 python src/generate_readiness_report.py
 ```
 
@@ -89,6 +116,9 @@ This project demonstrates practical ability to turn AI governance concepts into 
 - evidence-based governance,
 - policy drafting,
 - control ownership,
+- supplier/tool review,
+- human oversight and escalation,
+- incident/complaint handling,
 - SME consulting packaging,
 - and a bridge between cybersecurity compliance and applied AI implementation.
 
@@ -111,20 +141,24 @@ A lightweight engagement could include:
 2. classify data and affected stakeholders,
 3. map risks and existing safeguards,
 4. create an AI-use policy draft,
-5. prepare a readiness report with gaps, owners and recommended next steps.
+5. review AI suppliers/tools,
+6. define human oversight and incident escalation expectations,
+7. prepare a readiness report with gaps, owners and recommended next steps.
+
+See `consulting_offer_ai_governance_readiness.md` for a client-facing service outline.
 
 ## Limitations
 
 - This is not legal advice.
 - This is not a full ISO/IEC 42001 implementation package.
+- This is not a formal EU AI Act legal-classification tool.
 - The mapping is intentionally high level and educational.
 - Real organisations should adapt the artefacts to their sector, jurisdiction, risk profile, contractual obligations and professional legal/compliance guidance.
 
 ## Roadmap
 
-1. Add supplier and model-provider due-diligence checklist.
-2. Add EU AI Act-oriented risk-category notes.
-3. Add a human-oversight decision log template.
-4. Add AI incident and complaint handling template.
-5. Add PDF export for client-facing readiness reports.
-6. Add a TeenTech AI awareness-training variant for education and youth-focused contexts.
+1. Add PDF/HTML export for client-facing readiness reports.
+2. Add richer evidence-reference schema and owner sign-off fields.
+3. Add a TeenTech AI awareness-training variant for education and youth-focused contexts.
+4. Add a management workshop deck outline.
+5. Add optional questionnaire-based scoring for readiness maturity.
