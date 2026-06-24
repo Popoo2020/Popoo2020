@@ -26,7 +26,7 @@ Before presenting this toolkit to an employer, client or collaborator, confirm:
 - [ ] Architecture document is present.
 - [ ] Threat model is present.
 - [ ] Demo output is present.
-- [ ] Release notes are present.
+- [ ] Version notes are present.
 - [ ] README explains what the project demonstrates for AI Governance and Cybersecurity GRC roles.
 
 ## Recommended review cadence
