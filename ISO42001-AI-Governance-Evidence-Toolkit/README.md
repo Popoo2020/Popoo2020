@@ -21,6 +21,7 @@ This project demonstrates how AI governance can be translated into practical art
 - an AI incident and complaint handling template,
 - an EU AI Act readiness classification note,
 - a client-facing consulting offer,
+- a client-style case study,
 - and a generated readiness report.
 
 It is designed to bridge **AI governance**, **cybersecurity GRC**, **ISO 27001 experience**, **ISO/IEC 42001 readiness**, **EU AI Act awareness**, and practical AI implementation work such as AI-assisted Shopify/e-commerce workflows.
@@ -40,6 +41,9 @@ docs/
   ai_supplier_due_diligence_checklist.md # Supplier/tool review checklist
   eu_ai_act_risk_classification_note.md  # Readiness note for risk-based triage
   ai_incident_response_template.md       # AI incident and complaint handling template
+
+case_studies/
+  sme_sundai_ai_governance_review.md     # Client-style Sundai AI governance review
 
 src/
   generate_readiness_report.py      # Generates a Markdown readiness summary from CSV inputs
@@ -64,6 +68,7 @@ consulting_offer_ai_governance_readiness.md # Client-facing service outline
 | Human oversight decision log | ✅ Implemented |
 | AI incident and complaint handling template | ✅ Implemented |
 | Client-facing AI governance consulting offer | ✅ Implemented |
+| Sundai AI client-style governance case study | ✅ Implemented |
 | Readiness report generator | ✅ Implemented |
 | CI validation for report generation | ✅ Implemented |
 | Evidence pack export to PDF/HTML | 🟡 Planned |
@@ -77,7 +82,8 @@ The sample register includes realistic SME scenarios such as:
 - AI customer-support drafting,
 - recruitment note assistance,
 - internal document summarisation,
-- security workflow summarisation.
+- security workflow summarisation,
+- Sundai AI-style workflow adoption review.
 
 The point is not to ban AI. The point is to make AI adoption visible, owned, risk-assessed, reviewable and evidence-backed.
 
@@ -119,6 +125,7 @@ This project demonstrates practical ability to turn AI governance concepts into 
 - supplier/tool review,
 - human oversight and escalation,
 - incident/complaint handling,
+- client-style analysis,
 - SME consulting packaging,
 - and a bridge between cybersecurity compliance and applied AI implementation.
 
@@ -147,11 +154,16 @@ A lightweight engagement could include:
 
 See `consulting_offer_ai_governance_readiness.md` for a client-facing service outline.
 
+## Case study
+
+- [`case_studies/sme_sundai_ai_governance_review.md`](case_studies/sme_sundai_ai_governance_review.md) — anonymised/simulated client-style review showing how the toolkit can be applied to a company using Sundai AI-style workflows.
+
 ## Limitations
 
 - This is not legal advice.
 - This is not a full ISO/IEC 42001 implementation package.
 - This is not a formal EU AI Act legal-classification tool.
+- The case study is a portfolio demonstration, not a claim of a real paid client engagement.
 - The mapping is intentionally high level and educational.
 - Real organisations should adapt the artefacts to their sector, jurisdiction, risk profile, contractual obligations and professional legal/compliance guidance.
 
