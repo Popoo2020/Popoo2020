@@ -9,9 +9,9 @@ My background combines hands-on technical development with entrepreneurship, cro
 ## Flagship Projects
 
 ### 1. [ISO42001-AI-Governance-Evidence-Toolkit](./ISO42001-AI-Governance-Evidence-Toolkit/README.md)
-Practical AI governance and evidence-readiness toolkit for SMEs preparing for responsible AI adoption, ISO/IEC 42001-style management-system thinking, EU AI Act readiness, and cybersecurity/GRC discussions.
+Practical AI governance and evidence-readiness toolkit for SMEs preparing for responsible AI adoption, ISO/IEC 42001-style management-system thinking, EU AI Act readiness, cybersecurity/GRC discussions, supplier review, human oversight and AI incident handling.
 
-**Focus:** AI governance, ISO/IEC 42001 readiness, EU AI Act awareness, AI risk assessment, evidence mapping, SME consulting artefacts.
+**Focus:** AI governance, ISO/IEC 42001 readiness, EU AI Act awareness, AI risk assessment, evidence mapping, supplier due diligence, SME consulting artefacts.
 
 ### 2. [Secure-Agent-Control-Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)
 Policy-first security architecture lab for governing agentic AI systems through role-aware tool access, approval gates for sensitive actions, and structured audit events.
@@ -68,7 +68,7 @@ Detection engineering workspace with KQL examples, Sigma content, ATT&CK alignme
 
 ## Technical Areas
 
-- **AI Governance:** ISO/IEC 42001 readiness, AI use-case registers, AI risk assessment, human oversight, evidence mapping
+- **AI Governance:** ISO/IEC 42001 readiness, AI use-case registers, AI risk assessment, human oversight, supplier due diligence, AI incident handling, evidence mapping
 - **AI Security:** agent security, prompt injection, secure RAG, retrieval poisoning, LLM workflow risks
 - **SOC & Detection:** Microsoft Sentinel, KQL, Sigma concepts, MITRE ATT&CK alignment
 - **Cloud Security:** Azure, Entra ID, Microsoft Sentinel, AWS security controls
