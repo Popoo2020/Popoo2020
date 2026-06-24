@@ -1,5 +1,7 @@
 # ISO42001-AI-Governance-Evidence-Toolkit
 
+[![AI Governance Toolkit](https://github.com/Popoo2020/Popoo2020/actions/workflows/ai-governance-toolkit.yml/badge.svg)](https://github.com/Popoo2020/Popoo2020/actions/workflows/ai-governance-toolkit.yml)
+
 A practical AI governance and evidence-readiness toolkit for small and medium-sized organisations preparing for responsible AI adoption, ISO/IEC 42001-style management-system thinking, EU AI Act readiness, and cybersecurity/GRC discussions.
 
 > **Status:** portfolio-grade governance toolkit / active expansion.  
