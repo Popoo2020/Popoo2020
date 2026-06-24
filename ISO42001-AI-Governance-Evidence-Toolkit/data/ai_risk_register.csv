@@ -1,0 +1,7 @@
+risk_id,use_case_id,risk_description,impact,likelihood,inherent_risk,existing_controls,residual_risk,risk_owner,next_action
+R-001,AI-001,AI-generated product claims may be inaccurate or exaggerated,Medium,Medium,Medium,Human review before publishing and marketing claim checklist,Low,Marketing and e-commerce lead,Add documented product-claim review step
+R-002,AI-002,Customer-support draft may include incorrect or overly confident guidance,Medium,Medium,Medium,Staff review before sending and escalation path for uncertain cases,Medium,Customer support lead,Create response-quality review checklist
+R-003,AI-003,Internal summary may omit important policy limitations,Medium,Low,Medium,Manager verification and link to source document,Low,Operations lead,Add source-reference requirement
+R-004,AI-004,Recruitment assistance may introduce unfair or poorly explained screening notes,High,Medium,High,Human decision-maker and documented review criteria,Medium,People operations lead,Add fairness and explainability checklist
+R-005,AI-005,AI-assisted workflow may suggest action without sufficient human validation,High,Medium,High,Human approval gate and no automatic state change,Medium,Security lead,Document approval and audit evidence requirements
+R-006,ALL,Unapproved AI tool use may bypass policy or data-handling expectations,High,Medium,High,Approved-tool list and internal AI policy,Medium,Operations lead,Create periodic AI-use register review
