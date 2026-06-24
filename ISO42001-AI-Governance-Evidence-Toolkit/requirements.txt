@@ -1,0 +1,2 @@
+# This project intentionally uses only the Python standard library.
+# No runtime dependencies are required for src/generate_readiness_report.py.

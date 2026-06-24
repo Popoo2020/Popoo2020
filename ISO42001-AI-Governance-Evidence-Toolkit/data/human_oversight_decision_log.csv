@@ -1,0 +1,5 @@
+decision_id,use_case_id,ai_output_type,reviewer_role,decision,reason,escalated,evidence_ref
+D-001,AI-001,Product description draft,Marketing reviewer,Approved after edits,Claims verified against source product information,No,DOC-REVIEW-001
+D-002,AI-002,Customer support draft,Support reviewer,Edited before use,Original draft was too confident and needed softer wording,No,DOC-REVIEW-002
+D-003,AI-004,Recruitment note,People operations reviewer,Escalated,People-impacting workflow requires formal review before use,Yes,DOC-IMPACT-002
+D-004,AI-005,Security workflow summary,Security reviewer,Rejected,Human approval required before any operational state change,Yes,DOC-CONTROL-MAP-001

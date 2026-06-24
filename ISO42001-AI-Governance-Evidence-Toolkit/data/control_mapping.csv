@@ -1,0 +1,9 @@
+control_id,control_area,control_objective,owner,evidence_example,related_risks,status
+GOV-001,AI governance ownership,Define accountable owner for each AI use case,Operations lead,AI use-case register with owner field,R-006,Implemented
+GOV-002,AI use-case inventory,Maintain a current list of AI systems and intended purposes,Operations lead,AI use-case register,ALL,Implemented
+GOV-003,AI risk assessment,Assess risks before pilot or deployment,Risk owner,AI risk register,R-001 R-002 R-003 R-004 R-005,Implemented
+GOV-004,Human oversight,Define human review requirements for AI-assisted outputs,Process owner,Policy and impact assessment examples,R-001 R-002 R-004 R-005,Implemented
+GOV-005,Data minimisation,Limit unnecessary input data before AI tool use,Process owner,AI policy and workflow notes,R-002 R-005 R-006,Partially implemented
+GOV-006,Supplier and tool approval,Document approved AI tools and review supplier expectations,Operations lead,Approved-tool list,R-006,Planned
+GOV-007,AI output review,Require review before customer-facing or decision-support use,Process owner,Review checklist and sign-off evidence,R-001 R-002 R-004,Partially implemented
+GOV-008,Monitoring and improvement,Review AI use cases risks and controls periodically,Operations lead,Quarterly register review record,ALL,Planned
