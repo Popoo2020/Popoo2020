@@ -38,6 +38,7 @@ data/
   human_oversight_decision_log.csv  # Example human-review and escalation log
 
 docs/
+  executive-case-study.md                # Problem / solution / outcome summary for employers and clients
   ai_policy_draft.md                     # Lightweight internal AI-use policy draft
   ai_impact_assessment_example.md        # Example impact assessment for an SME AI workflow
   ai_supplier_due_diligence_checklist.md # Supplier/tool review checklist
@@ -60,6 +61,7 @@ consulting_offer_ai_governance_readiness.md # Client-facing service outline
 
 | Capability | Status |
 |---|---|
+| Executive case study | ✅ Implemented |
 | AI use-case register template | ✅ Implemented |
 | AI risk register template | ✅ Implemented |
 | AI impact assessment example | ✅ Implemented |
@@ -158,6 +160,7 @@ See `consulting_offer_ai_governance_readiness.md` for a client-facing service ou
 
 ## Case study
 
+- [`docs/executive-case-study.md`](docs/executive-case-study.md) — concise problem / solution / outcome summary for employers, recruiters and potential consulting clients.
 - [`case_studies/sme_sundai_ai_governance_review.md`](case_studies/sme_sundai_ai_governance_review.md) — anonymised/simulated client-style review showing how the toolkit can be applied to a company using Sundai AI-style workflows.
 
 ## Limitations
