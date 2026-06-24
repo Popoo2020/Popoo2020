@@ -2,7 +2,7 @@ name: AI Governance Toolkit
 
 on:
   push:
-    branches: [ main, harden-profile-and-iso42001-toolkit ]
+    branches: [ main, add-qa-security-ops-docs ]
   pull_request:
     paths:
       - 'ISO42001-AI-Governance-Evidence-Toolkit/**'
@@ -20,20 +20,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run toolkit unit tests
+      - name: Run full toolkit validation
         working-directory: ISO42001-AI-Governance-Evidence-Toolkit
         run: |
-          python -m unittest discover -s tests -p 'test_*.py'
-
-      - name: Generate readiness report
-        working-directory: ISO42001-AI-Governance-Evidence-Toolkit
-        run: |
-          python src/generate_readiness_report.py
-          test -f reports/generated_readiness_report.md
-
-      - name: Validate generated report content
-        working-directory: ISO42001-AI-Governance-Evidence-Toolkit
-        run: |
-          grep -q "AI Governance Readiness Report" reports/generated_readiness_report.md
-          grep -q "High-risk use cases" reports/generated_readiness_report.md
-          grep -q "Controls requiring follow-up" reports/generated_readiness_report.md
+          make validate
