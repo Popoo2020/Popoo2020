@@ -14,11 +14,55 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 REPORTS_DIR = REPO_ROOT / "reports"
 
+REQUIRED_COLUMNS: dict[str, set[str]] = {
+    "ai_use_case_register.csv": {
+        "use_case_id",
+        "name",
+        "owner",
+        "human_oversight",
+        "risk_level",
+        "status",
+        "evidence_ref",
+    },
+    "ai_risk_register.csv": {
+        "risk_id",
+        "use_case_id",
+        "risk_description",
+        "residual_risk",
+        "risk_owner",
+        "next_action",
+    },
+    "control_mapping.csv": {
+        "control_id",
+        "control_area",
+        "owner",
+        "evidence_example",
+        "status",
+    },
+}
 
-def read_csv(path: Path) -> list[dict[str, str]]:
-    """Read a CSV file into a list of dictionaries."""
+
+def escape_md(value: str) -> str:
+    """Escape Markdown table separators and normalise empty values."""
+    cleaned = (value or "-").strip() or "-"
+    return cleaned.replace("|", "\\|")
+
+
+def read_csv(path: Path, required_columns: set[str] | None = None) -> list[dict[str, str]]:
+    """Read a CSV file into a list of dictionaries and validate required columns."""
+    if not path.exists():
+        raise FileNotFoundError(f"Required CSV file not found: {path}")
+
     with path.open("r", encoding="utf-8", newline="") as handle:
-        return list(csv.DictReader(handle))
+        reader = csv.DictReader(handle)
+        fieldnames = set(reader.fieldnames or [])
+        if required_columns:
+            missing = required_columns - fieldnames
+            if missing:
+                raise ValueError(
+                    f"{path.name} is missing required columns: {', '.join(sorted(missing))}"
+                )
+        return list(reader)
 
 
 def count_by(rows: list[dict[str, str]], field: str) -> Counter[str]:
@@ -30,14 +74,23 @@ def render_counter(counter: Counter[str]) -> str:
     """Render a Counter as Markdown bullets."""
     if not counter:
         return "- No data available"
-    return "\n".join(f"- {key}: **{value}**" for key, value in sorted(counter.items()))
+    return "\n".join(f"- {escape_md(key)}: **{value}**" for key, value in sorted(counter.items()))
 
 
 def build_report() -> str:
     """Build a Markdown readiness report from the sample CSV artefacts."""
-    use_cases = read_csv(DATA_DIR / "ai_use_case_register.csv")
-    risks = read_csv(DATA_DIR / "ai_risk_register.csv")
-    controls = read_csv(DATA_DIR / "control_mapping.csv")
+    use_cases = read_csv(
+        DATA_DIR / "ai_use_case_register.csv",
+        REQUIRED_COLUMNS["ai_use_case_register.csv"],
+    )
+    risks = read_csv(
+        DATA_DIR / "ai_risk_register.csv",
+        REQUIRED_COLUMNS["ai_risk_register.csv"],
+    )
+    controls = read_csv(
+        DATA_DIR / "control_mapping.csv",
+        REQUIRED_COLUMNS["control_mapping.csv"],
+    )
 
     risk_levels = count_by(use_cases, "risk_level")
     use_case_status = count_by(use_cases, "status")
@@ -91,7 +144,11 @@ def build_report() -> str:
         ])
         for row in high_risk_use_cases:
             lines.append(
-                f"| {row['name']} | {row['owner']} | {row['human_oversight']} | {row['evidence_ref']} |"
+                "| "
+                f"{escape_md(row['name'])} | "
+                f"{escape_md(row['owner'])} | "
+                f"{escape_md(row['human_oversight'])} | "
+                f"{escape_md(row['evidence_ref'])} |"
             )
     else:
         lines.append("No high-risk use cases identified in the current register.")
@@ -109,7 +166,12 @@ def build_report() -> str:
         ])
         for row in open_controls:
             lines.append(
-                f"| {row['control_id']} | {row['control_area']} | {row['owner']} | {row['status']} | {row['evidence_example']} |"
+                "| "
+                f"{escape_md(row['control_id'])} | "
+                f"{escape_md(row['control_area'])} | "
+                f"{escape_md(row['owner'])} | "
+                f"{escape_md(row['status'])} | "
+                f"{escape_md(row['evidence_example'])} |"
             )
     else:
         lines.append("All mapped controls are marked implemented in the current sample dataset.")
