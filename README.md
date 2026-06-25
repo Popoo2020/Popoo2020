@@ -6,6 +6,16 @@ I build secure-by-design systems at the intersection of **cybersecurity, applied
 
 My background combines hands-on technical development with entrepreneurship, cross-border innovation work, leadership in regulated environments, practical AI/e-commerce implementation experience, and a strong interest in how organisations can deploy AI-enabled systems that are useful, governed, traceable, and resilient against misuse.
 
+## Portfolio review order
+
+For a fast review, start here:
+
+1. **AI Governance / ISO42001:** [ISO42001-AI-Governance-Evidence-Toolkit](./ISO42001-AI-Governance-Evidence-Toolkit/README.md)
+2. **AI Security / SOC Automation:** [Sentinel-AI-AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)
+3. **Agentic AI Controls:** [Secure-Agent-Control-Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)
+4. **Secure RAG Evaluation:** [RAG-Security-Eval-Harness](https://github.com/Popoo2020/RAG-Security-Eval-Harness)
+5. **Compliance Engineering:** [Cloud-Compliance-Engine-ISO27001](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)
+
 ## Flagship Projects
 
 ### 1. [ISO42001-AI-Governance-Evidence-Toolkit](./ISO42001-AI-Governance-Evidence-Toolkit/README.md)
