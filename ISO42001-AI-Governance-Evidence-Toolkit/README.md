@@ -4,8 +4,17 @@
 
 A practical AI governance and evidence-readiness toolkit for small and medium-sized organisations preparing for responsible AI adoption, ISO/IEC 42001-style management-system thinking, EU AI Act readiness, and cybersecurity/GRC discussions.
 
+> **Executive case study available:** [Download the PDF](case-studies/AI_Governance_Readiness_Toolkit_Case_Study.pdf)  
+> A one-page portfolio summary explaining the business problem, governance solution, security posture and portfolio value of this toolkit.
+
 > **Status:** portfolio-grade governance toolkit / active expansion.  
 > This is not a certification product, legal advice, or a substitute for a formal ISO/IEC 42001 audit. It is a practical evidence and documentation baseline for learning, consulting demonstrations, and SME readiness conversations.
+
+## Executive Case Study
+
+[Download the Executive Case Study PDF](case-studies/AI_Governance_Readiness_Toolkit_Case_Study.pdf)
+
+This one-page executive summary is designed for employers, recruiters, AI governance teams and potential consulting clients. It explains the business problem, the readiness solution, the security posture and the portfolio value of the toolkit without requiring the reader to inspect every file first.
 
 ## Why this project matters
 
@@ -45,8 +54,12 @@ docs/
   eu_ai_act_risk_classification_note.md  # Readiness note for risk-based triage
   ai_incident_response_template.md       # AI incident and complaint handling template
 
+case-studies/
+  AI_Governance_Readiness_Toolkit_Case_Study.pdf # One-page executive PDF case study
+  ai-governance-readiness-toolkit-case-study.md  # Markdown source suitable for PDF export
+
 case_studies/
-  sme_sundai_ai_governance_review.md     # Client-style Sundai AI governance review
+  sme_sundai_ai_governance_review.md     # Simulated client-style governance review
 
 src/
   generate_readiness_report.py      # Generates a Markdown readiness summary from CSV inputs
@@ -61,7 +74,8 @@ consulting_offer_ai_governance_readiness.md # Client-facing service outline
 
 | Capability | Status |
 |---|---|
-| Executive case study | ✅ Implemented |
+| Executive case study PDF | ✅ Implemented |
+| Portfolio case-study assets | ✅ Implemented |
 | AI use-case register template | ✅ Implemented |
 | AI risk register template | ✅ Implemented |
 | AI impact assessment example | ✅ Implemented |
@@ -160,6 +174,8 @@ See `consulting_offer_ai_governance_readiness.md` for a client-facing service ou
 
 ## Case study
 
+- [`case-studies/AI_Governance_Readiness_Toolkit_Case_Study.pdf`](case-studies/AI_Governance_Readiness_Toolkit_Case_Study.pdf) — one-page executive PDF case study for employers, recruiters and potential consulting clients.
+- [`case-studies/ai-governance-readiness-toolkit-case-study.md`](case-studies/ai-governance-readiness-toolkit-case-study.md) — Markdown source suitable for PDF export.
 - [`docs/executive-case-study.md`](docs/executive-case-study.md) — concise problem / solution / outcome summary for employers, recruiters and potential consulting clients.
 - [`case_studies/sme_sundai_ai_governance_review.md`](case_studies/sme_sundai_ai_governance_review.md) — anonymised/simulated client-style review showing how the toolkit can be applied to a company using Sundai AI-style workflows.
 
@@ -168,7 +184,7 @@ See `consulting_offer_ai_governance_readiness.md` for a client-facing service ou
 - This is not legal advice.
 - This is not a full ISO/IEC 42001 implementation package.
 - This is not a formal EU AI Act legal-classification tool.
-- The case study is a portfolio demonstration, not a claim of a real paid client engagement.
+- The case studies are portfolio demonstrations, not claims of real paid client engagements.
 - The mapping is intentionally high level and educational.
 - Real organisations should adapt the artefacts to their sector, jurisdiction, risk profile, contractual obligations and professional legal/compliance guidance.
 
