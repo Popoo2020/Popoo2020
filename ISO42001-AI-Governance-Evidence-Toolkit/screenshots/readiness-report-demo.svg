@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Governance Readiness Report Demo</title>
+  <desc id="desc">Portfolio demo screenshot showing readiness report output summary.</desc>
+  <rect width="1000" height="560" fill="#0f172a"/>
+  <rect x="40" y="40" width="920" height="480" rx="18" fill="#111827" stroke="#334155"/>
+  <text x="70" y="90" fill="#e5e7eb" font-family="monospace" font-size="26">AI Governance Readiness Report</text>
+  <text x="70" y="135" fill="#93c5fd" font-family="monospace" font-size="18">Executive summary</text>
+  <text x="90" y="175" fill="#e5e7eb" font-family="monospace" font-size="17">AI use cases reviewed: 5</text>
+  <text x="90" y="205" fill="#e5e7eb" font-family="monospace" font-size="17">Risks recorded: 6</text>
+  <text x="90" y="235" fill="#e5e7eb" font-family="monospace" font-size="17">Governance controls mapped: 8</text>
+  <text x="90" y="265" fill="#fbbf24" font-family="monospace" font-size="17">High-risk use cases requiring stronger oversight: 2</text>
+  <text x="90" y="295" fill="#f87171" font-family="monospace" font-size="17">Controls requiring follow-up: 4</text>
+  <text x="70" y="350" fill="#93c5fd" font-family="monospace" font-size="18">Recommended next steps</text>
+  <text x="90" y="390" fill="#e5e7eb" font-family="monospace" font-size="17">1. Confirm accountable owners for high-risk AI use cases.</text>
+  <text x="90" y="420" fill="#e5e7eb" font-family="monospace" font-size="17">2. Review supplier evidence and data boundaries.</text>
+  <text x="90" y="450" fill="#e5e7eb" font-family="monospace" font-size="17">3. Strengthen human oversight and incident handling.</text>
+  <text x="70" y="500" fill="#86efac" font-family="monospace" font-size="16">Status: portfolio demo · sample data only · not certification evidence</text>
+</svg>
