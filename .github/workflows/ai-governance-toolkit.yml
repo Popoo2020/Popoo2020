@@ -2,7 +2,7 @@ name: AI Governance Toolkit
 
 on:
   push:
-    branches: [ main, add-qa-security-ops-docs ]
+    branches: [ main ]
   pull_request:
     paths:
       - 'ISO42001-AI-Governance-Evidence-Toolkit/**'
