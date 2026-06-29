@@ -2,6 +2,8 @@
 
 **AI Governance · AI Security · SOC Automation · Cloud Compliance · DevSecOps · IAM Security**
 
+Based in Denmark, focused on AI governance, cybersecurity GRC and secure AI implementation for European organisations.
+
 I build secure-by-design systems at the intersection of **cybersecurity, applied AI, cloud infrastructure, identity, compliance, and security operations** — with a focus on governed automation, audit-ready evidence, LLM guardrails, secure RAG evaluation, agentic AI controls, and Microsoft security workflows.
 
 My background combines hands-on technical development with entrepreneurship, cross-border innovation work, leadership in regulated environments, practical AI/e-commerce implementation experience, and a strong interest in how organisations can deploy AI-enabled systems that are useful, governed, traceable, and resilient against misuse.
