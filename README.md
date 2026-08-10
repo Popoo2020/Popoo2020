@@ -40,6 +40,7 @@ My background also includes entrepreneurship, cross-border innovation and leader
 ### Education
 
 - **Bachelor of Social Services** — Novia University of Applied Sciences, Finland
+- **Erasmus+ exchange semester in Social Education — Head–Heart–Hands (30 ECTS)** — VIA University College, Aarhus, Denmark (2017); Creative Expression, placement, and Co-creation & Citizenship
 - **Pedagogical Psychology (5 ECTS)** — Åbo Akademi University, Finland
 - **Mini-MBA programme** — International Business Management Institute
 
