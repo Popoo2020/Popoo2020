@@ -6,7 +6,7 @@ I design and build testable, audit-ready security controls for AI agents, secure
 
 Based in Denmark and focused on opportunities across the Nordics and Europe.
 
-[Website](https://sundaibot.com) · [About](https://sundaibot.com/about/) · [Featured work](#featured-work) · [Contact](https://sundaibot.com)
+[Website](https://sundaibot.com) · [About](https://sundaibot.com/about/) · [Featured work](#featured-work) · [Professional learning](#education--verified-professional-learning) · [Contact](https://sundaibot.com)
 
 ## Featured work
 
@@ -35,9 +35,38 @@ My background also includes entrepreneurship, cross-border innovation and leader
 - **[Detection Engineering Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)** — KQL, Sigma, ATT&CK alignment and rule-quality guidance
 - **[DevSecOps Reference Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)** — testing, SAST, dependency auditing and secret-scanning gates
 
-## Selected credentials
+## Education & verified professional learning
 
-CompTIA Security+ · CompTIA CySA+ · Microsoft AZ-500 · Microsoft AZ-104 · Microsoft AI-102 · ISO/IEC 27001 Lead Implementer
+### Education
+
+- **Bachelor of Social Services** — Novia University of Applied Sciences, Finland
+- **Pedagogical Psychology (5 ECTS)** — Åbo Akademi University, Finland
+- **Mini-MBA programme** — International Business Management Institute
+
+### AI security, governance, cloud and automation
+
+- **[AI for Cybersecurity Specialization](https://coursera.org/verify/specialization/6QYARVK4C9L8)** — Johns Hopkins University; three-course programme covering AI-enabled security, malware and network-anomaly detection, and securing AI systems
+- **[AI System Impact Assessment Guidance](https://coursera.org/verify/EJRZ6JYOOE6U)** — British Standards Institution; aligned with ISO/IEC 42001 and ISO/IEC 23894
+- **[ISO/IEC 22989:2023 — Fundamentals of AI](https://coursera.org/verify/J8QCVQB3O9OK)** — British Standards Institution
+- **[Microsoft Azure Security Engineer Professional Certificate](https://coursera.org/verify/professional-cert/FEVLO405RYWW)** — seven-course, AZ-500-aligned professional programme
+- **[Exam Prep AZ-104: Microsoft Azure Administrator Associate](https://coursera.org/verify/specialization/MOKKHGGPILO0)** — five-course specialization
+- **[Microsoft Azure AI Fundamentals AI-900 Exam Prep](https://coursera.org/verify/specialization/N7B9NHAT9ZUH)** — five-course specialization
+- **[Advanced Python Scripting for Cybersecurity](https://coursera.org/verify/specialization/7ZLVP69YSUSS)** — three-course Infosec specialization covering offensive and defensive automation
+- **[Microsoft Copilot for Security](https://coursera.org/verify/MTZAM73PKYS6)** — Microsoft course completion
+- **[Elements of AI](https://certificates.mooc.fi/validate/i38tdbu7so)** — University of Helsinki and Linköping University; equivalent to two higher-education credits
+
+<details>
+<summary><strong>Additional completed security training</strong></summary>
+
+- EC-Council **Certified Ethical Hacker (CEH) v13 AI** course completion
+- EC-Council **Certified Threat Intelligence Analyst (CTIA)** course completion
+- **ISO/IEC 27001:2022 Lead Implementer** course completion (Udemy)
+- **CompTIA Security+ (SY0-701)** complete course and practice-exam training (Udemy)
+- Microsoft Azure coursework in artificial intelligence, computer vision and natural-language processing
+
+</details>
+
+Programme labels are intentionally precise: professional certificates, specializations, exam-preparation programmes and course completions are not presented as vendor exam certifications.
 
 ## Current direction
 
