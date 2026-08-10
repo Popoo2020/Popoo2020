@@ -55,19 +55,23 @@ My background also includes entrepreneurship, cross-border innovation and leader
 - **[Advanced Python Scripting for Cybersecurity](https://coursera.org/verify/specialization/7ZLVP69YSUSS)** — three-course Infosec specialization covering offensive and defensive automation
 - **[Microsoft Copilot for Security](https://coursera.org/verify/MTZAM73PKYS6)** — Microsoft course completion
 - **[Elements of AI](https://certificates.mooc.fi/validate/i38tdbu7so)** — University of Helsinki and Linköping University; equivalent to two higher-education credits
+- **EC-Council Certified Threat Intelligence Analyst (CTIA)** — official course completion covering the threat-intelligence lifecycle, analysis, reporting and threat hunting
+- **EC-Council Certified DevSecOps Engineer (E|CDE) v2** — official course completion covering secure SDLC and CI/CD security controls
+- **ISC2 AI for Cybersecurity** — professional-development course completion covering the AI lifecycle, AI-enabled cyber applications, attacks and mitigations
 
 <details>
-<summary><strong>Additional completed security training</strong></summary>
+<summary><strong>Additional completed training and exam-aligned studies</strong></summary>
 
 - EC-Council **Certified Ethical Hacker (CEH) v13 AI** course completion
-- EC-Council **Certified Threat Intelligence Analyst (CTIA)** course completion
+- **CompTIA CySA+ (CS0-003)** exam preparation and exam-objectives study
+- **Microsoft AI-102** exam-aligned Azure AI studies and preparation
 - **ISO/IEC 27001:2022 Lead Implementer** course completion (Udemy)
 - **CompTIA Security+ (SY0-701)** complete course and practice-exam training (Udemy)
 - Microsoft Azure coursework in artificial intelligence, computer vision and natural-language processing
 
 </details>
 
-Programme labels are intentionally precise: professional certificates, specializations, exam-preparation programmes and course completions are not presented as vendor exam certifications.
+Programme labels are intentionally precise: professional certificates, specializations, exam-preparation programmes and course completions are not presented as vendor exam certifications. The CySA+ and AI-102 entries describe study and preparation; they do not claim passed vendor exams.
 
 ## Current direction
 
