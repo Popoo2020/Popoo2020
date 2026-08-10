@@ -1,50 +1,50 @@
 # Eric Ariel Rimón
 
-**AI Security & Governance Specialist**
+**AI Security & Governance | Cloud Compliance | IAM | SOC Automation**
 
-I design and build testable, audit-ready security controls for AI agents, secure RAG, SOC automation and cloud-compliance workflows. My work connects practical Python engineering with AI governance, identity, human oversight and evidence-based security.
+I build practical, testable and audit-ready security controls for AI agents, secure RAG, SOC automation and cloud-compliance workflows. I translate security and governance requirements into working controls, evidence, clear documentation and usable processes.
 
-Based in Denmark and focused on opportunities across the Nordics and Europe.
+**Based in Odense, Denmark** · Open to opportunities across Denmark, the Nordics and Europe · Hybrid / Remote / Relocation
 
-[Website](https://sundaibot.com) · [About](https://sundaibot.com/about/) · [Featured work](#featured-work) · [Professional learning](#education--verified-professional-learning) · [Contact](https://sundaibot.com)
+[Email](mailto:eririm@protonmail.com) · [Website](https://sundaibot.com) · [About](https://sundaibot.com/about/) · [Featured work](#featured-work) · [Education and credentials](#education-credentials-and-professional-learning)
 
 ## Featured work
 
-| Project | Security problem | Evidence of work |
+| Project | What it demonstrates | Fast review |
 |---|---|---|
-| **[Sentinel AI AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)** | How can LLM assistance support incident triage without receiving uncontrolled authority or unnecessary sensitive data? | Pre-model redaction, schema validation, deterministic policy gates, human approval for closure paths, metadata-only audit events, tests, CI and CodeQL. |
-| **[ISO 42001 AI Governance Evidence Toolkit](./ISO42001-AI-Governance-Evidence-Toolkit/README.md)** | How can an SME translate AI-governance principles into practical ownership, risk and evidence artefacts? | AI use-case and risk registers, impact assessment, supplier review, human-oversight log, incident template, control mapping and readiness-report generation. |
-| **[Secure Agent Control Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)** | How should an AI agent be constrained before it can invoke sensitive tools? | Deny-by-default authorisation, role-aware tool access, policy-as-code, approval gates and structured audit events. |
+| **[Sentinel AI AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)** | Secure AI-assisted incident triage with pre-model redaction, schema validation, deterministic policy gates, human approval paths, metadata-only audit events, tests, CI and CodeQL. | [2-minute recruiter summary](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/blob/main/docs/recruiter_summary.md) |
+| **[ISO 42001 AI Governance Evidence Toolkit](./ISO42001-AI-Governance-Evidence-Toolkit/README.md)** | Practical ISO/IEC 42001 readiness artefacts: AI use-case and risk registers, impact assessment, supplier review, human oversight, incident handling, control mapping and evidence generation. | [Executive case study](./ISO42001-AI-Governance-Evidence-Toolkit/docs/executive-case-study.md) |
+| **[Secure Agent Control Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)** | Deny-by-default authorisation for AI agents, with role-aware tool access, policy-as-code, human approval gates and structured audit events. | [Security case study](https://github.com/Popoo2020/Secure-Agent-Control-Plane/blob/main/case-studies/secure-agent-control-plane-case-study.md) |
 
 ## What I bring
 
-- **AI security engineering:** agentic AI controls, prompt-risk handling, secure RAG evaluation and governed automation
-- **AI governance:** ISO/IEC 42001 readiness, AI risk assessment, human oversight, supplier due diligence and evidence mapping
-- **Security operations:** Microsoft Sentinel, KQL, detection engineering, MITRE ATT&CK and safe SOC automation
-- **Cloud and identity security:** Azure, Entra ID, IAM, RBAC, least privilege and auditability
-- **Compliance engineering:** ISO/IEC 27001, structured evidence, control mapping and audit-ready reporting
-- **Secure delivery:** GitHub Actions, testing, secret scanning, dependency checks and DevSecOps controls
+- **AI security and governed automation:** agentic-AI controls, prompt-risk handling, secure RAG evaluation, human oversight and safe workflow automation
+- **Governance, risk and compliance:** ISO/IEC 42001 readiness, AI impact and risk assessment, supplier due diligence, ISO/IEC 27001 control mapping and audit-ready evidence
+- **Microsoft security, cloud and identity:** Azure, Entra ID, IAM, RBAC, Microsoft Sentinel, KQL, detection engineering and least-privilege design
+- **Secure delivery and business translation:** Python, GitHub Actions, testing, secret and dependency checks, DevSecOps controls, and documentation that makes risk understandable and actionable
 
-My background also includes entrepreneurship, cross-border innovation and leadership in regulated human-services environments. That experience shapes how I approach security: controls must be technically defensible, understandable to people and usable inside real organisations.
+I also bring entrepreneurship, cross-border innovation and leadership experience from regulated human-services environments. That background shapes how I work: security controls must be technically defensible, understandable to people and usable inside real organisations.
 
 ## More selected projects
 
 - **[RAG Security Eval Harness](https://github.com/Popoo2020/RAG-Security-Eval-Harness)** — dataset-driven checks for retrieval poisoning, indirect prompt injection and source-trust risks
-- **[Cloud Compliance Engine](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)** — schema validation, evidence freshness checks and ISO 27001-oriented reporting
+- **[Cloud Compliance Engine](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001)** — schema validation, evidence-freshness checks and ISO/IEC 27001-oriented reporting
 - **[LLM Security Guardrails Lab](https://github.com/Popoo2020/LLM-Security-Guardrails-Lab)** — deterministic prompt-risk inspection and repeatable guardrail tests
-- **[Detection Engineering Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)** — KQL, Sigma, ATT&CK alignment and rule-quality guidance
+- **[Detection Engineering Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook)** — KQL, Sigma, MITRE ATT&CK alignment and rule-quality guidance
 - **[DevSecOps Reference Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline)** — testing, SAST, dependency auditing and secret-scanning gates
 
-## Education & verified professional learning
+## Education, credentials and professional learning
 
-### Education
+### Academic and interdisciplinary education
 
 - **Bachelor of Social Services** — Novia University of Applied Sciences, Finland
-- **Erasmus+ exchange semester in Social Education — Head–Heart–Hands (30 ECTS)** — VIA University College, Aarhus, Denmark (2017); Creative Expression, placement, and Co-creation & Citizenship
+- **Erasmus+ exchange semester in Social Education — Head–Heart–Hands (30 ECTS)** — VIA University College, Aarhus, Denmark (2017); Creative Expression, practicum, and Co-creation & Citizenship
 - **Pedagogical Psychology (5 ECTS)** — Åbo Akademi University, Finland
 - **Mini-MBA programme** — International Business Management Institute
 
-### AI security, governance, cloud and automation
+The VIA and Åbo Akademi studies represent **35 ECTS in total** and included an assessed final project and special-education field experience across Denmark and Finland.
+
+### Verified professional certificates and specializations
 
 - **[AI for Cybersecurity Specialization](https://coursera.org/verify/specialization/6QYARVK4C9L8)** — Johns Hopkins University; three-course programme covering AI-enabled security, malware and network-anomaly detection, and securing AI systems
 - **[AI System Impact Assessment Guidance](https://coursera.org/verify/EJRZ6JYOOE6U)** — British Standards Institution; aligned with ISO/IEC 42001 and ISO/IEC 23894
@@ -55,6 +55,9 @@ My background also includes entrepreneurship, cross-border innovation and leader
 - **[Advanced Python Scripting for Cybersecurity](https://coursera.org/verify/specialization/7ZLVP69YSUSS)** — three-course Infosec specialization covering offensive and defensive automation
 - **[Microsoft Copilot for Security](https://coursera.org/verify/MTZAM73PKYS6)** — Microsoft course completion
 - **[Elements of AI](https://certificates.mooc.fi/validate/i38tdbu7so)** — University of Helsinki and Linköping University; equivalent to two higher-education credits
+
+### Vendor training and professional development
+
 - **EC-Council Certified Threat Intelligence Analyst (CTIA)** — official course completion covering the threat-intelligence lifecycle, analysis, reporting and threat hunting
 - **EC-Council Certified DevSecOps Engineer (E|CDE) v2** — official course completion covering secure SDLC and CI/CD security controls
 - **ISC2 AI for Cybersecurity** — professional-development course completion covering the AI lifecycle, AI-enabled cyber applications, attacks and mitigations
@@ -71,8 +74,12 @@ My background also includes entrepreneurship, cross-border innovation and leader
 
 </details>
 
-Programme labels are intentionally precise: professional certificates, specializations, exam-preparation programmes and course completions are not presented as vendor exam certifications. The CySA+ and AI-102 entries describe study and preparation; they do not claim passed vendor exams.
+Credential labels are deliberate: professional certificates, specializations, exam-preparation programmes and course completions are not presented as vendor exam certifications. The CySA+ and AI-102 entries describe study and preparation; they do not claim passed vendor exams.
 
-## Current direction
+## Contact
 
-I am especially interested in roles and collaborations involving AI Security, AI Governance, Microsoft security, IAM, cloud compliance and secure AI adoption. For consulting, training or professional opportunities, visit **[SundAI](https://sundaibot.com)**.
+I am open to roles and collaborations in **AI Security, Security Governance and GRC, IAM, Microsoft security, cloud compliance, SOC automation and secure AI adoption** across Denmark, the Nordics and Europe.
+
+**Odense, Denmark** · Hybrid / Remote / Relocation
+
+[Email](mailto:eririm@protonmail.com) · [Website](https://sundaibot.com) · [About SundAI](https://sundaibot.com/about/)
