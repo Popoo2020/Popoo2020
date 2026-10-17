@@ -8,7 +8,7 @@ This case study focuses on my Azure delivery component: infrastructure defined i
 
 **Evidence:** a successful infrastructure deployment was recorded in September 2026. Source and execution records were reviewed in October 2026. Historical deployment evidence and current service availability are separate claims.
 
-[Engineering decisions](engineering-review.md) · [Selected implementation patterns](implementation-excerpts.md) · [Evidence](evidence/README.md) · [Public disclosure scope](public-disclosure.md) · [Back to my profile](../../README.md)
+[Engineering decisions](engineering-review.md) · [Selected implementation patterns](implementation-excerpts.md) · [Operating controls](operating-controls.md) · [Evidence](evidence/README.md) · [Public disclosure scope](public-disclosure.md) · [Back to my profile](../../README.md)
 
 ## The problem and my contribution
 
@@ -65,6 +65,16 @@ The bridge retrieves the confirmed artifact. The VM definition has no public IP 
 | WhatsApp authentication state | Persistent session storage outside the code checkout, with filesystem access restrictions. |
 
 These are distinct credential paths. They do not establish independent vault isolation or Azure Key Vault integration. Credential values, session files, recipient data and live configuration are excluded from this public case study.
+
+## Operating effort and resource controls
+
+My estimate of routine human input is **approximately one minute per edition**. This is an operator estimate, not a timed study or a claim about total maintenance effort.
+
+A source review in October 2026 found model-output token limits, generation/review deadlines, bounded retry and draft-evaluation loops, artifact-retention settings and a VM-deallocation path. These are concrete implementation controls; they do not establish a measured cost saving or a subscription-wide spending ceiling.
+
+Quality work includes source filters, publication checks and repeated draft evaluation. I describe this as **iterative quality refinement**; it is not a claim that the underlying model trains itself or that factual accuracy has been independently benchmarked.
+
+[Read the control and measurement scope](operating-controls.md).
 
 ## Value for a team
 
