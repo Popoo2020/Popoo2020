@@ -2,7 +2,7 @@
 
 **AI Implementation & Automation**
 
-I turn business processes into practical AI workflows: connecting tools, checking outputs and helping people use the result. My work combines Python and API integration with AI governance, security controls and experience leading service operations.
+I turn business processes into practical AI workflows: connecting tools, checking outputs and helping people use the result. My work combines Python and API integration with hands-on Azure deployment, AI governance, security controls and experience leading service operations.
 
 **My next role:** AI Implementation / AI Adoption Specialist. I also welcome AI Governance / GRC Analyst roles that combine risk documentation, technical evidence and user enablement. I am happy to join as an individual contributor and take ownership of a defined piece of work.
 
@@ -24,10 +24,12 @@ I turn business processes into practical AI workflows: connecting tools, checkin
 I develop a Hebrew briefing workflow for Israelis living in Denmark, in collaboration with Living Denmark through SundAI. It turns Danish news and practical information into a structured daily edition.
 
 - **My work:** source collection and enrichment, deduplication, AI-assisted selection and editing, editorial checks, and publication controls.
-- **Implementation:** Python, FastAPI, Pydantic, Gemini/OpenAI integration, Telegram publishing and a Node.js WhatsApp delivery bridge; GitHub Actions workflows and Azure infrastructure configuration.
+- **Implementation:** Python, FastAPI, Pydantic, Gemini/OpenAI integration and Telegram publishing; a Node.js bridge connects a dedicated WhatsApp Business account through WhatsApp Web. Its Azure VM and network are defined in Bicep, with GitHub OIDC authentication and separate application-secret and session-state handling.
 - **Current focus:** source quality, Hebrew editorial consistency, controlled delivery and recovery when a dependency fails.
 
-**Status:** active project; private repository. I can explain the architecture and implementation in a sanitised walkthrough.
+**Azure deployment evidence:** a successful VM/network deployment is recorded from 12 September 2026. [Read the public Azure architecture case study](case-studies/denmark-in-5-azure/README.md) for the design, selected code, deployment evidence and current limits.
+
+**Status:** active project; application repository private. The public case study explains the implementation without exposing credentials or recipient data.
 
 ### SundAI — practical AI adoption and governance
 
@@ -45,6 +47,7 @@ These examples show how I approach implementation, risk and verification. Each r
 
 | Work to review | What I implemented |
 |---|---|
+| **[Denmark in 5 — Azure Delivery Architecture](case-studies/denmark-in-5-azure/README.md)** | Bicep-defined VM/network, GitHub-to-Azure OIDC, separate secrets/session handling and a controlled WhatsApp Business delivery bridge. **Historical deployment verified; runtime availability assessed separately.** |
 | **[AI Governance Evidence Toolkit](https://github.com/Popoo2020/Popoo2020/tree/main/ISO42001-AI-Governance-Evidence-Toolkit)** | ISO/IEC 42001-oriented use-case and risk registers, impact assessment, supplier review, oversight templates and evidence reporting. **Portfolio toolkit with illustrative cases.** [Read the case study](https://github.com/Popoo2020/Popoo2020/blob/main/ISO42001-AI-Governance-Evidence-Toolkit/docs/executive-case-study.md). |
 | **[Sentinel AI AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)** | Incident-triage prototype with pre-model redaction, schema validation, deterministic policy checks, human approval gates and metadata-only audit events. **Controlled-demo prototype.** [Read the short walkthrough](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/blob/main/docs/recruiter_summary.md). |
 | **[Secure Agent Control Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)** | Role-aware tool permissions, YAML policies, allow/deny/approval decisions and audit events. **Policy-engine prototype; live tool execution is a future extension.** |
@@ -59,7 +62,7 @@ These examples show how I approach implementation, risk and verification. Each r
 - **[LLM Security Guardrails Lab](https://github.com/Popoo2020/LLM-Security-Guardrails-Lab):** deterministic prompt-risk checks and repeatable tests.
 - **[RAG Ingestion Baseline](https://github.com/Popoo2020/Enterprise-Sundai-Bot):** Python text normalisation, overlapping chunks, deterministic IDs, metadata and tests. The implemented scope is ingestion; retrieval, authentication and a running chatbot are future stages.
 
-**Working toolkit:** Python, FastAPI, Pydantic, REST APIs, JSON/YAML, Git, GitHub Actions, pytest and JavaScript/Node.js integrations.
+**Working toolkit:** Python, FastAPI, Pydantic, REST APIs, JSON/YAML, Git, GitHub Actions, pytest and JavaScript/Node.js integrations. **Applied Azure work:** Bicep, VM/VNet/NSG configuration and GitHub OIDC deployment.
 
 **Additional foundations through training and labs:** Azure, Entra ID, IAM/RBAC, Microsoft Sentinel, KQL, Linux, Windows/Active Directory, networking, Bash, PowerShell and Terraform fundamentals.
 
