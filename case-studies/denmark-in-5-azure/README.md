@@ -1,77 +1,75 @@
 # Denmark in 5 — Azure Delivery Architecture
 
-**AI implementation, Azure infrastructure and controlled delivery to WhatsApp Business**
+**AI implementation, API integration, Azure infrastructure and security controls**
 
-I built the Azure delivery component for Denmark in 5, an AI-assisted Hebrew news briefing for Israelis in Denmark. The wider project combines Python, model APIs, editorial checks and Telegram publishing. This case study shows how I connected that workflow to a persistent delivery bridge on Azure, with separate handling of application secrets, cloud authentication and WhatsApp session state.
+Denmark in 5 turns Danish news and practical information into a Hebrew briefing for Israelis in Denmark. I develop the workflow through SundAI in collaboration with Living Denmark, connecting Python and model APIs with editorial checks and distribution.
 
-**Evidence:** Azure infrastructure deployment recorded on **12 September 2026**; source and execution records reviewed on **17 October 2026**. Current service availability is assessed separately.
+This case study focuses on my Azure delivery component: infrastructure defined in Bicep, GitHub-to-Azure authentication, a persistent messaging bridge and controlled delivery of the confirmed edition.
 
-[Engineering review](engineering-review.md) · [Implementation excerpts](implementation-excerpts.md) · [Deployment evidence](evidence/README.md) · [Back to my profile](../../README.md)
+**Evidence:** a successful infrastructure deployment was recorded in September 2026. Source and execution records were reviewed in October 2026. Historical deployment evidence and current service availability are separate claims.
+
+[Engineering decisions](engineering-review.md) · [Selected implementation patterns](implementation-excerpts.md) · [Evidence](evidence/README.md) · [Public disclosure scope](public-disclosure.md) · [Back to my profile](../../README.md)
 
 ## The problem and my contribution
 
-The WhatsApp delivery component needed a persistent browser session and delivery history. It also needed to use the already-confirmed edition, avoid duplicate sends, recover carefully from failures and limit unnecessary VM runtime.
+A scheduled briefing needs more than generated text. It needs to preserve the selected edition, reach the approved destination, avoid careless retries and leave a clear outcome for the operator.
 
-My work spans the implementation and operation of that component:
-
-- **Infrastructure:** Bicep definitions for an Ubuntu VM, virtual network, subnet, network security group and network interface.
-- **Access and identity:** GitHub-to-Azure OIDC authentication, a dedicated resource-group scope in the bootstrap script, key-based SSH configuration and a system-assigned VM identity.
-- **Delivery engineering:** a Node.js bridge on a self-hosted runner, artifact validation, a pinned destination and persistent delivery state.
-- **Operational controls:** readiness checks, serialised delivery attempts, reconciliation after an uncertain send and a VM-deallocation cleanup path.
-
-**Result demonstrated:** GitHub Actions recorded successful Azure authentication, deployment preview and VM/network deployment. The current source implements the delivery controls described here. These are separate evidence categories; a completed deployment does not establish uninterrupted message delivery.
+- **Build the workflow:** connect source processing, model APIs, structured outputs and publication checks.
+- **Define its infrastructure:** use Bicep for an Azure VM, virtual network, subnet and network security group.
+- **Separate credential paths:** use Actions Secrets for application credentials, OIDC for Azure authentication and separate persistent messaging session state.
+- **Control delivery:** validate the edition artifact, maintain a delivery journal and reconcile uncertain outcomes before retrying.
+- **Operate responsibly:** add readiness checks, deployment validation, documentation and a VM-deallocation cleanup path.
 
 ## How the implemented architecture fits together
+
+This is a logical view of the implemented components. Operational identifiers, exact permission bindings, host configuration and recovery procedures are deliberately excluded.
 
 ```mermaid
 flowchart TD
     subgraph GH["GitHub"]
         S["Actions Secrets"]
-        P["Python briefing workflow"]
-        A["Confirmed daily-edition artifact"]
-        L["Azure lifecycle jobs"]
-        S -. "AI and Telegram credentials" .-> P
-        P --> A
+        G["Generation and lifecycle workflows"]
+        A["Confirmed edition artifact"]
+        S -. "Application credentials" .-> G
+        G --> A
     end
 
     subgraph AZ["Azure"]
-        E["Microsoft Entra OIDC federation"]
-        M["Azure management API"]
-        subgraph VN["VNet and subnet NSG"]
-            V["Linux VM: runner and Node.js bridge"]
-            D["Persistent LocalAuth and delivery journal"]
+        E["Microsoft Entra federation"]
+        subgraph VN["Virtual network"]
+            V["Private-IP VM: delivery bridge"]
+            D["Persistent messaging session and journal"]
             V <--> D
         end
-        M -->|"Start, inspect and deallocate"| V
     end
 
-    L -. "OIDC token exchange" .-> E
-    E -. "Short-lived Azure access token" .-> L
-    L -->|"Authenticated management operations"| M
-    A -->|"Read-only retrieval and validation"| V
-    P --> T["Telegram publication"]
-    V -->|"Outbound WhatsApp Web session"| W["WhatsApp Business account: pinned group"]
+    G -. "OIDC exchange" .-> E
+    E -. "Short-lived access token" .-> G
+    G -->|"Lifecycle via Azure management API"| V
+    A -->|"Validated artifact retrieval"| V
+    G --> T["Telegram"]
+    V -->|"Outbound WhatsApp Web session"| W["WhatsApp Business account"]
 ```
 
-Arrows show logical data and control flow. The artifact is fetched by the bridge; it is not pushed through a public port on the VM. The VM has no public IP attached to its NIC. Its subnet permits outbound internet access.
+The bridge retrieves the confirmed artifact. The VM definition has no public IP associated with its network interface. This is not a claim that the entire environment is isolated or independently security-certified.
 
-**WhatsApp connection:** the dedicated WhatsApp Business account is linked through WhatsApp Web using Node.js, Chromium and `whatsapp-web.js`. The current transport is a browser-based integration, not Meta's official Business Platform Cloud API.
+**Transport boundary:** the WhatsApp Business account connects through WhatsApp Web using `whatsapp-web.js`. This is a browser-based integration, not Meta's official Business Platform Cloud API.
 
-## Secrets are handled in separate places
+## Separate handling of secrets and session state
 
-| Material | Storage and consumer in the reviewed implementation |
+| Material | Implemented approach |
 |---|---|
-| Model API keys and Telegram credentials | GitHub Actions Secrets, supplied to the Python workflow through environment variables. The reviewed bridge job does not receive these application credentials. |
-| Azure deployment authentication | Entra federation exchanges a GitHub OIDC token for an Azure access token. Client, tenant and subscription identifiers are configuration; no Azure client password is used by the reviewed login flow. |
-| GitHub artifact access | The bridge job receives the workflow's GitHub token with read permissions. |
-| WhatsApp linked-device session | LocalAuth files on the Azure VM's persistent disk, outside the code checkout. Bootstrap and application code configure the authentication directory with mode 0700. |
+| Model-provider and Telegram credentials | GitHub Actions Secrets, supplied to the workflow that needs them. |
+| Azure deployment authentication | Entra OIDC federation; the reviewed login flow does not use a stored Azure client password. |
+| Edition-artifact access | A GitHub job token with read permissions. |
+| WhatsApp authentication state | Persistent session storage outside the code checkout, with filesystem access restrictions. |
 
-This separation is visible in the source. Filesystem permissions are not a dedicated secrets vault, and the runner and bridge share a service account. The review does not establish Key Vault integration or application-level encryption of LocalAuth files.
+These are distinct credential paths. They do not establish independent vault isolation or Azure Key Vault integration. Credential values, session files, recipient data and live configuration are excluded from this public case study.
 
-## What I can bring to a team
+## Value for a team
 
-This project demonstrates how I connect a business workflow to its operating environment: define the delivery boundary, implement infrastructure and integration code, manage authentication, make failures visible and document the next engineering decision.
+I can translate an operational need into a Python/API workflow, connect it to Azure infrastructure, explain the relevant security controls and document its operating limits. My focus is **AI Implementation & Automation**: delivering a defined component, discussing trade-offs and handing over work that colleagues can understand.
 
-It is relevant to **AI Implementation & Automation** work involving Python/API integration, Azure deployment, secure configuration and operational handover. I can walk through the implementation, explain its trade-offs and take responsibility for a defined component within a team.
+The public evidence supports the implementation and historical deployment described here. It does not claim measured business savings, continuous availability or a completed enterprise security assessment.
 
-[Review the engineering decisions and next steps](engineering-review.md) · [Contact Eric Ariel Rimón](mailto:eririmo@protonmail.com)
+[Explore the engineering decisions](engineering-review.md) · [Contact Eric Ariel Rimón](mailto:eririmo@protonmail.com)

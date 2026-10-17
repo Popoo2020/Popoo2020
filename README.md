@@ -1,10 +1,12 @@
 # Eric Ariel Rimón
 
-**AI Implementation & Automation**
+**AI Implementation & Automation Specialist**
+
+Python · API Integration · Azure Infrastructure · Security Controls
 
 I turn business processes into practical AI workflows: connecting tools, checking outputs and helping people use the result. My work combines Python and API integration with hands-on Azure deployment, AI governance, security controls and experience leading service operations.
 
-**My next role:** AI Implementation / AI Adoption Specialist. I also welcome AI Governance / GRC Analyst roles that combine risk documentation, technical evidence and user enablement. I am happy to join as an individual contributor and take ownership of a defined piece of work.
+**My next role:** AI Implementation & Automation Specialist, including AI Adoption roles. I also welcome AI Governance / GRC Analyst roles that combine risk documentation, technical evidence and user enablement. I am happy to join as an individual contributor and take ownership of a defined piece of work.
 
 **Availability:** from Tel Aviv in late October 2026; currently in Odense, Denmark. Open to employment and project-based work in Israel, and remote collaboration with European teams.
 
@@ -27,7 +29,7 @@ I develop a Hebrew briefing workflow for Israelis living in Denmark, in collabor
 - **Implementation:** Python, FastAPI, Pydantic, Gemini/OpenAI integration and Telegram publishing; a Node.js bridge connects a dedicated WhatsApp Business account through WhatsApp Web. Its Azure VM and network are defined in Bicep, with GitHub OIDC authentication and separate application-secret and session-state handling.
 - **Current focus:** source quality, Hebrew editorial consistency, controlled delivery and recovery when a dependency fails.
 
-**Azure deployment evidence:** a successful VM/network deployment is recorded from 12 September 2026. [Read the public Azure architecture case study](case-studies/denmark-in-5-azure/README.md) for the design, selected code, deployment evidence and current limits.
+**Azure deployment evidence:** a successful VM/network deployment is recorded from September 2026. [Read the public Azure architecture case study](case-studies/denmark-in-5-azure/README.md) for the logical architecture, selected implementation patterns and evidence boundaries.
 
 **Status:** active project; application repository private. The public case study explains the implementation without exposing credentials or recipient data.
 
@@ -47,7 +49,7 @@ These examples show how I approach implementation, risk and verification. Each r
 
 | Work to review | What I implemented |
 |---|---|
-| **[Denmark in 5 — Azure Delivery Architecture](case-studies/denmark-in-5-azure/README.md)** | Bicep-defined VM/network, GitHub-to-Azure OIDC, separate secrets/session handling and a controlled WhatsApp Business delivery bridge. **Historical deployment verified; runtime availability assessed separately.** |
+| **[Denmark in 5 — Azure Delivery Architecture](case-studies/denmark-in-5-azure/README.md)** | Bicep-defined VM/network, GitHub-to-Azure OIDC, separate secrets/session handling and a controlled WhatsApp Business delivery bridge. **Historical deployment evidence reviewed; current availability requires separate verification.** |
 | **[AI Governance Evidence Toolkit](https://github.com/Popoo2020/Popoo2020/tree/main/ISO42001-AI-Governance-Evidence-Toolkit)** | ISO/IEC 42001-oriented use-case and risk registers, impact assessment, supplier review, oversight templates and evidence reporting. **Portfolio toolkit with illustrative cases.** [Read the case study](https://github.com/Popoo2020/Popoo2020/blob/main/ISO42001-AI-Governance-Evidence-Toolkit/docs/executive-case-study.md). |
 | **[Sentinel AI AutoTriage](https://github.com/Popoo2020/Sentinel-AI-AutoTriage)** | Incident-triage prototype with pre-model redaction, schema validation, deterministic policy checks, human approval gates and metadata-only audit events. **Controlled-demo prototype.** [Read the short walkthrough](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/blob/main/docs/recruiter_summary.md). |
 | **[Secure Agent Control Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane)** | Role-aware tool permissions, YAML policies, allow/deny/approval decisions and audit events. **Policy-engine prototype; live tool execution is a future extension.** |
@@ -71,6 +73,7 @@ These examples show how I approach implementation, risk and verification. Each r
 ## Experience behind the technology
 
 - **Independent AI work — SundAI / Riimon Holdings, 2024–present:** workflow development, governance resources and technical portfolio projects, alongside business and innovation coordination.
+- **Business and innovation coordination — Riimon Holdings, 2021–present:** independent advisory and Denmark–Israel relationship-building, including collaboration with Innovation Centre Denmark in Tel Aviv and coordination with university and healthcare innovation teams. This work is carried out through my own initiative.
 - **Business operations and automation — Ariel's Pizza, Aug 2024–May 2025:** built and operated a concept across three sites. Developed a Python management assistant connecting Trello, Google Sheets, WhatsApp and OpenAI for operational tasks and daily staff task lists. Sold the business, concept and tool in May 2025.
 - **Social services, 2017–Jan 2024; unit manager, Aug 2023–Jan 2024:** led 45+ staff, with responsibilities in onboarding, privacy procedures and regulated service operations.
 - **Co-founder — Bcar.app / ChargeCast, Aug 2020–Sep 2023:** finance, product and international partner coordination for an EV charging and payments venture.

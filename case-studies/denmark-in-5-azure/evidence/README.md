@@ -1,44 +1,34 @@
-# Evidence and verification record
+# Evidence and verification summary
 
-[Case study](../README.md) · [Engineering review](../engineering-review.md) · [Structured evidence](deployment-review.json)
+[Case study](../README.md) · [Engineering decisions](../engineering-review.md) · [Structured summary](deployment-review.json)
 
-This is a sanitised portfolio record prepared from the private project's source and GitHub Actions records on **17 October 2026**. It is not a third-party attestation. Private source and execution records can be discussed in an authorised, sanitised walkthrough.
+This is a sanitised portfolio summary prepared from the private project's source and GitHub Actions records in **October 2026**. It is not a third-party attestation.
 
-## Historical deployment: 12 September 2026
+## Historical infrastructure deployment
 
-The inspected deployment job reported:
+The reviewed **September 2026** deployment job recorded:
 
-| Step | Recorded result |
+| Activity | Recorded result |
 |---|---|
-| Azure login with OIDC | Success |
-| Verify Azure target | Success |
-| Check requested VM SKU in region | Success |
-| Bicep what-if | Success |
-| Deploy VM and network | Success |
-| Wait for cloud-init | Success |
-| Host status command | Success |
+| Azure login through OIDC | Success |
+| Deployment-target validation | Success |
+| Resource availability check | Success |
+| Bicep deployment preview | Success |
+| VM and network deployment | Success |
+| Host initialisation and status steps | Success |
 
-The workflow at that deployment revision was inspected: the deployment step invokes Azure CLI's resource-group deployment command against the Bicep template. The source and selected deployment log output were also checked.
+The workflow implementation and selected log output were inspected alongside those results. A separate October infrastructure CI run recorded successful shell-syntax validation, YAML parsing and Bicep compilation.
 
-A literal, sanitised selection from the deployment output is:
+## What those results mean
 
-```json
-{
-  "noPublicIp": {
-    "type": "Bool",
-    "value": true
-  }
-}
-```
+The evidence supports a completed historical infrastructure deployment and specific source/build checks. It does not establish current end-to-end messaging availability, comprehensive security assurance, readership, delivery rates or business savings. Workflow success with skipped delivery is not counted as a delivered message.
 
-This value is a declared template output. It supports traceability to the template; it is not an independent live network-inspection result. The NIC definition was separately inspected for a public-IP association.
+**Evidence strength: 4/5 for the historical deployment.** Source, job steps and selected logs support it. Direct live Azure inspection and independent third-party verification were not performed. The score is not a hiring-success probability.
 
-## Validation and operational boundary
+## Public evidence boundary
 
-A separate infrastructure CI job on **17 October 2026** recorded successful shell-syntax validation, cloud-init YAML parsing and Bicep compilation.
+This public summary omits raw logs, private source-revision fingerprints, tenant/subscription identifiers, resource identifiers, addresses, permission bindings, session data, recipient information and live operational incidents.
 
-The runtime review also found a blocked VM-start attempt on that date. No current end-to-end WhatsApp availability, delivery rate, readership or uptime claim is made. A green workflow with skipped delivery jobs is not counted as delivery evidence.
+Detailed evidence can be reviewed in an authorised, sanitised walkthrough. The underlying application remains private; reviewers do not need access to production credentials or user data.
 
-**Evidence strength: 4/5 for the historical deployment.** Source, job steps and logs support the claim; a direct live Azure inspection and independent third-party verification were not performed. This score is not a skill rating or a hiring-success probability.
-
-Tenant/subscription identifiers, resource identifiers, addresses, keys, session data, destination identifiers, participant information and private account details are excluded. The structured record retains source-file fingerprints and revision identifiers for traceability without publishing private repository access links.
+[Public disclosure scope](../public-disclosure.md)

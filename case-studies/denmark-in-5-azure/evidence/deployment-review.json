@@ -1,134 +1,45 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "title": "Denmark in 5 — Azure deployment evidence",
-  "reviewed_on": "2026-10-17",
-  "record_type": "Sanitised portfolio transcription of source, GitHub job records and selected logs",
-  "source_repository_visibility": "private",
-  "source_snapshot_commit": "9e577972d8c9b2887e3c7446ec4279d9f72c4612",
+  "reviewed_month": "2026-10",
+  "record_type": "Sanitised portfolio summary of reviewed source and historical execution records",
   "historical_deployment": {
-    "date": "2026-09-12",
-    "source_commit": "a6e623c480147805878a58b16d52bcaab8061812",
-    "workflow": "Azure WhatsApp Infrastructure",
-    "job": "deploy",
+    "month": "2026-09",
     "recorded_conclusion": "success",
-    "reviewed_steps": [
-      {
-        "name": "Azure login with OIDC",
-        "conclusion": "success"
-      },
-      {
-        "name": "Verify Azure target",
-        "conclusion": "success"
-      },
-      {
-        "name": "Check requested VM SKU in region",
-        "conclusion": "success"
-      },
-      {
-        "name": "Bicep what-if",
-        "conclusion": "success"
-      },
-      {
-        "name": "Deploy VM and network",
-        "conclusion": "success"
-      },
-      {
-        "name": "Wait for cloud-init",
-        "conclusion": "success"
-      },
-      {
-        "name": "Host status",
-        "conclusion": "success"
-      }
-    ],
-    "command_verified_in_source": "az deployment group create",
-    "template_output": {
-      "noPublicIp": {
-        "type": "Bool",
-        "value": true
-      }
-    },
-    "template_output_limit": "Declared output; not an independent live NIC or network inspection"
+    "reviewed_activities": [
+      "Azure OIDC authentication",
+      "Deployment-target validation",
+      "Resource availability check",
+      "Bicep deployment preview",
+      "VM and network deployment",
+      "Host initialisation and status steps"
+    ]
   },
-  "infrastructure_ci": {
-    "date": "2026-10-17",
-    "source_commit": "7e5d0c737dde02feb2c59aef217b91f0ec74fb79",
+  "infrastructure_validation": {
+    "month": "2026-10",
+    "recorded_conclusion": "success",
     "checks": [
-      {
-        "name": "Validate bootstrap shell syntax",
-        "conclusion": "success"
-      },
-      {
-        "name": "Validate cloud-init YAML",
-        "conclusion": "success"
-      },
-      {
-        "name": "Compile Bicep",
-        "conclusion": "success"
-      }
+      "Shell syntax",
+      "YAML parsing",
+      "Bicep compilation"
     ],
     "scope": "Syntax and compilation only"
   },
-  "runtime_review": {
-    "date": "2026-10-17",
-    "observation": "A VM-start attempt was blocked. A successful workflow with skipped delivery jobs was not counted as delivery.",
-    "current_end_to_end_availability": "not established by this review",
-    "private_operational_details": "omitted"
-  },
-  "source_files": [
-    {
-      "path": "infra/azure/main.bicep",
-      "git_blob_sha": "a95f2ee3b8485782764caf765eb3977baaa72bcd"
-    },
-    {
-      "path": "infra/azure/bootstrap-oidc.sh",
-      "git_blob_sha": "8e4447d95bc9bf99a17b650510b7b3877a56dbf4"
-    },
-    {
-      "path": "infra/azure/cloud-init.yaml",
-      "git_blob_sha": "c31d09b04d15773ce82d684cd59246893b4cfc3f"
-    },
-    {
-      "path": ".github/workflows/azure-whatsapp-infra.yml",
-      "git_blob_sha": "196225e9c041430590451648055fa7ea9aebab74"
-    },
-    {
-      "path": ".github/workflows/whatsapp-daily-delivery.yml",
-      "git_blob_sha": "db017f7f70bf53c2a54947904c206a0ad6fb61a3"
-    },
-    {
-      "path": ".github/workflows/daily-briefing.yml",
-      "git_blob_sha": "cc147d816dc06c7483456ffc84698571a66b1abf"
-    },
-    {
-      "path": "bridge/src/whatsapp.js",
-      "git_blob_sha": "fd4aa45d67bc85107db8c8f20c823dfc4f0ebff5"
-    },
-    {
-      "path": "bridge/src/config.js",
-      "git_blob_sha": "19ceda5fb3ae271917d31a184b657a95d7c95bce"
-    },
-    {
-      "path": "bridge/src/delivery.js",
-      "git_blob_sha": "4fad85db64e856bfbeead3002505f59999e3fecd"
-    },
-    {
-      "path": "bridge/src/github-edition.js",
-      "git_blob_sha": "a9db9a86bfc8a642c7ab49bf62c706e7bfc80ef0"
-    }
-  ],
+  "current_end_to_end_availability": "Not established by this review",
   "evidence_strength": {
     "score": 4,
     "scale_maximum": 5,
-    "basis": "Source, workflow steps and selected logs inspected; no direct live Azure inspection or independent third-party attestation"
+    "basis": "Source, job steps and selected logs inspected; no direct live Azure inspection or independent third-party attestation"
   },
-  "excluded_from_publication": [
+  "disclosure_scope": "Public architecture and evidence summary, not a deployment package or operational runbook",
+  "omitted_from_this_summary": [
+    "Raw logs",
+    "Private revision and file fingerprints",
     "Tenant and subscription identifiers",
     "Resource identifiers and addresses",
-    "Private keys and credential values",
-    "WhatsApp session and QR data",
-    "Recipient and participant identifiers",
-    "Private account details",
-    "Private repository access links"
+    "Exact permission bindings and administrative paths",
+    "Credential values and session state",
+    "Recipient and participant information",
+    "Live operational incidents and private account details"
   ]
 }

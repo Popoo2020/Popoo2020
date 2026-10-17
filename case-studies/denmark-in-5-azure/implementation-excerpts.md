@@ -1,104 +1,51 @@
-# Selected implementation excerpts
+# Selected implementation patterns
 
-[Case study](README.md) · [Engineering review](engineering-review.md) · [Evidence](evidence/README.md)
+[Case study](README.md) · [Engineering decisions](engineering-review.md) · [Evidence](evidence/README.md)
 
-These excerpts explain the existing implementation. They are deliberately partial, with resource names and contextual identifiers omitted or generalised. They are not a standalone deployment package. The evidence record distinguishes the historical deployment revision from the source snapshot reviewed on 17 October 2026.
+This page presents deliberately limited examples. It excludes deployment coordinates, exact permission bindings, host paths, session internals and operational commands. It is not a deployable copy of the private application.
 
-## Azure VM configuration
+## Declarative Azure configuration
 
-Selected properties from the deployed Bicep definition:
+These selected properties appear in the reviewed Bicep definition, at their respective resource-property locations:
 
 ```bicep
+// VM identity configuration:
 identity: {
   type: 'SystemAssigned'
 }
 
-// Within osProfile.linuxConfiguration:
+// Within the Linux configuration:
 disablePasswordAuthentication: true
-provisionVMAgent: true
-ssh: {
-  publicKeys: [
-    {
-      path: '/home/${adminUsername}/.ssh/authorized_keys'
-      keyData: adminSshPublicKey
-    }
-  ]
-}
 ```
 
-The NIC has a dynamically assigned private IP and no public-IP association. The template creates a subnet NSG with `securityRules: []`: Azure defaults still apply. It explicitly enables `defaultOutboundAccess: true`. Neither an empty custom-rule list nor a private-IP NIC means that all traffic is denied.
+The identity declaration is evidence of configuration, not evidence that the application uses that identity to retrieve secrets. The complete reviewed template also defines the VM's networking.
 
-## GitHub-to-Azure federation
+## Keep credentials outside application source
 
-Selected properties from the deployment workflow:
-
-```yaml
-permissions:
-  id-token: write
-  contents: read
-
-# Selected job steps:
-steps:
-  - name: Azure login with OIDC
-    uses: azure/login@v2
-    with:
-      client-id: ${{ secrets.AZURE_CLIENT_ID }}
-      tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-      subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-```
-
-These three values identify the Azure target and identity. The login flow uses federation rather than a stored Azure client password. The bootstrap's intended RBAC scope is the dedicated workload resource group. Action version tags are shown as found; immutable commit pinning is a review recommendation.
-
-## Application secrets remain outside source
-
-Selected environment entries from the Python briefing job:
+The workflow supplies API credentials from GitHub Actions Secrets. The following is a generalised illustration of that pattern; the variable names are placeholders, not copied live configuration:
 
 ```yaml
 env:
-  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
 ```
 
-The delivery job has a different credential path: its GitHub token reads the confirmed artifact, while LocalAuth on the VM supplies the WhatsApp linked-device session. The reviewed bridge job does not inject the model-provider keys or Telegram bot token.
+Azure deployment uses OIDC federation. WhatsApp authentication uses separately persisted linked-device session state. No credential values or authentication-state files are included here.
 
-## Persistent WhatsApp authentication
+## Reconcile an uncertain outcome
 
-Selected logic from the transport implementation:
-
-```javascript
-await fs.mkdir(config.authDir, { recursive: true, mode: 0o700 });
-
-class PreserveLocalAuth extends LocalAuth {
-  async logout() {}
-}
-
-const client = new Client({
-  authStrategy: new PreserveLocalAuth({
-    clientId: 'denmark-in-5',
-    dataPath: config.authDir,
-  }),
-  puppeteer,
-  takeoverOnConflict: false,
-});
-```
-
-The directory sits on the persistent disk outside the checkout. Preserving authentication during reconnect/cleanup avoids accidental session loss, but it makes deliberate revocation and deletion procedures important. The mode is a directory-creation setting; this excerpt does not attest existing filesystem permissions or prove encryption of the stored profile.
-
-## Reconciliation before retry
-
-The delivery implementation persists a pending attempt before calling the transport. After a send error, it checks for an already-accepted outgoing message rather than sending again. The full reviewed function also validates the date, target and earlier journal state.
-
-This behaviour is represented here in explanatory pseudocode, not as an executable replacement:
+The following explanatory pseudocode describes the reviewed delivery logic. It is not an executable replacement:
 
 ```text
-validate current edition and approved destination
-if already confirmed: stop
-if a prior attempt exists: reconcile; do not resend
-persist pending attempt
+validate the confirmed edition and approved destination
+if delivery is already confirmed: stop
+if an earlier attempt is unresolved: reconcile its outcome
+persist a pending attempt before invoking transport
 send at most once in this invocation
-confirm matching outgoing message and acknowledgement
-record confirmation, or leave the attempt pending for reconciliation
+confirm the matching outcome or retain the pending state
 ```
 
-[Read the limits and proposed improvements](engineering-review.md)
+This is a duplicate-risk control for an external service. The implementation does not claim a universal exactly-once guarantee.
+
+A technical interview can cover the design and synthetic examples without exposing recipient information, live sessions or administrative access.
+
+[Review the validation boundaries](engineering-review.md)
