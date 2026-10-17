@@ -16,7 +16,7 @@ Seeking a long-term, hands-on role within an implementation or engineering team.
 
 **Development:** Python, REST APIs, FastAPI, Pydantic, JSON/YAML, OpenAI and Gemini integrations.  
 **Cloud and delivery:** Azure VM and networking, Bicep, GitHub Actions, OIDC authentication, Git, pytest.  
-**Workflow controls:** structured-output validation, credential handling, token/runtime limits, bounded retries, human escalation and delivery-state tracking.
+**Workflow controls and guardrails:** structured-output validation, credential handling, token/runtime limits, bounded retries, human-in-the-loop escalation and delivery-state tracking.
 
 ## Delivery & Adoption
 
@@ -42,7 +42,7 @@ Business advisory and venture activity since 2021; AI and automation projects th
 
 - Built a Python assistant for a business operating across **three locations**, connecting Wolt and business-ordering APIs with Trello, Google Sheets, WhatsApp and OpenAI.
 - Generated day- and performance-based tasks from business needs and managers' instructions, including purchasing lists, stock checks, cleaning and customer-service follow-up.
-- Supported staff operational questions and replacement-shift requests, escalating ambiguous or critical decisions to a manager for a human response.
+- Supported staff operational questions and replacement-shift requests, using human-in-the-loop (HITL) escalation for ambiguous or critical decisions.
 - Transferred the tool and business concept with the business sale in May 2025.
 
 [Workflow and functional architecture](../case-studies/ariels-pizza-operations/README.md)
@@ -82,4 +82,4 @@ Business advisory and venture activity since 2021; AI and automation projects th
 
 ## Languages
 
-Hebrew and Swedish — native · English — fluent
+Hebrew and Swedish — native · English and Danish — fluent · Finnish — professional working proficiency

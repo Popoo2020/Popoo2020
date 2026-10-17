@@ -1,6 +1,6 @@
 # Ariel's Pizza — AI Operations Assistant
 
-**Python · API integration · Context-based task generation · Human escalation**
+**Python · API integration · Context-based task generation · Human-in-the-loop escalation**
 
 **Project:** August 2024–May 2025, Odense, Denmark  
 **Business framework:** Riimon Holdings  
@@ -14,7 +14,7 @@
 
 I built a Python assistant that translated business activity and managers' priorities into practical staff tasks. It connected operational data, staff conversations and manager responses rather than providing a standalone question-and-answer interface.
 
-This case demonstrates requirements discovery, API integration, workflow design and user adoption in a business I operated. It also shows a decision boundary: routine task support could run through the assistant, while uncertain or critical decisions were referred to a manager.
+This case demonstrates requirements discovery, API integration, workflow design and user adoption in a business I operated. It also demonstrates a human-in-the-loop (HITL) workflow: routine task support could run through the assistant, while uncertain or critical decisions were referred to a manager.
 
 **Evidence scope:** the business, integrations and behaviours below are my account as the builder and operator, clarified in October 2026. The architecture below is a functional reconstruction. Historical source code, API configuration, execution logs and transfer records were not independently inspected for this public case.
 

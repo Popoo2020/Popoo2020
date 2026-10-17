@@ -17,7 +17,7 @@ I build practical AI workflows that connect business data, staff tasks and human
 - **Implement a useful AI workflow:** map the process, connect APIs, build a Python prototype, validate outputs and document the handover.
 - **Help people adopt it:** translate requirements into clear steps, prepare practical guidance and support onboarding and training.
 - **Make risks visible:** document AI use cases, supplier questions, impact assessments, human oversight and supporting evidence.
-- **Build checks into delivery:** use structured outputs, tests, approval gates, secret handling and CI checks appropriate to the project.
+- **Build checks into delivery:** use structured-output validation, workflow guardrails, credential handling and CI checks appropriate to the project; route decisions that need human judgement to a reviewer.
 
 ## Current and completed projects
 
@@ -27,7 +27,7 @@ I develop a Hebrew briefing workflow for Israelis living in Denmark, in collabor
 
 - **My work:** source collection and enrichment, deduplication, AI-assisted selection and editing, editorial checks, and publication controls.
 - **Implementation:** Python, FastAPI, Pydantic, Gemini/OpenAI integration and Telegram publishing; a Node.js bridge connects a dedicated WhatsApp Business account through WhatsApp Web. Its Azure VM and network are defined in Bicep, with GitHub OIDC authentication and separate application-secret and session-state handling.
-- **Operating controls:** model-output token limits, bounded retries and runtime, finite artifact retention, source-processing limits and a VM-deallocation path. Editorial filters and repeatable draft evaluations support quality refinement.
+- **Execution guardrails:** model-output token limits, bounded retries and runtime, finite artifact retention, source-processing limits and a VM-deallocation path. Editorial filters and repeatable draft evaluations support quality refinement.
 - **Routine human input:** approximately **one minute per edition**, based on my operator estimate; this is not a measured average or a before/after savings claim.
 - **Current focus:** source quality, Hebrew editorial consistency, controlled delivery and recovery when a dependency fails.
 
@@ -43,7 +43,7 @@ I built a Python assistant that connected business activity and managers' instru
 
 - **Integrations:** Wolt and the business ordering system through APIs, alongside Trello, Google Sheets, WhatsApp and OpenAI.
 - **Operational workflows:** day- and performance-based task lists, supplier purchasing lists, stock checks after busy periods, cleaning and logistics, and customer-service follow-up.
-- **Human decisions:** staff could ask operational questions; ambiguous or critical matters were escalated to a manager. Replacement-shift requests asked colleagues about availability.
+- **Human-in-the-loop (HITL):** staff could ask operational questions; ambiguous or critical matters were escalated to a manager. Replacement-shift requests asked colleagues about availability.
 - **Outcome:** the tool and business concept transferred with the business sale in May 2025.
 
 [Read the operations case study and functional architecture](case-studies/ariels-pizza-operations/README.md). This historical case is based on my account as its builder and operator; the source and production records are not public.
@@ -79,7 +79,7 @@ These examples show how I approach implementation, risk and verification. Each r
 - **[DevSecOps Reference Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline):** GitHub Actions patterns for Ruff, pytest, Bandit, dependency auditing and secret scanning, with checks conditional on repository content.
 - **[Detection Engineering Playbook](https://github.com/Popoo2020/Detection-Engineering-Playbook):** KQL and Sigma examples, ATT&CK mapping and rule-review guidance.
 - **[LLM Security Guardrails Lab](https://github.com/Popoo2020/LLM-Security-Guardrails-Lab):** deterministic prompt-risk checks and repeatable tests.
-- **[RAG Ingestion Baseline](https://github.com/Popoo2020/Enterprise-Sundai-Bot):** Python text normalisation, overlapping chunks, deterministic IDs, metadata and tests. The implemented scope is ingestion; retrieval, authentication and a running chatbot are future stages.
+- **[RAG (retrieval-augmented generation) ingestion baseline](https://github.com/Popoo2020/Enterprise-Sundai-Bot):** Python text normalisation, overlapping chunks, deterministic IDs, metadata and tests. The implemented scope is ingestion; retrieval, authentication and a running chatbot are future stages.
 
 **Working toolkit:** Python, FastAPI, Pydantic, REST APIs, JSON/YAML, Git, GitHub Actions, pytest and JavaScript/Node.js integrations. **Applied Azure work:** Bicep, VM/VNet/NSG configuration and GitHub OIDC deployment.
 
@@ -96,7 +96,7 @@ These examples show how I approach implementation, risk and verification. Each r
 
 This experience helps me connect a technical solution to the people using it: clarify the need, explain decisions, organise the work and follow through.
 
-**Languages:** native Hebrew and Swedish; fluent English and Danish; working Finnish.
+**Languages:** native Hebrew and Swedish; fluent English and Danish; professional working proficiency in Finnish.
 
 ## Education and training
 
