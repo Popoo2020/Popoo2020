@@ -3,6 +3,17 @@
 All notable changes to this profile repository will be documented in this file following the
 [Keep a Changelog](https://keepachangelog.com/) format.
 
+## 2026-10-19
+
+### Added
+
+- Public Denmark in 5 editorial-assurance case study and a minimized validation record, covering the 14-edition / 66-item review, source/context controls, reader relevance and offline acceptance in CI.
+- Explicit separation of local bridge tests, GitHub CI, archived corpus replay and live generation/delivery evidence.
+
+### Updated
+
+- Profile project summary, Azure case study and operating-controls page with the validated editorial completion release. Existing professional positioning and unrelated projects are preserved.
+
 ## [0.1.0] – 2026‑03‑01
 
 ### Added

@@ -29,7 +29,8 @@ I develop a Hebrew briefing workflow for Israelis living in Denmark, in collabor
 - **Implementation:** Python, FastAPI, Pydantic, Gemini/OpenAI integration and Telegram publishing; a Node.js bridge connects a dedicated WhatsApp Business account through WhatsApp Web. Its Azure VM and network are defined in Bicep, with GitHub OIDC authentication and separate application-secret and session-state handling.
 - **Execution guardrails:** model-output token limits, bounded retries and runtime, finite artifact retention, source-processing limits and a VM-deallocation path. Editorial filters and repeatable draft evaluations support quality refinement.
 - **Routine human input:** approximately **one minute per edition**, based on my operator estimate; this is not a measured average or a before/after savings claim.
-- **Current focus:** source quality, Hebrew editorial consistency, controlled delivery and recovery when a dependency fails.
+- **Editorial assurance, October 2026:** reviewed 14 confirmed editions / 66 items, improved source grounding, context and reader relevance, and added offline editorial acceptance in CI. The completion release passed **875 Python tests** and **23 reviewed acceptance cases** in GitHub CI. [Read the engineering and validation summary](case-studies/denmark-in-5-azure/editorial-assurance.md).
+- **Current focus:** source-grounded copy, practical reader value, regression coverage and separately verified delivery readiness. Test results are not a factual-accuracy percentage or proof of message delivery.
 
 **Azure deployment evidence:** a successful VM/network deployment is recorded from September 2026. [Read the public Azure architecture case study](case-studies/denmark-in-5-azure/README.md) for the logical architecture, selected implementation patterns and evidence boundaries.
 

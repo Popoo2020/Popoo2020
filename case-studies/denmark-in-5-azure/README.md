@@ -76,6 +76,12 @@ Quality work includes source filters, publication checks and repeated draft eval
 
 [Read the control and measurement scope](operating-controls.md).
 
+## Editorial assurance update — 19 October 2026
+
+A subsequent application release reviewed 14 confirmed editions / 66 items and strengthened source context, enrichment, factual-completeness checks, reader relevance and diagnosis. The completion release passed **875 Python tests** and **23 reviewed editorial acceptance cases** in GitHub CI; 46 bridge tests passed locally. These are regression and implementation results, not measured editorial accuracy, engagement or live delivery.
+
+[Read the editorial assurance case study and validation boundaries](editorial-assurance.md).
+
 ## Value for a team
 
 I can translate an operational need into a Python/API workflow, connect it to Azure infrastructure, explain the relevant security controls and document its operating limits. My focus is **AI Implementation & Automation**: delivering a defined component, discussing trade-offs and handing over work that colleagues can understand.

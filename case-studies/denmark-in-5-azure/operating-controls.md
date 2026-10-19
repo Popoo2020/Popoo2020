@@ -2,7 +2,7 @@
 
 [Azure case study](README.md) · [Engineering decisions](engineering-review.md) · [Evidence](evidence/README.md)
 
-**Review:** October 2026. This page separates inspected source configuration from operator estimates and measured outcomes. The source review was read-only; it did not deploy the application, run production jobs or audit an Azure bill.
+**Original source review:** October 2026. This page separates inspected configuration from operator estimates and measured outcomes. The original review was read-only; it did not deploy the application, run production jobs or audit an Azure bill. The subsequent application release and regression validation on 19 October are described separately below.
 
 ## Routine human effort
 
@@ -36,6 +36,14 @@ They do not establish:
 - a delivery-success rate.
 
 Any published quality metric should identify what was assessed, the sample and period, the acceptance rule and who performed the assessment. Model-generated ratings and independent factual evaluation are different evidence.
+
+## Application release validation — 19 October 2026
+
+The later editorial completion release was committed to the application's main branch and checked by a separate GitHub CI execution: **875 Python tests passed**, along with **23 reviewed offline acceptance cases**, Ruff, compile and Bandit. **46 bridge tests** passed locally. The acceptance cases overlap the Python suite; do not add them together as independent quality measurements.
+
+Source-health artifacts now distinguish collection failures from empty feeds, while editorial diagnostics record source/category/reader-desk observations. The existing deployment channel-health workflow checks infrastructure and channel evidence in read-only mode on an application push. It cannot substitute for an actual confirmed delivery.
+
+These findings extend the evidence for regression coverage and deployed checks. They do not establish a representative accuracy percentage, readership growth, current session readiness or uninterrupted availability. [Detailed editorial assurance and validation record](editorial-assurance.md).
 
 ## Cost language
 

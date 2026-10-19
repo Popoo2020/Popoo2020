@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "release_date": "2026-10-19",
+  "application_revision": "14a0bf43266ece7507aee2d19aac369a84981726",
+  "scope": "Minimized public engineering validation summary; application source and execution records are private.",
+  "python": {
+    "environment": "GitHub Actions CI",
+    "passed": 875,
+    "additional_completion_stage_tests": 30
+  },
+  "editorial_acceptance": {
+    "cases": 23,
+    "passed": 23,
+    "environment": "GitHub Actions CI",
+    "overlaps_python_suite": true,
+    "live_generation_tested": false
+  },
+  "bridge": {
+    "environment": "local",
+    "passed": 46,
+    "compatibility_check_passed": true,
+    "live_delivery_tested": false
+  },
+  "static_checks": {
+    "ruff": "passed",
+    "compile": "passed",
+    "bandit": "passed",
+    "workflow_yaml_files_parsed": 35
+  },
+  "retrospective_review": {
+    "editions": 14,
+    "items": 66,
+    "artifact_digests_and_publication_proofs_checked": true,
+    "independent_second_source_check_for_every_fact": false,
+    "production_replay_sent": false
+  },
+  "evidence_rating": {
+    "score": 4,
+    "out_of": 5,
+    "reason": "Source inspection, pre-fix reproduction, local regression checks and separate GitHub CI execution; no independent representative accuracy benchmark.",
+    "is_success_probability": false
+  },
+  "readership_measured": false,
+  "measured_factual_accuracy": null,
+  "continuous_availability_certified": false
+}
