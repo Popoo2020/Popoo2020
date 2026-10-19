@@ -1,4 +1,4 @@
-# Education and training
+# Certifications, Credentials & Education
 
 [Profile](../README.md) · [CV](ai-implementation-cv.md) · [Technical evidence](evidence.md)
 
@@ -7,17 +7,17 @@
 
 **Academic degree:** Bachelor of Social Services (Socionom), Novia University of Applied Sciences, Finland — 2019.
 
-**Selected completed professional training:**
+## Selected credentials
 
 - [Elements of AI](https://certificates.mooc.fi/validate/i38tdbu7so) — University of Helsinki and Linköping University.
-- **EC-Council — CEH v13 AI, CTIA and E|CDE v2:** Certificates of Achievement for successful course completion in ethical hacking, threat intelligence and DevSecOps (2026).
+- **EC-Council — CEH v13 AI, CTIA and E|CDE v2:** Certificates of Achievement in ethical hacking, threat intelligence and DevSecOps (2026).
 - **[AI for Cybersecurity Specialization](https://coursera.org/verify/specialization/6QYARVK4C9L8)** — Johns Hopkins University / Coursera.
 - **[Azure Security Engineer Professional Certificate](https://coursera.org/verify/professional-cert/FEVLO405RYWW)** — Microsoft / Coursera; AZ-500-aligned programme.
 - **[AI System Impact Assessment Guidance](https://coursera.org/verify/EJRZ6JYOOE6U)** and **[ISO/IEC 22989 — Fundamentals of AI](https://coursera.org/verify/J8QCVQB3O9OK)** — BSI.
 - **[Advanced Python Scripting for Cybersecurity](https://coursera.org/verify/specialization/7ZLVP69YSUSS)** — Infosec / Coursera.
 
 <details>
-<summary><strong>Additional education, completed courses and current study</strong></summary>
+<summary><strong>Additional credentials, education and professional development</strong></summary>
 
 **Education and professional development**
 
@@ -38,9 +38,5 @@
 
 **Further study:** CySA+ and AI-102 exam preparation, Terraform fundamentals and ISO/IEC 42001 AI management systems.
 
-EC-Council entries describe course-completion certificates; Microsoft entries describe Coursera programmes and exam preparation. These labels do not claim a separate vendor certification exam pass.
-
 </details>
 
-
-Education and training are presented as candidate background. Repository tests verify code behaviour; they do not verify academic enrolment or award credentials.

@@ -4,8 +4,6 @@
 
 Python · API Integration · Azure Infrastructure · Security Controls
 
-Odense, Denmark — relocating to Tel Aviv; available from late October 2026 · Israeli & Finnish (EU) citizen
-
 [Email](mailto:eririmo@protonmail.com) · [GitHub](https://github.com/Popoo2020) · [SundAI](https://sundaibot.com/)
 
 ## Profile
@@ -77,7 +75,7 @@ Business advisory and venture activity since 2021; AI and automation projects th
 - Connected financial planning and commercial requirements with product priorities, coordinating founders, technical partners and international stakeholders.
 - Prepared business cases and investor materials. Venture selected for **Mastercard Lighthouse FINITIV, Fall 2022**.
 
-## Education & Selected Training
+## Education & Selected Credentials
 
 **Master of Science in Cyber Security (MSCS) — EC-Council University | In progress**
 
@@ -92,7 +90,7 @@ Additional university studies: Pedagogical Psychology, Åbo Akademi (5 ECTS); Er
 - **DevSecOps, E|CDE v2** — EC-Council; course-completion Certificate of Achievement, 2026.
 - **Elements of AI** — University of Helsinki / Linköping University.
 
-[Full training and certificate links](education-and-training.md). Course completion and exam preparation are labelled separately from vendor certification exams.
+[Certifications, credentials and verification links](education-and-training.md).
 
 ## Review My Work
 

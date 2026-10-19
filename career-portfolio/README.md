@@ -1,6 +1,6 @@
 # Project guide for recruiters and technical reviewers
 
-[Profile](../README.md) · [CV](ai-implementation-cv.md) · [Code and test evidence](evidence.md) · [Education and training](education-and-training.md)
+[Profile](../README.md) · [CV](ai-implementation-cv.md) · [Code and test evidence](evidence.md) · [Certifications & credentials](education-and-training.md)
 
 My focus is AI implementation and automation: connect business systems, validate outputs and help teams use the workflow. Choose the route closest to the role.
 
