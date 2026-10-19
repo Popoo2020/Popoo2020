@@ -1,60 +1,46 @@
 # Eric Ariel Rimón
 
-**AI Implementation & Automation Specialist**
+**AI Implementation, Automation & Security**
 
-Python · API integration · Azure · Validation · User adoption
+Python · REST APIs · Azure · FastAPI · Pydantic · GitHub Actions · AI governance
 
-I build Python/API workflows that turn business inputs into validated outputs and practical staff actions. My work includes a Hebrew briefing workflow on Azure and an operations assistant built for a three-location business. I combine implementation with experience leading 45+ staff, clarifying requirements and helping people adopt new routines.
+I build AI-assisted workflows that connect business systems, validate model outputs and turn information into useful actions. My work combines Python/API development, cloud delivery, security controls and practical adoption.
 
-**Looking for:** a long-term, hands-on implementation or automation role in a product, engineering or operations team. Available for focused consulting projects through SundAI.
+[Technical evidence & test results](career-portfolio/evidence.md) · [Project guide](career-portfolio/README.md) · [Certifications & credentials](career-portfolio/education-and-training.md) · [SundAI](https://sundaibot.com/) · [Contact](mailto:eririmo@protonmail.com)
 
-**Location:** Odense, Denmark; relocating to Tel Aviv in late October 2026. Israeli and Finnish (EU) citizen; open to remote collaboration with European teams.
+## Start with the implementation
 
-[Contact](mailto:eririmo@protonmail.com) · [CV](career-portfolio/ai-implementation-cv.md) · [SundAI](https://sundaibot.com/) · [Technical evidence & test results](career-portfolio/evidence.md)
-
-## Start here — choose what you want to assess
-
-| What you are hiring for | Work to open | What you can inspect |
+| Project | Technical focus | Code and evidence |
 |---|---|---|
-| **Python/API and Azure delivery** | [Denmark in 5](case-studies/denmark-in-5-azure/README.md) | Workflow architecture, Bicep/OIDC decisions and a [dated CI validation summary](case-studies/denmark-in-5-azure/editorial-assurance.md). Private application; public case study. |
-| **Readable code and engineering judgement** | [Sentinel AI AutoTriage walkthrough](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/blob/main/docs/recruiter_summary.md) | Public Python implementation, policy gates, redaction and regression tests. Controlled-demo prototype. |
-| **Business workflows and adoption** | [Ariel's Pizza](case-studies/ariels-pizza-operations/README.md) | Ordering/API integrations, staff tasks and manager escalation across three locations. Historical builder/operator account. |
-| **Practical AI governance** | [AI Governance Evidence Toolkit](ISO42001-AI-Governance-Evidence-Toolkit/README.md) | Sample registers, impact assessment, [Python report generator](ISO42001-AI-Governance-Evidence-Toolkit/src/generate_readiness_report.py) and [tests](ISO42001-AI-Governance-Evidence-Toolkit/tests/test_generate_readiness_report.py). Illustrative portfolio toolkit. |
+| **Sentinel AI AutoTriage** | Python incident workflow, Azure SDK integration, structured recommendations, deterministic decision gates, redaction and audit events. | [Source](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/tree/main/src) · [Tests](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/tree/main/tests) · [CI](https://github.com/Popoo2020/Sentinel-AI-AutoTriage/actions/runs/39241641427). Controlled-demo prototype; **48 tests passed**. |
+| **SundAI website & APIs** | JavaScript/Cloudflare APIs, input and origin validation, Turnstile checks, email routing, escaped HTML and retry handling. | [API implementation](https://github.com/Popoo2020/Enterprise-Sundai-Bot/blob/main/site/functions/api/contact.js) · [Tests](https://github.com/Popoo2020/Enterprise-Sundai-Bot/tree/main/site/tests). **114 offline JavaScript tests passed**. |
+| **Denmark in 5** | Python/FastAPI information pipeline, source processing, deduplication, AI-assisted editing, publication checks and Azure/Bicep deployment with OIDC. | [Architecture](case-studies/denmark-in-5-azure/README.md) · [Implementation patterns](case-studies/denmark-in-5-azure/implementation-excerpts.md) · [CI validation](case-studies/denmark-in-5-azure/editorial-assurance.md). Private application; public case study. **875 Python tests passed**. |
+| **AI Governance Evidence Toolkit** | AI inventories, supplier reviews, impact assessments and a Python report generator with validation tests. | [Toolkit](ISO42001-AI-Governance-Evidence-Toolkit/README.md) · [Source](ISO42001-AI-Governance-Evidence-Toolkit/src/generate_readiness_report.py) · [Tests](ISO42001-AI-Governance-Evidence-Toolkit/tests/test_generate_readiness_report.py). Illustrative governance resources; **4 tests passed**. |
 
-## Selected delivery
+Test results are from the **19 October 2026 review**, using offline fixtures and mocked external services. Exact revisions, commands and validation scope are in the [evidence guide](career-portfolio/evidence.md). Denmark in 5 also passed 23 editorial acceptance cases that overlap its regression suite.
 
-**Denmark in 5 · SundAI / Living Denmark · 2026–present**
+## What I implement
 
-I connect source processing, deduplication, AI-assisted Hebrew editing and publication checks with Python, FastAPI, Pydantic and model APIs. Delivery components include Telegram and a Node.js WhatsApp Web bridge for a WhatsApp Business account, with Azure infrastructure defined in Bicep and GitHub Actions OIDC. The **19 October 2026 release passed 875 Python tests and 23 editorial acceptance cases in CI**. Those acceptance cases overlap the regression suite; the results assess offline behaviour. [Validation scope](case-studies/denmark-in-5-azure/editorial-assurance.md) separates these checks from live delivery and service availability.
+- **API and workflow integration:** Python, REST, FastAPI, Pydantic, JSON/YAML, OpenAI/Gemini and JavaScript/Node.js; structured inputs, outputs and explicit failure handling.
+- **Cloud delivery:** Azure infrastructure with Bicep, GitHub Actions and OIDC; separate credential handling, bounded retries, runtime limits and delivery-state tracking.
+- **AI security controls:** model-output validation, deterministic policy checks, redaction, human approval and audit events.
+- **Engineering quality:** pytest, regression cases, SDK contract checks, Ruff, Bandit and dependency auditing, with reproducible commands and documented operating limits.
+- **Implementation and adoption:** requirements, acceptance criteria, workflow design, technical documentation and practical handover.
 
-**Ariel's Pizza · Riimon Holdings · August 2024–May 2025**
+## Applied operations
 
-I built a Python/OpenAI assistant connecting Wolt/ordering APIs, Trello, Google Sheets and WhatsApp. It translated order activity and manager priorities into purchasing, stock, customer follow-up and shift-cover tasks, with escalation to managers. The business, concept and tool transferred in May 2025. [Case study](case-studies/ariels-pizza-operations/README.md); historical source and production records are not public.
+For **Ariel's Pizza**, I built a Python/OpenAI operations assistant connecting Wolt and ordering APIs with Trello, Google Sheets and WhatsApp across three locations. It turned operational inputs into purchasing, stock-check, customer-follow-up and shift-cover tasks, with manager escalation for uncertain or critical decisions. [Workflow case study](case-studies/ariels-pizza-operations/README.md). Completed historical project; source and operational records are private.
 
-**SundAI · Website and adoption resources**
+## More public code
 
-A multilingual website with JavaScript/Cloudflare enquiry APIs, input validation, abuse controls and AI inventory, supplier-review and impact-assessment materials. **114 offline JavaScript tests passed** in the 19 October review. [Website](https://sundaibot.com/) · [API source](https://github.com/Popoo2020/Enterprise-Sundai-Bot/blob/main/site/functions/api/contact.js) · [Verification](career-portfolio/evidence.md#sundai-website-and-enquiry-api).
+- [Secure Agent Control Plane](https://github.com/Popoo2020/Secure-Agent-Control-Plane) — role-aware policy decisions and audit events.
+- [RAG Security Eval Harness](https://github.com/Popoo2020/RAG-Security-Eval-Harness) — deterministic source-risk evaluation, trust labels and test metrics.
+- [DevSecOps Reference Pipeline](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline) — reusable GitHub Actions patterns for code, dependency and secret checks.
 
-## How I work
+## Certifications & credentials
 
-1. Clarify the workflow, users, exceptions and acceptance criteria.
-2. Implement the API connections and validation; make failure paths and human decisions explicit.
-3. Test representative cases, document operating limits and hand over with practical user guidance.
+Selected credentials cover **Azure security, AI for cybersecurity, Python security automation, ethical hacking, threat intelligence, DevSecOps and AI impact assessment**.
 
-**Working toolkit:** Python, REST APIs, FastAPI, Pydantic, OpenAI/Gemini, JavaScript/Node.js, Azure/Bicep, GitHub Actions/OIDC, Git and pytest. Security and governance support the implementation: redaction, structured outputs, policy checks, credential handling and documented oversight.
+[View credential titles, issuers and verification links](career-portfolio/education-and-training.md).
 
-**More public code:** [agent policy decisions](https://github.com/Popoo2020/Secure-Agent-Control-Plane) · [retrieval-security evaluation](https://github.com/Popoo2020/RAG-Security-Eval-Harness) · [DevSecOps checks](https://github.com/Popoo2020/DevSecOps-Reference-Pipeline). See the [repository guide](career-portfolio/README.md) for scope, source links and additional labs.
-
-## Background
-
-Working with AI and programming since **2018**; delivering business workflows since **2024**. My earlier work informs how I scope and explain technical solutions:
-
-- **Riimon Holdings, 2021–present:** independent business advisory and implementation; SundAI since 2024 and Entréprify in Finland. Independent collaboration with Innovation Centre Denmark, Tel Aviv, January 2025–August 2026.
-- **Varha, Finland, August 2023–January 2024:** Unit Manager leading **45+ staff**, coordinating onboarding, service quality and multidisciplinary work.
-- **Bcar.app / ChargeCast, August 2020–September 2023:** Co-founder & CFO, linking finance, product priorities and technical partners; Mastercard Lighthouse FINITIV, Fall 2022 cohort.
-
-**Education:** MSCS, EC-Council University — **in progress**; Bachelor of Social Services, Novia UAS — 2019. [Education, professional training and certificate links](career-portfolio/education-and-training.md).
-
-**Languages:** Hebrew and Swedish — native; English and Danish — fluent; Finnish — professional working proficiency.
-
-I can walk through the implementation, the choices behind it and the limits of the evidence. **[Contact me about a role or a defined project](mailto:eririmo@protonmail.com).**
+I can walk through the code, architecture, tests and deployment decisions behind these projects. **[Discuss an implementation or automation project](mailto:eririmo@protonmail.com).**
