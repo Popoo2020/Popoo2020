@@ -39,4 +39,3 @@
 **Further study:** CySA+ and AI-102 exam preparation, Terraform fundamentals and ISO/IEC 42001 AI management systems.
 
 </details>
-
