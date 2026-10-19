@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-19",
+  "method": "Maintainer portfolio review: local offline execution with synthetic fixtures and mocked external services, plus inspection of private application CI logs. No independent certification. Counts are per suite and are not combined into a portfolio quality score.",
+  "public_code_checks": [
+    {
+      "repository": "Popoo2020/Sentinel-AI-AutoTriage",
+      "revision": "4f7f3835a2975a3de96ef1120d8c4867d987ab6f",
+      "command": "python -m pytest -q tests",
+      "runtime": "Python 3.12.14; Azure Security Insights SDK 1.0.0",
+      "exit_code": 0,
+      "passed": 48,
+      "live_services_tested": false,
+      "captured_log_sha256": "5ac35778a1140b6e216824c5344a474a48ac39314b7e1e0237e3adbf13fa2bdd",
+      "additional_checks": {
+        "ruff": "passed",
+        "bandit": "passed",
+        "authored_mock_benchmark_cases_matched": 4
+      },
+      "note": "Five adapter regression cases were added after an initial 43-test review; the published revision contains the verified fixes. SDK operations and model responses were mocked.",
+      "github_ci_url": "https://github.com/Popoo2020/Sentinel-AI-AutoTriage/actions/runs/39241641427",
+      "github_ci_status": "success"
+    },
+    {
+      "repository": "Popoo2020/Enterprise-Sundai-Bot",
+      "revision": "2fde43b61379b57ee9d6a2b744301acf0d38377f",
+      "command": "node --test site/tests/*.test.mjs",
+      "runtime": "Node.js 24.19.0",
+      "exit_code": 0,
+      "passed": 114,
+      "live_services_tested": false,
+      "captured_log_sha256": "c2fb6dfe5188a427fd45f11ecfd6d1dd43737cc846989c9e63f55643454131a2",
+      "github_ci_url": "https://github.com/Popoo2020/Enterprise-Sundai-Bot/actions/runs/38821188605"
+    },
+    {
+      "repository": "Popoo2020/Secure-Agent-Control-Plane",
+      "revision": "ff77aedd5cec54885340c3dbbff680a8bcfb59f3",
+      "command": "python -m pytest -q tests",
+      "runtime": "Python 3.12.14",
+      "exit_code": 0,
+      "passed": 7,
+      "live_services_tested": false,
+      "captured_log_sha256": "6de737d0385644e2191172547b9f5e12a9f3867a25c502ac7f5cf490b304fde1"
+    },
+    {
+      "repository": "Popoo2020/RAG-Security-Eval-Harness",
+      "revision": "42c9b63bfcab3073bfcd9a5cce703065ea507490",
+      "command": "python -m pytest -q tests",
+      "runtime": "Python 3.12.14",
+      "exit_code": 0,
+      "passed": 6,
+      "live_services_tested": false,
+      "captured_log_sha256": "c45e6bc5c80a8005f5aef12377920fc8ebddcb24298be8ed6dd1c4eecb5ee04d"
+    },
+    {
+      "repository": "Popoo2020/Popoo2020",
+      "revision": "ee0969994e15a5b5765f895355ead24f0ba13b4b",
+      "command": "make validate",
+      "runtime": "Python 3.12.14",
+      "exit_code": 0,
+      "passed": 4,
+      "live_services_tested": false,
+      "working_directory": "ISO42001-AI-Governance-Evidence-Toolkit",
+      "report_generation_checks_passed": true
+    }
+  ],
+  "private_application_check": {
+    "project": "Denmark in 5",
+    "release_date": "2026-10-19",
+    "python_tests_passed": 875,
+    "editorial_acceptance_cases_passed": 23,
+    "acceptance_overlaps_python_suite": true,
+    "environment": "GitHub Actions CI records inspected",
+    "live_generation_tested": false,
+    "live_delivery_tested": false,
+    "public_summary": "../case-studies/denmark-in-5-azure/evidence/editorial-validation-2026-10-19.json"
+  }
+}

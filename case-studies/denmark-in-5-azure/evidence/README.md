@@ -27,7 +27,9 @@ The evidence supports a completed historical infrastructure deployment and speci
 
 ## Public evidence boundary
 
-This public summary omits raw logs, private source-revision fingerprints, tenant/subscription identifiers, resource identifiers, addresses, permission bindings, session data, recipient information and live operational incidents.
+This public summary omits raw logs, tenant/subscription identifiers, resource identifiers, addresses, permission bindings, session data, recipient information and live operational incidents.
+
+The [editorial validation record](editorial-validation-2026-10-19.json) includes a release revision solely to identify the assessed version; it does not grant access to the private source.
 
 Detailed evidence can be reviewed in an authorised, sanitised walkthrough. The underlying application remains private; reviewers do not need access to production credentials or user data.
 

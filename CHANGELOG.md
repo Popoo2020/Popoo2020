@@ -7,10 +7,17 @@ All notable changes to this profile repository will be documented in this file f
 
 ### Added
 
+- Recruiter review routes, public source/test links and a dated cross-project verification record.
+- Education/training reference page preserving certificate links and the current MSCS study status.
+
 - Public Denmark in 5 editorial-assurance case study and a minimized validation record, covering the 14-edition / 66-item review, source/context controls, reader relevance and offline acceptance in CI.
 - Explicit separation of local bridge tests, GitHub CI, archived corpus replay and live generation/delivery evidence.
 
 ### Updated
+
+- Shortened the main profile around AI implementation and automation, aligned the focused Markdown CV with the current supplied CVs, and separated business history from code verification.
+- Linked the verified SundAI API implementation and corrected Sentinel SDK regression evidence.
+- Clarified the disclosure scope of the existing Denmark in 5 release revision.
 
 - Profile project summary, Azure case study and operating-controls page with the validated editorial completion release. Existing professional positioning and unrelated projects are preserved.
 
