@@ -42,6 +42,15 @@ python -m src.benchmark
 - **Evidence:** [public validation record](../case-studies/denmark-in-5-azure/evidence/editorial-validation-2026-10-19.json). Application source and raw execution records remain private. Public snippets explain selected patterns; they are not the complete runnable application.
 - **Scope:** offline regression results and historical infrastructure deployment evidence. Current delivery readiness, factual accuracy and readership require their own verification. The approximately one-minute routine input figure is an operator estimate, not a timed study or total maintenance effort.
 
+## Ariel's Pizza — historical business case plus separate offline demo
+
+**CV claim:** Built an AI-assisted operational workflow for a business operating across three locations, connecting ordering information and manager priorities with staff tasks and escalation.
+
+- **Historical evidence:** [Case study](../case-studies/ariels-pizza-operations/README.md) and [evidence register](../case-studies/ariels-pizza-operations/evidence-and-outcomes.md). This is a **first-hand builder/operator account**; historical source, API traces, logs and business-transfer records were **not independently inspected**. Historical implementation evidence remains **3/5**.
+- **New independent technical illustration (October 2026):** [Python engine](../case-studies/ariels-pizza-operations/demo/engine.py), [three synthetic scenarios](../case-studies/ariels-pizza-operations/demo/scenarios.py), [unit tests](../case-studies/ariels-pizza-operations/demo/tests/test_engine.py), [model-output boundary](../case-studies/ariels-pizza-operations/demo/model_boundary.py), [model-output tests](../case-studies/ariels-pizza-operations/demo/tests/test_model_boundary.py), [sample output](../case-studies/ariels-pizza-operations/demo/sample-output.json), [architecture](../case-studies/ariels-pizza-operations/architecture.md) and [security boundaries](../case-studies/ariels-pizza-operations/security-and-oversight.md).
+- **Reproducibility:** Standard-library-only offline demo; run `python -m demo.scenarios` and `python -m unittest discover -s demo/tests -v` from the case-study directory. The sample never connects to external APIs or sends messages. The newly authored demo **does not prove** historical API behaviour, original security configuration, productivity gains or ownership of transferred code.
+- **Measured outcomes:** No audited historical time-saving, revenue, staffing or customer-satisfaction metrics. No numbers are invented.
+
 ## Supporting public modules
 
 | Module | Read the implementation | Observed result | Scope |
@@ -55,6 +64,6 @@ To repeat the policy/evaluation tests, check out the revision in the [verificati
 
 ## Business experience and evidence boundaries
 
-[Ariel's Pizza](../case-studies/ariels-pizza-operations/README.md) describes a historical implementation across **three locations**, based on my builder/operator account. Source, customer/employee records and transfer documents are not public. **45+ staff** describes my management scope at Varha. These numbers describe scale, not measured productivity gains. Education, language proficiency and employment history are candidate background; passing repository tests does not independently verify them.
+[Ariel's Pizza](../case-studies/ariels-pizza-operations/README.md) describes a historical implementation across **three locations**, based on my builder/operator account. Its separate **2026 synthetic Python demo** has reproducible tests but does not independently verify the original tool. Source, customer/employee records and transfer documents are not public. **45+ staff** describes my management scope at Varha. These numbers describe scale, not measured productivity gains. Education, language proficiency and employment history are candidate background; passing repository tests does not independently verify them.
 
 For a technical conversation, I can explain the requirement, walk through the code and tests, and discuss what would be needed for a production handover. [Contact](mailto:eririmo@protonmail.com).

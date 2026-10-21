@@ -1,4 +1,6 @@
-# Ariel's Pizza — AI Operations Assistant
+# Ariel's Pizza — AI Operations Automation
+
+**Real-world business case study · independently authored 2026 offline engineering demonstration**
 
 **Python · API integration · Context-based task generation · Human-in-the-loop escalation**
 
@@ -16,7 +18,7 @@ I built a Python assistant that translated business activity and managers' prior
 
 This case demonstrates requirements discovery, API integration, workflow design and user adoption in a business I operated. It also demonstrates a human-in-the-loop (HITL) workflow: routine task support could run through the assistant, while uncertain or critical decisions were referred to a manager.
 
-**Evidence scope:** the business, integrations and behaviours below are my account as the builder and operator, clarified in October 2026. The architecture below is a functional reconstruction. Historical source code, API configuration, execution logs and transfer records were not independently inspected for this public case.
+**Evidence scope:** the business, integrations and behaviours below are my account as the builder and operator, clarified in October 2026. The architecture below is a functional reconstruction. Historical source code, API configuration, execution logs and transfer records were not independently inspected for this public case. The new code in [demo/](demo/) is **independently authored in October 2026**, not recovered historical code, not transferred intellectual property, and not a live integration.
 
 ## Workflows described
 
@@ -62,6 +64,43 @@ flowchart TD
 
 This sequence illustrates the reported behaviours; individual tasks could follow different paths.
 
+## Reproducible technical demonstration — newly authored in 2026
+
+This **standard-library-only** offline example is a separate portfolio teaching aid. It does not connect to Wolt, WhatsApp, OpenAI, Trello, Google Sheets or any historical business accounts. It demonstrates a defensible **decision boundary**, not the original proprietary implementation.
+
+- [Detailed architecture and decision data flow](architecture.md)
+- [Security, privacy and human oversight](security-and-oversight.md)
+- [Runnable Python code, synthetic scenarios and tests](demo/README.md) · [Mock model-output validation](demo/model_boundary.py)
+- [Labelled synthetic JSON output](demo/sample-output.json)
+- [Evidence register and business-outcome limits](evidence-and-outcomes.md)
+
+From this case-study directory:
+
+~~~bash
+python -m demo.scenarios
+python -m unittest discover -s demo/tests -v
+~~~
+
+The three **invented** cases cover low stock, voluntary shift coverage and customer-complaint follow-up. They use synthetic site aliases, no actual orders or personal data, and a local manager-review gate. An illustrative approval only changes in-memory state: **zero messages, purchases or compensation actions are dispatched**. A separate synthetic model-output contract checks event/site/task consistency and rejects arbitrary commands before deterministic decision routing; **no real model is called**. The engine rejects unknown fields and free text, handles duplicate event IDs and records metadata-only audit events. These safeguards are demonstrated **only for the new sample**, not claimed for the original historical system.
+
+### Illustrative 2026 decision flow (not historical infrastructure)
+
+~~~mermaid
+flowchart TD
+  A[Invented inventory / shift / complaint event] --> B[Strict allowlisted schema]
+  B -->|Invalid| X[Reject with no side effects]
+  B --> V[Validate invented model-like suggestion]
+  V -->|Invalid| X
+  V --> C[Deterministic rules and event-ID deduplication]
+  C --> D{Consequential or uncertain?}
+  D -->|No| E[Routine advice in memory]
+  D -->|Yes| F[Manager-review state]
+  F --> G[Approve / reject for demo only]
+  E --> H[Minimal synthetic audit metadata]
+  G --> H
+  H --> I[JSON output; no external dispatch]
+~~~
+
 ## Controls described by the operator
 
 Earlier project accounts describe application-secret handling, token limits and selection of models appropriate to the task. The current account adds manager escalation and context-based task generation.
@@ -75,11 +114,11 @@ The exact authentication, hosting and permission design remains outside the veri
 - Combined AI-assisted guidance with a route to human decisions.
 - Transferred the tool and business concept with the business sale in **May 2025**.
 
-The project shows how I connect business needs with implementation and adoption. Measured time savings, service-quality changes and financial returns are not available in this case.
+The project shows how I connect business needs with implementation and adoption. Measured time savings, service-quality changes and financial returns are not available in this case. The demo's passing tests show only reproducible behaviour of newly authored synthetic code; they are not historical performance evidence.
 
 ## Public disclosure
 
-This case excludes API credentials, account identifiers, employee and customer conversations, order-level data, absence reasons and live infrastructure details. Shift coordination is described in terms of availability. No source code from the transferred tool is published here.
+This case excludes API credentials, account identifiers, employee and customer conversations, order-level data, absence reasons and live infrastructure details. Shift coordination is described in terms of availability. No source code from the transferred tool is published here. The new sample is standalone and contains no actual customer/employee records, provider credentials, order-level data or real branch identifiers.
 
 **Evidence assessment: 3/5** for the reported implementation and business use: a detailed builder/operator account, without independent inspection of the historical technical or transaction records. This is an evidence score, not a hiring-success probability.
 
