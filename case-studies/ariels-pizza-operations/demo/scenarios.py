@@ -2,6 +2,7 @@
 from __future__ import annotations
 import json
 from demo.engine import DecisionEngine, Event
+from demo.model_boundary import mock_model_output, validate_model_output
 
 # Invented counts and aliases; no historical staff, customer or order data.
 SCENARIOS = [
@@ -12,7 +13,9 @@ SCENARIOS = [
 
 def demo_report() -> dict[str, object]:
     engine = DecisionEngine()
-    planned = [engine.plan(Event.from_mapping(raw)) for raw in SCENARIOS]
+    events = [Event.from_mapping(raw) for raw in SCENARIOS]
+    proposals = [validate_model_output(event, mock_model_output(event)) for event in events]
+    planned = [engine.plan(event) for event in events]
     # Synthetic approval in memory only. Nothing is sent or purchased.
     approved = engine.resolve(planned[0].decision_id, actor_role="manager", approve=True)
     return {
@@ -20,6 +23,10 @@ def demo_report() -> dict[str, object]:
         "decisions": [engine.plan(Event.from_mapping(raw)).as_dict() for raw in SCENARIOS],
         "manager_example": approved.as_dict(),
         "audit": list(engine.audit()),
+        "model_boundary": [
+            {"event_id": p.event_id, "task": p.task, "source": "synthetic_mock", "validated": True}
+            for p in proposals
+        ],
         "outbound_messages": 0,
         "purchases": 0,
     }
