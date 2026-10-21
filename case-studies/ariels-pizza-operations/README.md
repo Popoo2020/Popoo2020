@@ -73,6 +73,7 @@ This **standard-library-only** offline example is a separate portfolio teaching 
 - [Runnable Python code, synthetic scenarios and tests](demo/README.md) · [Mock model-output validation](demo/model_boundary.py)
 - [Labelled synthetic JSON output](demo/sample-output.json)
 - [Evidence register and business-outcome limits](evidence-and-outcomes.md)
+- [Verified GitHub CI: 33 offline tests, Ruff, Bandit, compile and sample snapshot](https://github.com/Popoo2020/Popoo2020/actions/runs/39579721199)
 
 From this case-study directory:
 
