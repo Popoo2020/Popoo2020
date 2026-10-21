@@ -8,7 +8,7 @@ The historical case and the new 2026 demonstration have **different evidence bas
 | Original Python/OpenAI assistant integrated ordering, Trello, Sheets and WhatsApp | Builder's first-hand description | 3 | Historical source, API traces and logs not inspected |
 | Manager escalation, inventory and shift tasks | Operator account | 3 | No independent historical execution receipts |
 | Tool and concept transferred with May 2025 sale | Operator account | 3 | No public contract/IP schedule verified |
-| New offline demo validates/routs invented events | New code, tests and reproducible JSON output | 4 | Demonstration only, not historical software or live integration |
+| New offline demo validates/routes invented events | New code, model-output contract, tests and reproducible JSON output | 4 | Demonstration only, not historical software or live integration |
 | Original system's security configuration | No independent records | 1 | Not established by the new sample |
 | Quantified time savings, ROI, revenue, staff/customer satisfaction | No measured baseline/outcomes | 1 | Do not make numerical improvement claims |
 
