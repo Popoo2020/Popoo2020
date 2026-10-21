@@ -70,7 +70,7 @@ This **standard-library-only** offline example is a separate portfolio teaching 
 
 - [Detailed architecture and decision data flow](architecture.md)
 - [Security, privacy and human oversight](security-and-oversight.md)
-- [Runnable Python code, synthetic scenarios and tests](demo/README.md)
+- [Runnable Python code, synthetic scenarios and tests](demo/README.md) · [Mock model-output validation](demo/model_boundary.py)
 - [Labelled synthetic JSON output](demo/sample-output.json)
 - [Evidence register and business-outcome limits](evidence-and-outcomes.md)
 
@@ -81,7 +81,7 @@ python -m demo.scenarios
 python -m unittest discover -s demo/tests -v
 ~~~
 
-The three **invented** cases cover low stock, voluntary shift coverage and customer-complaint follow-up. They use synthetic site aliases, no actual orders or personal data, and a local manager-review gate. An illustrative approval only changes in-memory state: **zero messages, purchases or compensation actions are dispatched**. The engine rejects unknown fields and free text, handles duplicate event IDs and records metadata-only audit events. These safeguards are demonstrated **only for the new sample**, not claimed for the original historical system.
+The three **invented** cases cover low stock, voluntary shift coverage and customer-complaint follow-up. They use synthetic site aliases, no actual orders or personal data, and a local manager-review gate. An illustrative approval only changes in-memory state: **zero messages, purchases or compensation actions are dispatched**. A separate synthetic model-output contract checks event/site/task consistency and rejects arbitrary commands before deterministic decision routing; **no real model is called**. The engine rejects unknown fields and free text, handles duplicate event IDs and records metadata-only audit events. These safeguards are demonstrated **only for the new sample**, not claimed for the original historical system.
 
 ### Illustrative 2026 decision flow (not historical infrastructure)
 
@@ -89,7 +89,9 @@ The three **invented** cases cover low stock, voluntary shift coverage and custo
 flowchart TD
   A[Invented inventory / shift / complaint event] --> B[Strict allowlisted schema]
   B -->|Invalid| X[Reject with no side effects]
-  B --> C[Deterministic rules and event-ID deduplication]
+  B --> V[Validate invented model-like suggestion]
+  V -->|Invalid| X
+  V --> C[Deterministic rules and event-ID deduplication]
   C --> D{Consequential or uncertain?}
   D -->|No| E[Routine advice in memory]
   D -->|Yes| F[Manager-review state]
