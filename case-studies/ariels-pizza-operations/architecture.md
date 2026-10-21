@@ -24,7 +24,9 @@ The original system's API payloads, authentication, storage, hosting, retention,
 flowchart TD
   I[Invented aggregate event] --> V[Strict schema validation]
   V -->|Unexpected fields| X[Reject with no side effects]
-  V --> E[Deterministic rule engine]
+  V --> M[Validate invented model-like suggestion]
+  M -->|Invalid| X
+  M --> E[Deterministic rule engine]
   E --> D{Manager judgement required?}
   D -->|No| A[Routine in-memory advice]
   D -->|Yes| H[Review-required state]
@@ -35,7 +37,7 @@ flowchart TD
   L --> O[JSON demo output; no outbound connectors]
 ~~~
 
-No LLM is called in the sample. This deliberately tests the **policy boundary** independently of the historical AI implementation.
+No live LLM is called. An independent **mock model-output contract** emits invented task suggestions, verifies event/site/task consistency and rejects arbitrary commands before deterministic policy routing. This tests the **policy boundary** independently of the historical AI implementation.
 
 ## Event contract and human oversight
 
