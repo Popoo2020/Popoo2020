@@ -47,7 +47,7 @@ Business advisory and venture activity since 2021; AI and automation projects th
 - Generated day- and performance-based tasks from business needs and managers' instructions, including purchasing lists, stock checks, cleaning and customer-service follow-up.
 - Supported staff operational questions and replacement-shift requests, using human-in-the-loop (HITL) escalation for ambiguous or critical decisions.
 - The tool and concept were transferred with the business sale in May 2025 (operator account; original code and records are not public).
-- A **separate 2026 offline Python demo** now illustrates input validation, decision routing, manager review, local idempotency and privacy boundaries; it is **not** the original transferred code.
+- A **separate 2026 offline Python demo** illustrates input validation, model-output controls, manager review, local idempotency and privacy boundaries; **33 offline tests passed in [CI](https://github.com/Popoo2020/Popoo2020/actions/runs/39579721199)**. It is **not** the original transferred code.
 
 [Historical workflow and architecture](../case-studies/ariels-pizza-operations/README.md) · [Runnable independent demo](../case-studies/ariels-pizza-operations/demo/README.md) · [Security and evidence limits](../case-studies/ariels-pizza-operations/evidence-and-outcomes.md)
 
