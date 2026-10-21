@@ -1,0 +1,45 @@
+name: Ariel's Pizza Offline Demo CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "case-studies/ariels-pizza-operations/**"
+      - ".github/workflows/ariels-pizza-demo.yml"
+  pull_request:
+    paths:
+      - "case-studies/ariels-pizza-operations/**"
+      - ".github/workflows/ariels-pizza-demo.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  offline-demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: case-studies/ariels-pizza-operations
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Compile Python
+        run: python -m compileall -q demo
+
+      - name: Run isolated unit tests
+        run: python -m unittest discover -s demo/tests -v
+
+      - name: Verify deterministic, non-publishing sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m demo.scenarios > "$RUNNER_TEMP/ariels-pizza-demo.json"
+          cmp demo/sample-output.json "$RUNNER_TEMP/ariels-pizza-demo.json"
+          python -c 'import json,sys; x=json.load(open(sys.argv[1], encoding="utf-8")); assert x["outbound_messages"] == x["purchases"] == 0 and len(x["decisions"]) == 3 and "SYNTHETIC" in x["disclaimer"]' "$RUNNER_TEMP/ariels-pizza-demo.json"
