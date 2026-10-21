@@ -17,7 +17,7 @@ Exact revisions, environments, commands and limits are in the [19 October verifi
 ## Review applied workflow design
 
 - **[Denmark in 5](../case-studies/denmark-in-5-azure/README.md):** Python/API daily-briefing workflow, editorial checks and Bicep/OIDC Azure delivery. [Engineering and CI validation](../case-studies/denmark-in-5-azure/editorial-assurance.md). Private application, public case study and sanitised release evidence.
-- **[Ariel's Pizza](../case-studies/ariels-pizza-operations/README.md):** order and manager inputs translated into staff tasks, purchasing, follow-up and manager escalation. Completed three-location business project; historical builder/operator account.
+- **[Ariel's Pizza](../case-studies/ariels-pizza-operations/README.md):** order and manager inputs translated into staff tasks, purchasing, follow-up and manager escalation across three locations. Historical builder/operator account **plus a separately authored, runnable [2026 offline Python demo](../case-studies/ariels-pizza-operations/demo/README.md)** with [unit tests](../case-studies/ariels-pizza-operations/demo/tests/test_engine.py) and [security/ownership boundaries](../case-studies/ariels-pizza-operations/security-and-oversight.md). The demo is not the original transferred tool.
 
 ## Supporting prototypes and references
 
