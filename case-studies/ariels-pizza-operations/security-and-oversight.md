@@ -12,9 +12,10 @@ A real system would involve ordering platforms, staff, managers, model providers
 2. **Synthetic site and source checks:** only three fictional site aliases and expected adapter labels.
 3. **Bounded data:** fixed item, role and complaint enums; integer limits; booleans cannot masquerade as counts.
 4. **Human-in-the-loop:** low stock, staffing gaps and complaints require manager review; routine stock status remains advice.
-5. **No dispatch:** approval only changes an in-memory state. No API, message, purchase, compensation, Trello task or WhatsApp call exists.
-6. **Local idempotency:** duplicate identical event IDs do not create another recommendation; conflicting reuse fails.
-7. **Audit minimisation:** only synthetic IDs, rule names and lifecycle actions are recorded, never raw payloads.
+5. **Mock model-output gate:** invented proposals must match event ID, site and an allowlisted task; arbitrary commands and extra fields fail closed.
+6. **No dispatch:** approval only changes an in-memory state. No API, message, purchase, compensation, Trello task or WhatsApp call exists.
+7. **Local idempotency:** duplicate identical event IDs do not create another recommendation; conflicting reuse fails.
+8. **Audit minimisation:** only synthetic IDs, rule names and lifecycle actions are recorded, never raw payloads.
 
 The demo manager role is a **string parameter**, not authenticated identity. The ledger is **not persistent**. These are illustrative controls, not production assurance.
 
