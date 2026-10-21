@@ -46,9 +46,10 @@ Business advisory and venture activity since 2021; AI and automation projects th
 - Built a Python assistant for a business operating across **three locations**, connecting Wolt and business-ordering APIs with Trello, Google Sheets, WhatsApp and OpenAI.
 - Generated day- and performance-based tasks from business needs and managers' instructions, including purchasing lists, stock checks, cleaning and customer-service follow-up.
 - Supported staff operational questions and replacement-shift requests, using human-in-the-loop (HITL) escalation for ambiguous or critical decisions.
-- Transferred the tool and business concept with the business sale in May 2025.
+- The tool and concept were transferred with the business sale in May 2025 (operator account; original code and records are not public).
+- A **separate 2026 offline Python demo** now illustrates input validation, decision routing, manager review, local idempotency and privacy boundaries; it is **not** the original transferred code.
 
-[Workflow and functional architecture](../case-studies/ariels-pizza-operations/README.md)
+[Historical workflow and architecture](../case-studies/ariels-pizza-operations/README.md) · [Runnable independent demo](../case-studies/ariels-pizza-operations/demo/README.md) · [Security and evidence limits](../case-studies/ariels-pizza-operations/evidence-and-outcomes.md)
 
 **Additional Python Portfolio Work**
 
