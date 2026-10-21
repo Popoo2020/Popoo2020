@@ -13,7 +13,7 @@ python -m demo.scenarios
 python -m unittest discover -s demo/tests -v
 ~~~
 
-No third-party dependencies, credentials or environment variables are needed. The CLI prints JSON. It performs **no network calls, file writes, outbound notifications, purchases or external side effects**.
+No third-party dependencies, credentials or environment variables are needed. The CLI prints JSON. The application performs **no network calls, application-data writes, outbound notifications, purchases or external side effects** (Python itself may create local bytecode-cache files unless disabled).
 
 ## Invented scenarios
 
