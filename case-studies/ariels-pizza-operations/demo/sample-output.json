@@ -1,0 +1,73 @@
+{
+  "audit": [
+    {
+      "action": "planned",
+      "decision_id": "decision-7a7db2c73028",
+      "event_id": "demo-stock-001",
+      "rule": "STOCK_REVIEW"
+    },
+    {
+      "action": "planned",
+      "decision_id": "decision-7db1670ce43f",
+      "event_id": "demo-shift-002",
+      "rule": "SHIFT_REVIEW"
+    },
+    {
+      "action": "planned",
+      "decision_id": "decision-d92c2820b20d",
+      "event_id": "demo-complaint-003",
+      "rule": "CUSTOMER_CARE_REVIEW"
+    },
+    {
+      "action": "approved_for_demo",
+      "decision_id": "decision-7a7db2c73028",
+      "event_id": "demo-stock-001",
+      "rule": "STOCK_REVIEW"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "decision-7a7db2c73028",
+      "event_id": "demo-stock-001",
+      "human_required": true,
+      "kind": "inventory",
+      "recommendation": "Review stock and potential replenishment of cheese at SITE_A (count 3; threshold 8).",
+      "rule": "STOCK_REVIEW",
+      "site": "SITE_A",
+      "state": "approved_for_demo"
+    },
+    {
+      "decision_id": "decision-7db1670ce43f",
+      "event_id": "demo-shift-002",
+      "human_required": true,
+      "kind": "shift_gap",
+      "recommendation": "Manager to review voluntary kitchen coverage for 1 open slot(s) at SITE_B.",
+      "rule": "SHIFT_REVIEW",
+      "site": "SITE_B",
+      "state": "review_required"
+    },
+    {
+      "decision_id": "decision-d92c2820b20d",
+      "event_id": "demo-complaint-003",
+      "human_required": true,
+      "kind": "complaint",
+      "recommendation": "Manager to review high priority wrong_item customer-service follow-up at SITE_C.",
+      "rule": "CUSTOMER_CARE_REVIEW",
+      "site": "SITE_C",
+      "state": "review_required"
+    }
+  ],
+  "disclaimer": "SYNTHETIC OFFLINE DEMO — not historical source or a live integration",
+  "manager_example": {
+    "decision_id": "decision-7a7db2c73028",
+    "event_id": "demo-stock-001",
+    "human_required": true,
+    "kind": "inventory",
+    "recommendation": "Review stock and potential replenishment of cheese at SITE_A (count 3; threshold 8).",
+    "rule": "STOCK_REVIEW",
+    "site": "SITE_A",
+    "state": "approved_for_demo"
+  },
+  "outbound_messages": 0,
+  "purchases": 0
+}
