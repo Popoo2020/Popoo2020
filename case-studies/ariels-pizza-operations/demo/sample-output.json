@@ -68,6 +68,26 @@
     "site": "SITE_A",
     "state": "approved_for_demo"
   },
+  "model_boundary": [
+    {
+      "event_id": "demo-stock-001",
+      "source": "synthetic_mock",
+      "task": "stock_check",
+      "validated": true
+    },
+    {
+      "event_id": "demo-shift-002",
+      "source": "synthetic_mock",
+      "task": "shift_coverage",
+      "validated": true
+    },
+    {
+      "event_id": "demo-complaint-003",
+      "source": "synthetic_mock",
+      "task": "customer_follow_up",
+      "validated": true
+    }
+  ],
   "outbound_messages": 0,
   "purchases": 0
 }
