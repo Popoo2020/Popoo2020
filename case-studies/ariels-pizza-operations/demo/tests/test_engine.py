@@ -10,7 +10,7 @@ class EventValidationTests(unittest.TestCase):
             self.assertEqual(Event.from_mapping(raw).event_id, raw["event_id"])
 
     def test_reject_sensitive_fact(self):
-        raw = copy.deepcopy(SCENARIOS[2]); raw["facts"]["customer_phone"] = "+4512345678"
+        raw = copy.deepcopy(SCENARIOS[2]); raw["facts"]["customer_phone"] = "SYNTHETIC_PHONE_PLACEHOLDER"
         with self.assertRaises(ValueError): Event.from_mapping(raw)
 
     def test_reject_sensitive_top_level_field(self):
