@@ -4,6 +4,8 @@ A merchant has a product, a launch budget and an overseas customer in mind. Can 
 
 **Read the sample decisions:** [EUR 1,000 budget](examples/results/ready.md) · [EUR 450 budget](examples/results/hold.md). **Inspect the controls:** [security, GDPR and EU AI Act](docs/security-privacy-ai.md) · [merchant pilot and market evidence](docs/merchant-pilot.md).
 
+Starting with an empty store? Follow the [merchant handover from account setup to the first delivery](docs/store-handover.md). It identifies the configuration owned by the merchant, the evidence the software produces and the checks to repeat with an actual supplier.
+
 ### The worked example
 
 A fictional Danish company wants to sell one paper print in Germany for EUR 39.00. Its simulated supplier dispatches within Germany. The inputs include the company's registration country, destination, currency, supplier variant, quoted freight and delivery time, merchant experience, planned marketing cost and cash reserved for the first orders.
