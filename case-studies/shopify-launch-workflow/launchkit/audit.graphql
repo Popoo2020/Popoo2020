@@ -1,0 +1,9 @@
+query LaunchDraftAudit($search: String!) {
+  shop { currencyCode myshopifyDomain plan { partnerDevelopment } }
+  products(first: 2, query: $search) {
+    nodes {
+      handle status
+      variants(first: 2) { nodes { sku price } }
+    }
+  }
+}

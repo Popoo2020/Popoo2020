@@ -1,0 +1,27 @@
+{
+  "data": {
+    "shop": {
+      "currencyCode": "EUR",
+      "myshopifyDomain": "fictional-paper-studio.myshopify.com",
+      "plan": {
+        "partnerDevelopment": true
+      }
+    },
+    "products": {
+      "nodes": [
+        {
+          "handle": "grid-studio-print",
+          "status": "DRAFT",
+          "variants": {
+            "nodes": [
+              {
+                "sku": "DEMO-PRINT-A4",
+                "price": "39.00"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

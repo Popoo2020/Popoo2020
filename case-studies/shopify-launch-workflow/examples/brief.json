@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-11-20",
+  "shop": "fictional-paper-studio.myshopify.com",
+  "company_country": "DK",
+  "market": "DE",
+  "currency": "EUR",
+  "experience": "first_store",
+  "budget": {
+    "cash": "1000.00",
+    "setup": "210.00",
+    "samples": "55.00",
+    "marketing_test": "240.00",
+    "float_units": 10
+  },
+  "product": {
+    "handle": "grid-studio-print",
+    "title": "Grid Studio Print",
+    "sku": "DEMO-PRINT-A4",
+    "facts": [
+      "A4 paper print",
+      "Unframed",
+      "Blue grid illustration"
+    ],
+    "sale_price": "39.00",
+    "unit_cost": "12.00",
+    "payment_percent": "2.50",
+    "payment_fixed": "0.30",
+    "tax_allowance": "6.20",
+    "return_allowance": "1.50",
+    "duty_allowance": "0.00"
+  },
+  "supplier": {
+    "name": "Printful API contract / illustrative variant",
+    "dispatch_country": "DE",
+    "catalog_variant_id": 10001,
+    "sync_variant_id": 90001,
+    "sample_checked": true
+  },
+  "shipping": {
+    "market": "DE",
+    "currency": "EUR",
+    "per_unit": "4.50",
+    "max_days": 5,
+    "valid_until": "2026-12-05",
+    "dispatch_country": "DE",
+    "catalog_variant_id": 10001
+  },
+  "market_review": {
+    "company_country": "DK",
+    "market": "DE",
+    "payouts_checked": true,
+    "tax_and_returns_checked": true,
+    "dispatch_country": "DE"
+  },
+  "marketing": {
+    "channel": "paid_social",
+    "target_cac": "8.00",
+    "max_delivery_days": 7,
+    "campaign": "grid-launch-de"
+  }
+}

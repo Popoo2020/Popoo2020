@@ -1,0 +1,21 @@
+{
+  "id": 1001,
+  "test": true,
+  "financial_status": "paid",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "sku": "DEMO-PRINT-A4",
+      "quantity": 1,
+      "price": "39.00"
+    }
+  ],
+  "shipping_address": {
+    "first_name": "Demo",
+    "last_name": "Recipient",
+    "address1": "Example address 1",
+    "city": "Berlin",
+    "zip": "10115",
+    "country_code": "DE"
+  }
+}
