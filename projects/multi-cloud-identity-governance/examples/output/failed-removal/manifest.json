@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mode": "simulation_only",
+  "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+  "audit_head": "3fc89ed7016ce7eeeb8a3e7749a44117cc9e33a5136cb692392d4a50138b5f83",
+  "files": {
+    "after.json": "0e3b39e1def49cbc1786ae2a054b3875f47bc89d475f95a27425778fb45251b7",
+    "approvals.json": "f95ce2de1f86cc9e67a59853cb48bacd43644c788abbef8721ceac04cbb894a5",
+    "assessment.json": "77f5026d7f9a0b59f391c7da0e031b93fc36f57466007a0c3182b3b66aae67b4",
+    "audit.jsonl": "eaa8fd3e21e50d85676c804677540f52d83778734a5c64b36792e8ca85d1e3cf",
+    "before.json": "64f730de1252fd3b6a8e106521dd1cc931c9bee9215cad59651d98958d255a86",
+    "plan.json": "ac739cdc3cedd82c0152b91c69b8bf834f0306261dfd179629b6b87226cbf845",
+    "report.md": "491a4ecbcefa3be0e2fcbb6c8bd1a17271f125c9936addb305b58458efab9c6a",
+    "result.json": "19c1855227bceaa012b0c6a31d6be9ee0f13c0b74008490cb6b8ca6f8861a01f"
+  },
+  "authenticity": "Unsigned local manifest; not an independent trust anchor"
+}

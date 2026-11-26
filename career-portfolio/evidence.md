@@ -2,7 +2,16 @@
 
 [Profile](../README.md) · [CV](ai-implementation-cv.md) · [Repository guide](README.md) · [Machine-readable verification record](verification-2026-10-19.json)
 
-**Reviewed 19 October 2026.** Start with SundAI for a public API implementation, Sentinel for a Python workflow with decision gates, or Denmark in 5 for applied Azure architecture. Public test results below were executed locally with synthetic inputs and mocked external services. Private-project results were checked against GitHub CI records. These are dated engineering observations, not independent certification or measured business impact.
+**Baseline review: 19 October 2026. Identity-governance update: 26 November 2026.** Start with the identity-governance section below for access workflows, SundAI for a public API implementation, Sentinel for a Python workflow with decision gates, or Denmark in 5 for applied Azure architecture. Public test results below were executed locally with synthetic inputs and mocked external services. Private-project results were checked against GitHub CI records. These are dated engineering observations, not independent certification or measured business impact.
+
+## Multi-Cloud Identity Governance — 26 November 2026
+
+**Demonstrated work:** a runnable workforce lifecycle and access-review workflow, with Azure/Entra, AWS IAM Identity Center and Google Cloud IAM export adapters, explicit catalogue mapping, plan-bound owner approvals and reviewable failure outcomes.
+
+- **Implementation:** [planner and simulator](../projects/multi-cloud-identity-governance/identity_governance/engine.py), [provider adapters](../projects/multi-cloud-identity-governance/identity_governance/providers.py), [import and provenance](../projects/multi-cloud-identity-governance/identity_governance/imports.py), [evidence reporting](../projects/multi-cloud-identity-governance/identity_governance/evidence.py).
+- **Observed locally:** **87 tests passed** on Python 3.12.14; Ruff 0.14.14 lint and formatting checks passed. Seven synthetic scenarios ran. The approved mover removed three obsolete assignments and granted three approved ones; an injected AWS removal failure blocked all three new grants.
+- **Inspect:** [successful move](../projects/multi-cloud-identity-governance/examples/output/mover/report.md), [partial failure](../projects/multi-cloud-identity-governance/examples/output/failed-removal/report.md), [tests](../projects/multi-cloud-identity-governance/tests), [commands and validation](../projects/multi-cloud-identity-governance/docs/validation.md), [GitHub workflow](https://github.com/Popoo2020/Popoo2020/actions/workflows/multi-cloud-identity-governance.yml).
+- **Scope:** standard-library local implementation. No live cloud collection or mutation, authenticated approval service, deployment or actual session-revocation validation. Input coverage is an explicit assertion checked for consistency; it is not independently authenticated. Evidence hashes do not certify compliance or make storage tamperproof.
 
 ## SundAI website and enquiry API
 

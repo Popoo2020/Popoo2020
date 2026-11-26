@@ -1,0 +1,17 @@
+{
+  "principal_id": "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/emp-014",
+  "resource": "projects/synthetic-governance-demo",
+  "policy": {
+    "version": 1,
+    "etag": "c3ludGhldGljLWV4YW1wbGU=",
+    "bindings": [
+      {
+        "role": "roles/viewer",
+        "members": [
+          "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/emp-014",
+          "user:another-person@example.invalid"
+        ]
+      }
+    ]
+  }
+}

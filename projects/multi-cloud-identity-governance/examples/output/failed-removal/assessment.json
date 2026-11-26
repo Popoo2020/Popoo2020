@@ -1,0 +1,70 @@
+[
+  {
+    "control_id": "IG-01",
+    "title": "Identity and scope",
+    "status": "model_checked",
+    "evidence": [
+      "plan.json",
+      "before.json"
+    ],
+    "finding": "Subject, policy and bounded snapshot are linked by immutable identifiers and digests.",
+    "next_action": "For a pilot, validate HR authority, collection coverage and identity bindings with their owners."
+  },
+  {
+    "control_id": "IG-02",
+    "title": "Role reconciliation",
+    "status": "open",
+    "evidence": [
+      "before.json",
+      "after.json",
+      "result.json"
+    ],
+    "finding": "1 unexpected and 3 missing assignments remain in the catalogued scope.",
+    "next_action": "Resolve failed removals; collect new state and replan before requesting approvals for new grants."
+  },
+  {
+    "control_id": "IG-03",
+    "title": "Approval before grants",
+    "status": "open",
+    "evidence": [
+      "approvals.json",
+      "result.json"
+    ],
+    "finding": "New grants require two distinct, plan-bound, unexpired manager and owner approvals in the model.",
+    "next_action": "Replace synthetic approval assertions with authenticated, signed decisions before live execution."
+  },
+  {
+    "control_id": "IG-04",
+    "title": "Separation of duties",
+    "status": "model_checked",
+    "evidence": [
+      "plan.json",
+      "result.json"
+    ],
+    "finding": "0 configured conflicts remain after simulation.",
+    "next_action": "Have business owners review the conflict rules and any wider inherited access."
+  },
+  {
+    "control_id": "IG-05",
+    "title": "Departure and expiry",
+    "status": "not_applicable",
+    "evidence": [
+      "plan.json",
+      "after.json",
+      "result.json"
+    ],
+    "finding": "Departure and expiry events plan IdP disablement and removal of catalogued assignments; existing sessions are not tested.",
+    "next_action": "Verify actual disablement, SCIM propagation, credential handling and session expiry using each provider's supported controls."
+  },
+  {
+    "control_id": "IG-06",
+    "title": "Review evidence",
+    "status": "generated",
+    "evidence": [
+      "audit.jsonl",
+      "manifest.json"
+    ],
+    "finding": "A local hash chain and file manifest support reproducible integrity checks, not independent authenticity.",
+    "next_action": "Use separated evidence writers, retention controls and a trusted signing or anchoring service in a pilot."
+  }
+]

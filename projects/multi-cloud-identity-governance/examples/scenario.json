@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "company": {
+    "name": "Fjord Supply (fictional)",
+    "employees": 180,
+    "sector": "B2B distribution",
+    "data": "Synthetic workforce and access records; no customer data"
+  },
+  "as_of": "2026-11-26T09:00:00Z",
+  "policy": {
+    "snapshot_max_age_minutes": 60,
+    "plan_valid_minutes": 30,
+    "approvers": [
+      "manager-finance",
+      "manager-operations",
+      "owner-workplace",
+      "owner-orders",
+      "owner-finance",
+      "owner-analytics"
+    ],
+    "entitlements": {
+      "azure.staff": {
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "33333333-3333-4333-8333-333333333333",
+        "label": "Staff collaboration",
+        "owner": "owner-workplace",
+        "authority": "idp"
+      },
+      "azure.order_ops": {
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "22222222-2222-4222-8222-222222222222",
+        "label": "Order operations application",
+        "owner": "owner-orders",
+        "authority": "idp"
+      },
+      "azure.finance": {
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "44444444-4444-4444-8444-444444444444",
+        "label": "Finance reporting application",
+        "owner": "owner-finance",
+        "authority": "idp"
+      },
+      "azure.vendor": {
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "55555555-5555-4555-8555-555555555555",
+        "label": "Vendor support portal",
+        "owner": "owner-orders",
+        "authority": "idp"
+      },
+      "aws.order_operator": {
+        "provider": "aws",
+        "resource": "123456789012",
+        "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-0123456789abcdef",
+        "label": "Order integration operator",
+        "owner": "owner-orders",
+        "authority": "provider"
+      },
+      "aws.cost_reader": {
+        "provider": "aws",
+        "resource": "123456789012",
+        "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-fedcba9876543210",
+        "label": "Cost and billing read-only",
+        "owner": "owner-finance",
+        "authority": "provider"
+      },
+      "aws.support_reader": {
+        "provider": "aws",
+        "resource": "123456789012",
+        "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-1111111111111111",
+        "label": "Support diagnostics read-only",
+        "owner": "owner-orders",
+        "authority": "provider"
+      },
+      "gcp.sales_viewer": {
+        "provider": "gcp",
+        "resource": "projects/synthetic-governance-demo",
+        "permission": "roles/viewer",
+        "label": "Sales analytics project viewer",
+        "owner": "owner-analytics",
+        "authority": "provider"
+      },
+      "gcp.finance_viewer": {
+        "provider": "gcp",
+        "resource": "projects/synthetic-governance-demo",
+        "permission": "projects/synthetic-governance-demo/roles/financeReader",
+        "label": "Finance analytics reader",
+        "owner": "owner-finance",
+        "authority": "provider"
+      }
+    },
+    "roles": {
+      "order_operations": [
+        "azure.staff",
+        "azure.order_ops",
+        "aws.order_operator",
+        "gcp.sales_viewer"
+      ],
+      "finance_analyst": [
+        "azure.staff",
+        "azure.finance",
+        "aws.cost_reader",
+        "gcp.finance_viewer"
+      ],
+      "vendor_support": [
+        "azure.vendor",
+        "aws.support_reader"
+      ]
+    },
+    "conflicts": [
+      [
+        "aws.order_operator",
+        "gcp.finance_viewer"
+      ],
+      [
+        "azure.order_ops",
+        "azure.finance"
+      ]
+    ]
+  },
+  "identities": {
+    "emp-014": {
+      "kind": "employee",
+      "status": "active",
+      "role": "finance_analyst",
+      "manager": "manager-finance",
+      "external_ids": {
+        "azure": "11111111-1111-4111-8111-111111111111",
+        "aws": "11111111-1111-4111-8111-111111111111",
+        "gcp": "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/emp-014"
+      }
+    },
+    "emp-015": {
+      "kind": "employee",
+      "status": "active",
+      "role": "order_operations",
+      "manager": "manager-operations",
+      "external_ids": {
+        "azure": "00000015-0000-4000-8000-000000000015",
+        "aws": "00000015-0000-4000-8000-000000000015",
+        "gcp": "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/emp-015"
+      }
+    },
+    "emp-019": {
+      "kind": "employee",
+      "status": "departed",
+      "role": "order_operations",
+      "manager": "manager-operations",
+      "external_ids": {
+        "azure": "00000019-0000-4000-8000-000000000019",
+        "aws": "00000019-0000-4000-8000-000000000019",
+        "gcp": "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/emp-019"
+      }
+    },
+    "contractor-007": {
+      "kind": "contractor",
+      "status": "active",
+      "role": "vendor_support",
+      "manager": "manager-operations",
+      "external_ids": {
+        "azure": "00000007-0000-4000-8000-000000000007",
+        "aws": "00000007-0000-4000-8000-000000000007",
+        "gcp": "principal://iam.googleapis.com/locations/global/workforcePools/synthetic-workforce/subject/contractor-007"
+      },
+      "end_at": "2026-11-26T08:00:00Z"
+    }
+  },
+  "snapshot": {
+    "schema_version": 1,
+    "captured_at": "2026-11-26T08:55:00Z",
+    "scope": "catalogued_direct_assignments",
+    "complete": {
+      "azure": true,
+      "aws": true,
+      "gcp": true
+    },
+    "subjects": [
+      "emp-014",
+      "emp-015",
+      "emp-019",
+      "contractor-007"
+    ],
+    "disabled_subjects": [],
+    "assignments": [
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.order_ops"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "aws.order_operator"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "gcp.sales_viewer"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.order_ops"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "aws.order_operator"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "gcp.sales_viewer"
+      },
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "azure.vendor"
+      },
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "aws.support_reader"
+      }
+    ]
+  },
+  "events": {
+    "mover": {
+      "event_id": "hr-2026-11-26-mover",
+      "kind": "mover",
+      "subject_id": "emp-014",
+      "effective_at": "2026-11-26T09:00:00Z",
+      "source": "authoritative_hr_fixture"
+    },
+    "joiner": {
+      "event_id": "hr-2026-11-26-joiner",
+      "kind": "joiner",
+      "subject_id": "emp-015",
+      "effective_at": "2026-11-26T09:00:00Z",
+      "source": "authoritative_hr_fixture"
+    },
+    "leaver": {
+      "event_id": "hr-2026-11-26-leaver",
+      "kind": "leaver",
+      "subject_id": "emp-019",
+      "effective_at": "2026-11-26T09:00:00Z",
+      "source": "authoritative_hr_fixture"
+    },
+    "contractor-expiry": {
+      "event_id": "hr-2026-11-26-contractor-expiry",
+      "kind": "contract_expiry",
+      "subject_id": "contractor-007",
+      "effective_at": "2026-11-26T09:00:00Z",
+      "source": "authoritative_hr_fixture"
+    },
+    "access-review": {
+      "event_id": "hr-2026-11-26-access-review",
+      "kind": "access_review",
+      "subject_id": "emp-014",
+      "effective_at": "2026-11-26T09:00:00Z",
+      "source": "authoritative_hr_fixture"
+    }
+  }
+}

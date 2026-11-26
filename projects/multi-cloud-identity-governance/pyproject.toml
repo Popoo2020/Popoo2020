@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-cloud-identity-governance"
+version = "0.1.0"
+description = "A reproducible identity lifecycle and access-review workflow for Azure, AWS and Google Cloud."
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Eric Ariel Rimón"}]
+dependencies = []
+
+[project.scripts]
+identity-governance = "identity_governance.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["identity_governance*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "S"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]

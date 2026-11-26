@@ -4,6 +4,10 @@ This mini lab demonstrates practical identity and access governance thinking for
 
 It is designed as a recruiter-friendly proof of work for roles involving IAM, Identity Provider operations, Entra ID, access governance, lifecycle processes, documentation and security automation.
 
+## Runnable extension
+
+The [Multi-Cloud Identity Governance project](../projects/multi-cloud-identity-governance/README.md) extends this design lab with a Python workflow, Azure/AWS/GCP export normalization, synthetic owner approvals, failure handling and evidence bundles. Compare its [successful role change](../projects/multi-cloud-identity-governance/examples/output/mover/report.md) with the [failed-removal report](../projects/multi-cloud-identity-governance/examples/output/failed-removal/report.md). Cloud execution is simulated; this original lab remains the conceptual reference.
+
 ## Purpose
 
 The goal is to show how identity governance can be documented and structured as both a technical and organisational process.

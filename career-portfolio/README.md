@@ -4,6 +4,12 @@
 
 My focus is AI implementation and automation: connect business systems, validate outputs and help teams use the workflow. Choose the route closest to the role.
 
+## Review identity and access governance
+
+**[Multi-Cloud Identity Governance](../projects/multi-cloud-identity-governance/README.md)** connects workforce changes, Azure/AWS/GCP export normalization, manager and resource-owner approvals, and review evidence. Start with the [successful mover](../projects/multi-cloud-identity-governance/examples/output/mover/report.md), compare the [failed-removal case](../projects/multi-cloud-identity-governance/examples/output/failed-removal/report.md), then follow the [five-minute walkthrough](../projects/multi-cloud-identity-governance/docs/interview-guide.md).
+
+Working local implementation with **87 tests passed in the 26 November 2026 review**. Provider exports and approvals are synthetic; cloud execution and sessions are not validated. [Validation record](../projects/multi-cloud-identity-governance/docs/validation.md).
+
 ## Review a working implementation
 
 | Work | Where to start | Status |

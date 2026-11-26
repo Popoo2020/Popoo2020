@@ -1,0 +1,47 @@
+name: Multi-cloud identity governance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects/multi-cloud-identity-governance/**"
+      - ".github/workflows/multi-cloud-identity-governance.yml"
+  pull_request:
+    paths:
+      - "projects/multi-cloud-identity-governance/**"
+      - ".github/workflows/multi-cloud-identity-governance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/multi-cloud-identity-governance
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exercise policy, provider and evidence boundaries
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce demonstration and verify evidence
+        run: |
+          python -m identity_governance demo --output build/ci-demo
+          python -m identity_governance verify --bundle build/ci-demo/mover
+          python -m identity_governance verify --bundle build/ci-demo/failed-removal
+          diff -ru examples/output/mover build/ci-demo/mover
+          diff -ru examples/output/failed-removal build/ci-demo/failed-removal
+      - name: Check Python formatting and lint
+        run: |
+          python -m pip install ruff==0.14.14
+          python -m ruff check .
+          python -m ruff format --check .

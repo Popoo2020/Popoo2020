@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "mode": "simulation_only",
+  "scope": "catalogued_direct_assignments",
+  "event_name": "mover",
+  "event": {
+    "event_id": "hr-2026-11-26-mover",
+    "kind": "mover",
+    "subject_id": "emp-014",
+    "effective_at": "2026-11-26T09:00:00Z",
+    "source": "authoritative_hr_fixture"
+  },
+  "subject_id": "emp-014",
+  "created_at": "2026-11-26T09:00:00Z",
+  "expires_at": "2026-11-26T09:30:00Z",
+  "snapshot_digest": "44888e8f07301b7fcd69c8b3afb370541b613d3fe93feedf9c55f59a6b5f781c",
+  "policy_digest": "0e903b18040f0d9556bf67244836c8d48028fcca54499e39a8ac7e3027ca2297",
+  "identity_digest": "7555218224837cdce448b12ad032dca81da2c4096c295191fb25bae69b2219bd",
+  "manager": "manager-finance",
+  "desired_entitlements": [
+    "aws.cost_reader",
+    "azure.finance",
+    "azure.staff",
+    "gcp.finance_viewer"
+  ],
+  "operations": [
+    {
+      "operation_id": "89d121d3e783d356356d6ec4",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "aws.order_operator",
+      "provider": "aws",
+      "resource": "123456789012",
+      "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-0123456789abcdef",
+      "authority": "provider",
+      "owner": "owner-orders",
+      "reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "214e84ff19699209002a47df",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.order_ops",
+      "provider": "azure",
+      "resource": "00000000-0000-4000-8000-000000000000",
+      "permission": "22222222-2222-4222-8222-222222222222",
+      "authority": "idp",
+      "owner": "owner-orders",
+      "reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "8c083e6d8f3cae635a1964cf",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "gcp.sales_viewer",
+      "provider": "gcp",
+      "resource": "projects/synthetic-governance-demo",
+      "permission": "roles/viewer",
+      "authority": "provider",
+      "owner": "owner-analytics",
+      "reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "32aed810421a07198e5e4865",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "aws.cost_reader",
+      "provider": "aws",
+      "resource": "123456789012",
+      "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-fedcba9876543210",
+      "authority": "provider",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role"
+    },
+    {
+      "operation_id": "0d8653afd43ffdc08892f2a2",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.finance",
+      "provider": "azure",
+      "resource": "00000000-0000-4000-8000-000000000000",
+      "permission": "44444444-4444-4444-8444-444444444444",
+      "authority": "idp",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role"
+    },
+    {
+      "operation_id": "7078404b67429d920014097e",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "gcp.finance_viewer",
+      "provider": "gcp",
+      "resource": "projects/synthetic-governance-demo",
+      "permission": "projects/synthetic-governance-demo/roles/financeReader",
+      "authority": "provider",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role"
+    }
+  ],
+  "control_ids": [
+    "IG-01",
+    "IG-02",
+    "IG-03",
+    "IG-04",
+    "IG-05",
+    "IG-06"
+  ],
+  "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7"
+}

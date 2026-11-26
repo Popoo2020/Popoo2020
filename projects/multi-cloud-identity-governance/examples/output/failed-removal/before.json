@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-11-26T08:55:00Z",
+  "scope": "catalogued_direct_assignments",
+  "complete": {
+    "azure": true,
+    "aws": true,
+    "gcp": true
+  },
+  "subjects": [
+    "emp-014",
+    "emp-015",
+    "emp-019",
+    "contractor-007"
+  ],
+  "disabled_subjects": [],
+  "assignments": [
+    {
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.staff"
+    },
+    {
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.order_ops"
+    },
+    {
+      "subject_id": "emp-014",
+      "entitlement_id": "aws.order_operator"
+    },
+    {
+      "subject_id": "emp-014",
+      "entitlement_id": "gcp.sales_viewer"
+    },
+    {
+      "subject_id": "emp-019",
+      "entitlement_id": "azure.staff"
+    },
+    {
+      "subject_id": "emp-019",
+      "entitlement_id": "azure.order_ops"
+    },
+    {
+      "subject_id": "emp-019",
+      "entitlement_id": "aws.order_operator"
+    },
+    {
+      "subject_id": "emp-019",
+      "entitlement_id": "gcp.sales_viewer"
+    },
+    {
+      "subject_id": "contractor-007",
+      "entitlement_id": "azure.vendor"
+    },
+    {
+      "subject_id": "contractor-007",
+      "entitlement_id": "aws.support_reader"
+    }
+  ]
+}

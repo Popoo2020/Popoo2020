@@ -1,0 +1,62 @@
+[
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "32aed810421a07198e5e4865",
+    "subject_id": "emp-014",
+    "approver_id": "manager-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  },
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "32aed810421a07198e5e4865",
+    "subject_id": "emp-014",
+    "approver_id": "owner-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  },
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "0d8653afd43ffdc08892f2a2",
+    "subject_id": "emp-014",
+    "approver_id": "manager-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  },
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "0d8653afd43ffdc08892f2a2",
+    "subject_id": "emp-014",
+    "approver_id": "owner-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  },
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "7078404b67429d920014097e",
+    "subject_id": "emp-014",
+    "approver_id": "manager-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  },
+  {
+    "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+    "operation_id": "7078404b67429d920014097e",
+    "subject_id": "emp-014",
+    "approver_id": "owner-finance",
+    "decision": "approve",
+    "approved_at": "2026-11-26T09:00:00Z",
+    "expires_at": "2026-11-26T09:30:00Z",
+    "source": "synthetic_demo"
+  }
+]

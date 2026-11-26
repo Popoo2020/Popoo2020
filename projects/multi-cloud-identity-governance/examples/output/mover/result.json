@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "mode": "simulation_only",
+  "status": "completed_simulation",
+  "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+  "subject_id": "emp-014",
+  "before": {
+    "schema_version": 1,
+    "captured_at": "2026-11-26T08:55:00Z",
+    "scope": "catalogued_direct_assignments",
+    "complete": {
+      "azure": true,
+      "aws": true,
+      "gcp": true
+    },
+    "subjects": [
+      "emp-014",
+      "emp-015",
+      "emp-019",
+      "contractor-007"
+    ],
+    "disabled_subjects": [],
+    "assignments": [
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.order_ops"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "aws.order_operator"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "gcp.sales_viewer"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.order_ops"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "aws.order_operator"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "gcp.sales_viewer"
+      },
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "azure.vendor"
+      },
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "aws.support_reader"
+      }
+    ]
+  },
+  "after": {
+    "schema_version": 1,
+    "captured_at": "2026-11-26T08:55:00Z",
+    "scope": "catalogued_direct_assignments",
+    "complete": {
+      "azure": true,
+      "aws": true,
+      "gcp": true
+    },
+    "subjects": [
+      "emp-014",
+      "emp-015",
+      "emp-019",
+      "contractor-007"
+    ],
+    "disabled_subjects": [],
+    "assignments": [
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "aws.support_reader"
+      },
+      {
+        "subject_id": "contractor-007",
+        "entitlement_id": "azure.vendor"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "aws.cost_reader"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.finance"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-014",
+        "entitlement_id": "gcp.finance_viewer"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "aws.order_operator"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.order_ops"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "azure.staff"
+      },
+      {
+        "subject_id": "emp-019",
+        "entitlement_id": "gcp.sales_viewer"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation_id": "89d121d3e783d356356d6ec4",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "aws.order_operator",
+      "provider": "aws",
+      "resource": "123456789012",
+      "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-0123456789abcdef",
+      "authority": "provider",
+      "owner": "owner-orders",
+      "reason": "No longer justified by the authoritative workforce record",
+      "status": "simulated",
+      "result_reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "214e84ff19699209002a47df",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.order_ops",
+      "provider": "azure",
+      "resource": "00000000-0000-4000-8000-000000000000",
+      "permission": "22222222-2222-4222-8222-222222222222",
+      "authority": "idp",
+      "owner": "owner-orders",
+      "reason": "No longer justified by the authoritative workforce record",
+      "status": "simulated",
+      "result_reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "8c083e6d8f3cae635a1964cf",
+      "action": "revoke",
+      "subject_id": "emp-014",
+      "entitlement_id": "gcp.sales_viewer",
+      "provider": "gcp",
+      "resource": "projects/synthetic-governance-demo",
+      "permission": "roles/viewer",
+      "authority": "provider",
+      "owner": "owner-analytics",
+      "reason": "No longer justified by the authoritative workforce record",
+      "status": "simulated",
+      "result_reason": "No longer justified by the authoritative workforce record"
+    },
+    {
+      "operation_id": "32aed810421a07198e5e4865",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "aws.cost_reader",
+      "provider": "aws",
+      "resource": "123456789012",
+      "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-fedcba9876543210",
+      "authority": "provider",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role",
+      "status": "simulated",
+      "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+    },
+    {
+      "operation_id": "0d8653afd43ffdc08892f2a2",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "azure.finance",
+      "provider": "azure",
+      "resource": "00000000-0000-4000-8000-000000000000",
+      "permission": "44444444-4444-4444-8444-444444444444",
+      "authority": "idp",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role",
+      "status": "simulated",
+      "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+    },
+    {
+      "operation_id": "7078404b67429d920014097e",
+      "action": "grant",
+      "subject_id": "emp-014",
+      "entitlement_id": "gcp.finance_viewer",
+      "provider": "gcp",
+      "resource": "projects/synthetic-governance-demo",
+      "permission": "projects/synthetic-governance-demo/roles/financeReader",
+      "authority": "provider",
+      "owner": "owner-finance",
+      "reason": "Required by the approved target role",
+      "status": "simulated",
+      "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+    }
+  ],
+  "review": {
+    "unexpected_assignments": [],
+    "missing_role_assignments": [],
+    "separation_of_duties_conflicts": [],
+    "catalogued_assignment_target_reached": true,
+    "live_access_verified": false,
+    "session_revocation_verified": false
+  },
+  "audit": [
+    {
+      "sequence": 1,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "plan_validated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "mode": "simulation_only",
+        "snapshot_digest": "44888e8f07301b7fcd69c8b3afb370541b613d3fe93feedf9c55f59a6b5f781c"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "6ec1ed130724ce2c9bddbf03eb3ebc3c4e16294d8dd97b674fbb6bb792df3e42"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "89d121d3e783d356356d6ec4",
+        "action": "revoke",
+        "subject_id": "emp-014",
+        "entitlement_id": "aws.order_operator",
+        "provider": "aws",
+        "resource": "123456789012",
+        "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-0123456789abcdef",
+        "authority": "provider",
+        "owner": "owner-orders",
+        "reason": "No longer justified by the authoritative workforce record",
+        "status": "simulated",
+        "result_reason": "No longer justified by the authoritative workforce record"
+      },
+      "previous_hash": "6ec1ed130724ce2c9bddbf03eb3ebc3c4e16294d8dd97b674fbb6bb792df3e42",
+      "hash": "fec834040336fc8a9da87014b57eab4aa1fc6d9103a3c6a403d487c942b5bab5"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "214e84ff19699209002a47df",
+        "action": "revoke",
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.order_ops",
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "22222222-2222-4222-8222-222222222222",
+        "authority": "idp",
+        "owner": "owner-orders",
+        "reason": "No longer justified by the authoritative workforce record",
+        "status": "simulated",
+        "result_reason": "No longer justified by the authoritative workforce record"
+      },
+      "previous_hash": "fec834040336fc8a9da87014b57eab4aa1fc6d9103a3c6a403d487c942b5bab5",
+      "hash": "7acac6d36c943354fce1271577d7ecab7e065ee62a8a598b367421e16be07967"
+    },
+    {
+      "sequence": 4,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "8c083e6d8f3cae635a1964cf",
+        "action": "revoke",
+        "subject_id": "emp-014",
+        "entitlement_id": "gcp.sales_viewer",
+        "provider": "gcp",
+        "resource": "projects/synthetic-governance-demo",
+        "permission": "roles/viewer",
+        "authority": "provider",
+        "owner": "owner-analytics",
+        "reason": "No longer justified by the authoritative workforce record",
+        "status": "simulated",
+        "result_reason": "No longer justified by the authoritative workforce record"
+      },
+      "previous_hash": "7acac6d36c943354fce1271577d7ecab7e065ee62a8a598b367421e16be07967",
+      "hash": "02f9b4f265316166a364cb9828ea1b8a917acf38bb9ef9962d2a0d6878c69c45"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "32aed810421a07198e5e4865",
+        "action": "grant",
+        "subject_id": "emp-014",
+        "entitlement_id": "aws.cost_reader",
+        "provider": "aws",
+        "resource": "123456789012",
+        "permission": "arn:aws:sso:::permissionSet/ssoins-0123456789abcdef/ps-fedcba9876543210",
+        "authority": "provider",
+        "owner": "owner-finance",
+        "reason": "Required by the approved target role",
+        "status": "simulated",
+        "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+      },
+      "previous_hash": "02f9b4f265316166a364cb9828ea1b8a917acf38bb9ef9962d2a0d6878c69c45",
+      "hash": "d037c26c797836bfbc25e0dfcffb3dbd3956a3f2b2e7b89c3aac0fb447d32377"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "0d8653afd43ffdc08892f2a2",
+        "action": "grant",
+        "subject_id": "emp-014",
+        "entitlement_id": "azure.finance",
+        "provider": "azure",
+        "resource": "00000000-0000-4000-8000-000000000000",
+        "permission": "44444444-4444-4444-8444-444444444444",
+        "authority": "idp",
+        "owner": "owner-finance",
+        "reason": "Required by the approved target role",
+        "status": "simulated",
+        "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+      },
+      "previous_hash": "d037c26c797836bfbc25e0dfcffb3dbd3956a3f2b2e7b89c3aac0fb447d32377",
+      "hash": "3c9d271ebcebc6529c1267113557f47f01c41d1331aff07e838b433d35867fbe"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "operation_evaluated",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "operation_id": "7078404b67429d920014097e",
+        "action": "grant",
+        "subject_id": "emp-014",
+        "entitlement_id": "gcp.finance_viewer",
+        "provider": "gcp",
+        "resource": "projects/synthetic-governance-demo",
+        "permission": "projects/synthetic-governance-demo/roles/financeReader",
+        "authority": "provider",
+        "owner": "owner-finance",
+        "reason": "Required by the approved target role",
+        "status": "simulated",
+        "result_reason": "Bound, unexpired demo approvals present; identities are not authenticated"
+      },
+      "previous_hash": "3c9d271ebcebc6529c1267113557f47f01c41d1331aff07e838b433d35867fbe",
+      "hash": "8adaa7248c13cb9f097a293dbee95635b7c73447498cac6ff53bbd580f5d0e4c"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-11-26T09:00:00Z",
+      "event_type": "reconciliation_completed",
+      "plan_id": "e40ff79511343a3d9a9ec351a5314877718e6af9566d0b3a09d2bd5bd3cac2b7",
+      "subject_id": "emp-014",
+      "details": {
+        "status": "completed_simulation",
+        "review": {
+          "unexpected_assignments": [],
+          "missing_role_assignments": [],
+          "separation_of_duties_conflicts": [],
+          "catalogued_assignment_target_reached": true,
+          "live_access_verified": false,
+          "session_revocation_verified": false
+        }
+      },
+      "previous_hash": "8adaa7248c13cb9f097a293dbee95635b7c73447498cac6ff53bbd580f5d0e4c",
+      "hash": "c4a08c8a90a078c4df4e02bca3574ad92d1cb1b83f1358ecf391512b9567668a"
+    }
+  ]
+}
