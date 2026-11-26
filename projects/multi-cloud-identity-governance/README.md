@@ -1,5 +1,7 @@
 # Multi-Cloud Identity Governance
 
+**Dedicated repository:** [Multi-Cloud-Identity-Governance](https://github.com/Popoo2020/Multi-Cloud-Identity-Governance). The same project now has its own repository and CI workflow. This original copy is retained so existing portfolio links continue to work.
+
 **A role change should remove old access, establish who approved the new access, and leave evidence someone can review.**
 
 This project follows that change across Microsoft Entra ID, AWS IAM Identity Center and Google Cloud IAM. It connects workforce events, an entitlement catalogue, owner approvals and access-review evidence in one reproducible workflow.
